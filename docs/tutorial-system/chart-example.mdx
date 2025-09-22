@@ -1,0 +1,725 @@
+---
+title: 业务数据可视化图表示例参考
+sidebar_position: 2
+description: 展示若善云营销+直播+销售一体化平台的多种数据图表，包含柱状图、折线图、饼图、雷达图、热力图、玫瑰图、混合图、堆叠图、散点图、K线图等，所有数据均为模拟业务数据。
+---
+
+import EChartsWrapper from '@site/src/components/EChartsWrapper';
+
+# 📈 若善云平台业务数据可视化图表示例
+
+:::info
+
+所有图表数据均为模拟业务数据，用于展示 ECharts 在 Docusaurus 中的渲染能力与若善云平台的数据分析维度。
+
+:::
+
+> 包含柱状图、折线图、饼图、雷达图、热力图、玫瑰图、混合图、堆叠图、散点图、K线图等，所有数据均为模拟业务数据。
+> 图表加载时带有动态入场动画，提升用户体验。
+
+---
+
+## 📊 月度销售额统计（柱状图）
+
+<EChartsWrapper
+  option={{
+    animation: true,
+    animationDuration: 1200,
+    animationEasing: 'cubicInOut',
+    title: {
+      text: '2025年Q1各渠道月度销售额对比（万元）',
+      subtext: '数据来源：若善云销售中枢 · 模拟数据',
+      left: 'center',
+      textStyle: {
+        fontSize: 16,
+        fontWeight: 'bold'
+      }
+    },
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: { 
+        type: 'shadow',
+        shadowStyle: {
+          color: 'rgba(0,0,0,0.1)'
+        }
+      },
+      backgroundColor: 'rgba(255,255,255,0.95)',
+      borderColor: '#ccc',
+      borderWidth: 1,
+      textStyle: {
+        color: '#333'
+      }
+    },
+    legend: {
+      data: ['总销售额', '直播带货', '私域转化', '广告投放'],
+      top: 'top',
+      textStyle: {
+        fontSize: 12
+      }
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '10%',
+      containLabel: true
+    },
+    xAxis: {
+      type: 'category',
+      data: [
+        '1月第1周', '1月第2周', '1月第3周', '1月第4周',
+        '2月第1周', '2月第2周', '2月第3周', '2月第4周',
+        '3月第1周', '3月第2周', '3月第3周', '3月第4周'
+      ],
+      axisLabel: {
+        interval: 0,
+        rotate: 45,
+        fontSize: 10,
+        margin: 10
+      },
+      axisTick: {
+        alignWithLabel: true
+      }
+    },
+    yAxis: {
+      type: 'value',
+      name: '销售额（万元）',
+      axisLabel: {
+        formatter: '{value}'
+      },
+      splitLine: {
+        lineStyle: {
+          type: 'dashed',
+          color: '#eee'
+        }
+      }
+    },
+    series: [
+      {
+        name: '总销售额',
+        type: 'bar',
+        barWidth: '18%',
+        data: [
+          68, 72, 75, 65,
+          80, 85, 92, 88,
+          95, 102, 115, 108
+        ],
+        itemStyle: { 
+          color: '#5470C6',
+          borderRadius: [4, 4, 0, 0]
+        },
+        emphasis: { 
+          focus: 'series',
+          itemStyle: {
+            shadowBlur: 10,
+            shadowColor: 'rgba(84, 112, 198, 0.5)'
+          }
+        },
+        label: {
+          show: true,
+          position: 'top',
+          fontSize: 9,
+          color: '#5470C6',
+          fontWeight: 'bold'
+        }
+      },
+      {
+        name: '直播带货',
+        type: 'bar',
+        barWidth: '18%',
+        data: [
+          42, 48, 50, 40,
+          55, 60, 68, 62,
+          72, 80, 90, 85
+        ],
+        itemStyle: { 
+          color: '#EE6666',
+          borderRadius: [4, 4, 0, 0]
+        },
+        emphasis: { 
+          focus: 'series',
+          itemStyle: {
+            shadowBlur: 10,
+            shadowColor: 'rgba(238, 102, 102, 0.5)'
+          }
+        }
+      },
+      {
+        name: '私域转化',
+        type: 'bar',
+        barWidth: '18%',
+        data: [
+          18, 16, 17, 15,
+          18, 20, 19, 20,
+          18, 17, 20, 18
+        ],
+        itemStyle: { 
+          color: '#91CC75',
+          borderRadius: [4, 4, 0, 0]
+        },
+        emphasis: { 
+          focus: 'series',
+          itemStyle: {
+            shadowBlur: 10,
+            shadowColor: 'rgba(145, 204, 117, 0.5)'
+          }
+        }
+      },
+      {
+        name: '广告投放',
+        type: 'bar',
+        barWidth: '18%',
+        data: [
+          8, 8, 8, 10,
+          7, 5, 5, 6,
+          5, 5, 5, 5
+        ],
+        itemStyle: { 
+          color: '#FAC858',
+          borderRadius: [4, 4, 0, 0]
+        },
+        emphasis: { 
+          focus: 'series',
+          itemStyle: {
+            shadowBlur: 10,
+            shadowColor: 'rgba(250, 200, 88, 0.5)'
+          }
+        }
+      }
+    ]
+  }}
+/>
+
+---
+
+## 🌹 商品销量分布（南丁格尔玫瑰图）
+
+<EChartsWrapper
+  option={{
+    animation: true,
+    animationDuration: 1500,
+    title: {
+      text: '热销商品销量分布（玫瑰图）',
+      subtext: '面积代表销量，角度代表品类',
+      left: 'center'
+    },
+    tooltip: { trigger: 'item', formatter: '{b}: {c}件' },
+    legend: {
+      top: 'bottom',
+      data: ['智能养生壶', '胶原蛋白饮', '便携按摩仪', '酵素果冻', '护眼叶黄素', '维生素C泡腾片']
+    },
+    series: [{
+      type: 'pie',
+      radius: [30, 120],
+      center: ['50%', '50%'],
+      roseType: 'area', // 南丁格尔玫瑰图关键
+      itemStyle: {
+        borderRadius: 8,
+        borderColor: '#fff',
+        borderWidth: 2
+      },
+      data: [
+        { value: 8900, name: '智能养生壶' },
+        { value: 7600, name: '胶原蛋白饮' },
+        { value: 6200, name: '便携按摩仪' },
+        { value: 5800, name: '酵素果冻' },
+        { value: 4500, name: '护眼叶黄素' },
+        { value: 3200, name: '维生素C泡腾片' }
+      ]
+    }]
+  }}
+/>
+
+---
+
+## 📉📈 直播销售额与订单量（折柱混合图）
+
+<EChartsWrapper
+  option={{
+    animation: true,
+    animationDuration: 1300,
+    title: {
+      text: '每日直播销售额与订单量对比',
+      subtext: '折线=销售额，柱状=订单量',
+      left: 'center'
+    },
+    tooltip: { trigger: 'axis', axisPointer: { type: 'cross' } },
+    legend: { data: ['销售额（万元）', '订单量（单）'], top: 'top' },
+    xAxis: {
+      type: 'category',
+      data: ['3/1', '3/5', '3/10', '3/15', '3/20', '3/25', '3/30'],
+    },
+    yAxis: [
+      {
+        type: 'value',
+        name: '销售额（万元）',
+        position: 'left',
+        axisLabel: { formatter: '{value}' }
+      },
+      {
+        type: 'value',
+        name: '订单量（单）',
+        position: 'right',
+        axisLabel: { formatter: '{value}' }
+      }
+    ],
+    series: [
+      {
+        name: '销售额（万元）',
+        type: 'line',
+        data: [45, 58, 72, 85, 98, 110, 125],
+        smooth: true,
+        symbolSize: 8,
+        lineStyle: { width: 4 },
+        itemStyle: { color: '#EE6666' }
+      },
+      {
+        name: '订单量（单）',
+        type: 'bar',
+        data: [1200, 1500, 1800, 2100, 2400, 2700, 3100],
+        itemStyle: { color: '#5470C6' },
+        yAxisIndex: 1
+      }
+    ]
+  }}
+/>
+
+---
+
+## 📊 用户增长趋势（堆叠面积图）
+
+<EChartsWrapper
+  option={{
+    animation: true,
+    animationDuration: 1600,
+    title: {
+      text: '用户增长来源趋势（堆叠面积图）',
+      subtext: '展示不同渠道用户增长贡献',
+      left: 'center'
+    },
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: { type: 'cross' }
+    },
+    legend: { data: ['自然流量', '直播引流', '广告投放', '私域裂变'], top: 'top' },
+    xAxis: {
+      type: 'category',
+      boundaryGap: false,
+      data: ['1月', '2月', '3月', '4月', '5月', '6月']
+    },
+    yAxis: {
+      type: 'value',
+      name: '新增用户数'
+    },
+    series: [
+      {
+        name: '自然流量',
+        type: 'line',
+        stack: '总量',
+        areaStyle: { opacity: 0.6 },
+        symbol: 'none',
+        data: [300, 400, 450, 500, 550, 600],
+        itemStyle: { color: '#91CC75' }
+      },
+      {
+        name: '直播引流',
+        type: 'line',
+        stack: '总量',
+        areaStyle: { opacity: 0.6 },
+        symbol: 'none',
+        data: [500, 700, 900, 1100, 1300, 1500],
+        itemStyle: { color: '#5470C6' }
+      },
+      {
+        name: '广告投放',
+        type: 'line',
+        stack: '总量',
+        areaStyle: { opacity: 0.6 },
+        symbol: 'none',
+        data: [200, 300, 400, 450, 500, 550],
+        itemStyle: { color: '#FAC858' }
+      },
+      {
+        name: '私域裂变',
+        type: 'line',
+        stack: '总量',
+        areaStyle: { opacity: 0.6 },
+        symbol: 'none',
+        data: [100, 200, 350, 500, 700, 900],
+        itemStyle: { color: '#EE6666' }
+      }
+    ]
+  }}
+/>
+
+---
+
+## 🎯 客单价与转化率关系（散点图）
+
+<EChartsWrapper
+  option={{
+    animation: true,
+    animationDuration: 1400,
+    title: {
+      text: '主播客单价 vs 转化率（散点图）',
+      subtext: '气泡大小 = GMV贡献值',
+      left: 'center'
+    },
+    tooltip: {
+      trigger: 'item',
+      formatter: function (params) {
+        return `${params.name}<br/>客单价: ¥${params.value[0]}<br/>转化率: ${params.value[1]}%<br/>GMV: ¥${params.value[2]}万`;
+      }
+    },
+    xAxis: {
+      name: '客单价（元）',
+      type: 'value',
+      min: 0,
+      max: 500
+    },
+    yAxis: {
+      name: '转化率（%）',
+      type: 'value',
+      min: 0,
+      max: 15
+    },
+    visualMap: [{
+      show: false,
+      dimension: 2, // 第三个维度（GMV）控制气泡大小
+      min: 10,
+      max: 200,
+      calculable: true,
+      inRange: {
+        symbolSize: [20, 80]
+      }
+    }],
+    series: [{
+      type: 'scatter',
+      symbolSize: function (val) {
+        return val[2] / 3; // GMV值映射到气泡大小
+      },
+      data: [
+        { name: '主播A', value: [120, 8.5, 120] },
+        { name: '主播B', value: [85, 12.3, 95] },
+        { name: '主播C', value: [210, 6.2, 180] },
+        { name: '主播D', value: [65, 10.8, 70] },
+        { name: '主播E', value: [320, 4.1, 150] },
+        { name: '主播F', value: [95, 9.7, 88] },
+        { name: '主播G', value: [180, 7.0, 160] }
+      ],
+      itemStyle: {
+        color: '#5470C6',
+        opacity: 0.8
+      }
+    }]
+  }}
+/>
+
+---
+
+## 📉 股权激励计划股价走势（K线图）
+
+> *注：若善云平台如涉及股权激励、内部估值或投融资，可用此图展示模拟股价走势。*
+
+<EChartsWrapper
+  option={{
+    animation: true,
+    animationDuration: 1800,
+    title: {
+      text: 'RS-Share 股权激励计划模拟股价（K线图）',
+      subtext: '仅供内部参考 · 模拟数据',
+      left: 'center'
+    },
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: { type: 'cross' }
+    },
+    xAxis: {
+      type: 'category',
+      data: ['3/1', '3/2', '3/3', '3/4', '3/5', '3/6', '3/7', '3/8', '3/9', '3/10'],
+      boundaryGap: false
+    },
+    yAxis: {
+      type: 'value',
+      name: '股价（元）'
+    },
+    series: [{
+      type: 'candlestick', // K线图
+      data: [
+        [10.2, 12.5, 9.8, 11.3],
+        [11.3, 13.2, 10.5, 12.8],
+        [12.8, 11.5, 10.2, 10.8],
+        [10.8, 14.0, 10.5, 13.5],
+        [13.5, 15.2, 12.8, 14.9],
+        [14.9, 13.8, 12.5, 13.0],
+        [13.0, 16.5, 12.8, 15.8],
+        [15.8, 17.2, 15.0, 16.8],
+        [16.8, 15.5, 14.2, 15.0],
+        [15.0, 18.0, 14.8, 17.5]
+      ],
+      itemStyle: {
+        color: '#EC5F67', // 跌
+        color0: '#54C492', // 涨
+        borderColor: '#EC5F67',
+        borderColor0: '#54C492'
+      }
+    }]
+  }}
+/>
+
+---
+
+## 📉 热销商品销量排名（条形图）
+
+<EChartsWrapper
+  option={{
+    title: {
+      text: '热销商品Top5（3月）',
+      subtext: '按直播带货销量排序',
+    },
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'shadow',
+      },
+    },
+    yAxis: {
+      type: 'category',
+      data: ['智能养生壶', '胶原蛋白饮', '便携按摩仪', '酵素果冻', '护眼叶黄素'],
+    },
+    xAxis: {
+      type: 'value',
+      name: '销量（件）',
+    },
+    series: [
+      {
+        type: 'bar',
+        data: [8900, 7600, 6200, 5800, 4500],
+        itemStyle: {
+          color: '#91CC75',
+        },
+      },
+    ],
+  }}
+/>
+
+---
+
+## 📈 用户增长与直播场次趋势（折线图）
+
+<EChartsWrapper
+  option={{
+    title: {
+      text: '用户增长与直播活跃度趋势',
+      subtext: '2025年3月1日 - 3月31日',
+    },
+    tooltip: {
+      trigger: 'axis',
+    },
+    legend: {
+      data: ['新增用户', '日均直播场次'],
+    },
+    xAxis: {
+      type: 'category',
+      data: ['3/1', '3/8', '3/15', '3/22', '3/29'],
+    },
+    yAxis: [
+      {
+        type: 'value',
+        name: '新增用户',
+        position: 'left',
+      },
+      {
+        type: 'value',
+        name: '直播场次',
+        position: 'right',
+        axisLabel: {
+          formatter: '{value} 场',
+        },
+      },
+    ],
+    series: [
+      {
+        name: '新增用户',
+        type: 'line',
+        data: [1200, 1800, 2300, 2900, 3500],
+        smooth: true,
+        itemStyle: { color: '#5470C6' },
+        yAxisIndex: 0,
+      },
+      {
+        name: '日均直播场次',
+        type: 'line',
+        data: [45, 62, 78, 95, 112],
+        smooth: true,
+        itemStyle: { color: '#EE6666' },
+        yAxisIndex: 1,
+      },
+    ],
+  }}
+/>
+
+---
+
+## 🥧 营销渠道转化占比（饼图）
+
+<EChartsWrapper
+  option={{
+    title: {
+      text: '3月营销渠道转化占比',
+      left: 'center',
+      subtext: '按最终成交订单来源统计',
+    },
+    tooltip: {
+      trigger: 'item',
+      formatter: '{b}: {c} ({d}%)',
+    },
+    legend: {
+      orient: 'vertical',
+      left: 'left',
+      data: ['直播带货', '私域社群', '搜索引擎', '信息流广告', '其他'],
+    },
+    series: [
+      {
+        name: '渠道来源',
+        type: 'pie',
+        radius: '50%',
+        data: [
+          { value: 45, name: '直播带货' },
+          { value: 25, name: '私域社群' },
+          { value: 12, name: '搜索引擎' },
+          { value: 10, name: '信息流广告' },
+          { value: 8, name: '其他' },
+        ],
+        itemStyle: {
+          emphasis: {
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowColor: 'rgba(0,0,0,0.5)',
+          },
+        },
+      },
+    ],
+  }}
+/>
+
+---
+
+## 🕸️ 主播能力评估雷达图
+
+<EChartsWrapper
+  option={{
+    title: {
+      text: '主播综合能力评估',
+      left: 'center',
+      subtext: '维度：转化率、控场力、话术、粉丝粘性、GMV贡献',
+    },
+    tooltip: {},
+    legend: {
+      data: ['主播A', '主播B'],
+      top: 'bottom',
+    },
+    radar: {
+      indicator: [
+        { name: '转化率', max: 100 },
+        { name: '控场力', max: 100 },
+        { name: '话术技巧', max: 100 },
+        { name: '粉丝粘性', max: 100 },
+        { name: 'GMV贡献', max: 100 },
+      ],
+      radius: '60%',
+    },
+    series: [
+      {
+        name: '主播能力对比',
+        type: 'radar',
+        data: [
+          {
+            value: [88, 92, 85, 78, 95],
+            name: '主播A',
+            areaStyle: { opacity: 0.1 },
+          },
+          {
+            value: [75, 80, 90, 92, 82],
+            name: '主播B',
+            areaStyle: { opacity: 0.1 },
+          },
+        ],
+      },
+    ],
+  }}
+/>
+
+---
+
+## 🔥 每日直播活跃热力图
+
+<EChartsWrapper
+  option={{
+    title: {
+      text: '每日直播活跃热力图（3月）',
+      left: 'center',
+      subtext: '颜色越深，开播场次越多',
+    },
+    tooltip: {
+      position: 'top',
+      formatter: function (params) {
+        return `周${params.value[0] + 1} 第${params.value[1] + 1}天: ${params.value[2]} 场直播`;
+      },
+    },
+    grid: {
+      height: '50%',
+      y: '15%',
+    },
+    xAxis: {
+      type: 'category',
+      data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+      splitArea: {
+        show: true,
+      },
+    },
+    yAxis: {
+      type: 'category',
+      data: ['第1周', '第2周', '第3周', '第4周'],
+      splitArea: {
+        show: true,
+      },
+    },
+    visualMap: {
+      min: 0,
+      max: 120,
+      calculable: true,
+      orient: 'horizontal',
+      left: 'center',
+      bottom: '5%',
+      inRange: {
+        color: ['#FFFFFF', '#FF6B35'], // 从白到橙红
+      },
+    },
+    series: [
+      {
+        name: '直播场次',
+        type: 'heatmap',
+        data: [
+          [0, 0, 35], [0, 1, 42], [0, 2, 58], [0, 3, 65], [0, 4, 88], [0, 5, 105], [0, 6, 92],
+          [1, 0, 40], [1, 1, 48], [1, 2, 62], [1, 3, 70], [1, 4, 95], [1, 5, 112], [1, 6, 98],
+          [2, 0, 45], [2, 1, 55], [2, 2, 70], [2, 3, 78], [2, 4, 102], [2, 5, 118], [2, 6, 105],
+          [3, 0, 50], [3, 1, 60], [3, 2, 75], [3, 3, 85], [3, 4, 110], [3, 5, 125], [3, 6, 115],
+        ].map(item => [item[0], item[1], item[2]]),
+        label: {
+          show: false,
+        },
+        emphasis: {
+          itemStyle: {
+            shadowBlur: 10,
+            shadowColor: 'rgba(0,0,0,0.5)',
+          },
+        },
+      },
+    ],
+  }}
+/>
+
+```js showLineNumbers=true
+animation: true,
+animationDuration: 1200 ~ 1800, // 不同图表错开节奏
+animationEasing: 'cubicInOut'   // 缓动曲线更自然
