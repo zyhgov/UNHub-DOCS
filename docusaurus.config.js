@@ -22,7 +22,7 @@ const config = {
 
 i18n: {
   defaultLocale: 'zh-Hans',
-  locales: ['zh-Hans','zh-Hant', 'en',  'ja', 'ko' ,'ru'], 
+  locales: ['zh-Hans'],
 },
 
   // ✅ 1. 启用 Mermaid 解析支持
@@ -171,7 +171,7 @@ plugins: [
               document.body.appendChild(overlay);
 
               // 🔥 关键：请确保替换为你自己的 Site Key！
-              const siteKey = '0x4AAAAAABzxmZ5cp7bwL3PZ';
+              const siteKey = '0x4AAAAAAB2kTE457GPaMQgx';
 
               // 渲染 Turnstile
               window.turnstile.render('#turnstile-container', {
