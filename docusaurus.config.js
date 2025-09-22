@@ -627,7 +627,7 @@ plugins: [
 
       //  公开 API 密钥：提交它没有危险
       apiKey: '8bd0bf7d484c04950368797c46a1ce3a',
-      indexName: 'docs_zyhorg_cn_lnk66ch6fl_pages',
+      indexName: 'unhub-docs-index',
       // indexName: 'rsjk_zyhgov_cn_spm1vvuqfu_pages',
 
       // 可选：见下文
