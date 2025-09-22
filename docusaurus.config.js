@@ -316,7 +316,29 @@ plugins: [
     };
   },
 }),
-
+  // ✅ 3. 新增：Microsoft Clarity 跟踪插件 👇
+  () => ({
+    name: 'docusaurus-plugin-clarity',
+    injectHtmlTags() {
+      return {
+        headTags: [
+          {
+            tagName: 'script',
+            attributes: {
+              type: 'text/javascript',
+            },
+            innerHTML: `
+              (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "tenruiomq3");
+            `,
+          },
+        ],
+      };
+    },
+  }),
   [
     '@docusaurus/plugin-content-docs',
     {
@@ -376,17 +398,6 @@ plugins: [
     { name: 'og:type', content: 'website' },
   ],
   headTags: [
-{
-  tagName: 'script',
-  attributes: { type: 'text/javascript' },
-  innerHTML: `
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "tenruiomq3");
-  `,
-},
     // 🔗 预连接到关键域名（提升加载速度）
     {
       tagName: 'link',
