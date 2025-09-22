@@ -376,19 +376,20 @@ plugins: [
     { name: 'og:type', content: 'website' },
   ],
   headTags: [
+    {
+      tagName: 'script',
+      attributes: { type: 'text/javascript' },
+      innerHTML: `
+        <!-- Clarity tracking code for https://docs.zyhorg.cn -->
+        (function(c,l,a,r,i,y){c[l]||(c[l]=[]);c[l].push(arguments);t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tags/tenruiomq3?ref=bwt";y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","tenruiomq3");
+      `,
+    },
     // 🔗 预连接到关键域名（提升加载速度）
     {
       tagName: 'link',
       attributes: {
         rel: 'preconnect',
         href: 'https://docs.zyhorg.cn',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://rsc.rsjk.org.cn',
       },
     },
     // 🧩 结构化数据：Organization（帮助搜索引擎理解你的网站）
