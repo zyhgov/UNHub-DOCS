@@ -621,6 +621,16 @@ plugins: [
           </a>
         </div>
       `
+    },
+    {
+      html: `
+        <div style="display: flex; align-items: center; justify-content: center; width: 120px; gap: 8px; white-space: nowrap;">
+          <a href="https://gsap.com/" style="display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none;">
+            <img src="/img/logos/GSAP.svg" alt="ECharts Logo" height="20" style="vertical-align: middle;" />
+            <span>GSAP</span>
+          </a>
+        </div>
+      `
     }
   ]
 }
