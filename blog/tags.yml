@@ -12,3 +12,8 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+说明:
+  label: 说明
+  description: 项目说明与使用指南
+  permalink: /explain

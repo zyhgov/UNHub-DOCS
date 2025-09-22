@@ -48,7 +48,7 @@ presets: [
           type: ['rss', 'atom'],
           xslt: true,
         },
-        editUrl: 'https://github.com/zyhgov/rsjk/edit/main/', // ✅ 已修正
+        editUrl: 'https://github.com/zyhgov/UNHub-DOCS/edit/main/', // ✅ 已修正
         onInlineTags: 'warn',
         onInlineAuthors: 'warn',
         onUntruncatedBlogPosts: 'warn',
@@ -324,7 +324,7 @@ plugins: [
       path: 'docs',
       routeBasePath: 'docs',
       sidebarPath: './sidebars.js',
-      editUrl: 'https://github.com/zyhgov/rsjk/edit/main/', // ✅ 已修正
+      editUrl: 'https://github.com/zyhgov/UNHub-DOCS/edit/main/', // ✅ 已修正
     },
   ],
   [
@@ -334,7 +334,7 @@ plugins: [
       path: 'docs-private',
       routeBasePath: 'private',
       sidebarPath: './sidebars-private.js',
-      editUrl: 'https://github.com/zyhgov/rsjk/edit/main/', // ✅ 已修正
+      editUrl: 'https://github.com/zyhgov/UNHub-DOCS/edit/main/', // ✅ 已修正
     },
   ],
   [
@@ -344,7 +344,7 @@ plugins: [
       path: 'docs-os',
       routeBasePath: 'os',
       sidebarPath: './sidebars-os.js',
-      editUrl: 'https://github.com/zyhgov/rsjk/edit/main/',
+      editUrl: 'https://github.com/zyhgov/UNHub-DOCS/edit/main/',
     },
   ],
     [
@@ -354,7 +354,7 @@ plugins: [
       path: 'docs-news',
       routeBasePath: 'news',
       sidebarPath: './sidebars-news.js',
-      editUrl: 'https://github.com/zyhgov/rsjk/edit/main/',
+      editUrl: 'https://github.com/zyhgov/UNHub-DOCS/edit/main/',
     },
   ],
 ],
@@ -365,12 +365,12 @@ plugins: [
     { name: 'keywords', content: 'UNHub, UNHub文档, 云系统, 运维手册, 操作教程, 企业内参, 技术文档' },
     // 🐦 Twitter 卡片
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'UNHub文档 - UNHub云系统平台运维操作手册' },
-    { name: 'twitter:description', content: 'UNHub云系统平台官方教程网站，提供全面的系统使用指南、操作教程和最佳实践。' },
+    { name: 'twitter:title', content: 'UNHub DOCS' },
+    { name: 'twitter:description', content: 'UNHub DOCS提供全面的系统使用指南、操作教程和最佳实践。' },
     { name: 'twitter:image', content: 'https://docs.zyhorg.cn/img/bg.jpg' },
     // 🌐 Open Graph（用于微信、Facebook 等社交分享）
-    { name: 'og:title', content: 'UNHub文档 - UNHub云系统平台运维操作手册' },
-    { name: 'og:description', content: 'UNHub云系统平台官方教程网站，提供全面的系统使用指南、操作教程和最佳实践。' },
+    { name: 'og:title', content: 'UNHub DOCS' },
+    { name: 'og:description', content: 'UNHub DOCS提供全面的系统使用指南、操作教程和最佳实践。' },
     { name: 'og:image', content: 'https://docs.zyhorg.cn/img/bg.jpg'},
     { name: 'og:url', content: 'https://docs.zyhorg.cn'},
     { name: 'og:type', content: 'website' },
@@ -400,13 +400,13 @@ plugins: [
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Organization',
-        name: 'UNHub健康',
+        name: 'UNHub DOCS',
         url: 'https://docs.zyhorg.cn',
         logo: 'https://docs.zyhorg.cn/img/logo.svg',
-        description: 'UNHub云系统平台运维工作人员操作手册与一般性笔记文档网站。',
+        description: 'UNHub DOCS 一般性笔记文档网站。',
         sameAs: [
           'https://github.com/zyhgov',
-          'https://govhub.zyhgov.cn'
+          'https://zyhorg.cn'
         ]
       }),
     },
@@ -621,40 +621,40 @@ plugins: [
     mermaid: {
       theme: { light: 'default', dark: 'dark' },
     },
-    algolia: {
-      // Algolia 提供的应用 ID
-      appId: '',
+    // algolia: {
+    //   // Algolia 提供的应用 ID
+    //   appId: '',
 
-      //  公开 API 密钥：提交它没有危险
-      apiKey: '',
-      indexName: '',
-      // indexName: 'rsjk_zyhgov_cn_spm1vvuqfu_pages',
+    //   //  公开 API 密钥：提交它没有危险
+    //   apiKey: '',
+    //   indexName: '',
+    //   // indexName: 'rsjk_zyhgov_cn_spm1vvuqfu_pages',
 
-      // 可选：见下文
-      contextualSearch: true,
+    //   // 可选：见下文
+    //   contextualSearch: true,
 
-      // 可选：声明哪些域名需要用 window.location 型的导航而不是 history.push。 适用于 Algolia 配置会爬取多个文档站点，而我们想要用 window.location.href 在它们之间跳转时。
-      // externalUrlRegex: 'external\\.com|domain\\.com',
+    //   // 可选：声明哪些域名需要用 window.location 型的导航而不是 history.push。 适用于 Algolia 配置会爬取多个文档站点，而我们想要用 window.location.href 在它们之间跳转时。
+    //   // externalUrlRegex: 'external\\.com|domain\\.com',
 
-      // 可选：替换 Algolia 的部分网址。 在使用相同搜索索引支持多个不同 baseUrl 的部署时非常有用。 你可以在 “from” 中使用正则表达式或字符串。 比方说，localhost:3000 和 myCompany.com/docs
-      replaceSearchResultPathname: {
-        // 匹配所有不在 /docs/ 下但应该是的路径
-        from: '^/(?!(docs|private|blog|search)/)([^/]+)$',
-        to: '/docs/$2',
-      },
+    //   // 可选：替换 Algolia 的部分网址。 在使用相同搜索索引支持多个不同 baseUrl 的部署时非常有用。 你可以在 “from” 中使用正则表达式或字符串。 比方说，localhost:3000 和 myCompany.com/docs
+    //   replaceSearchResultPathname: {
+    //     // 匹配所有不在 /docs/ 下但应该是的路径
+    //     from: '^/(?!(docs|private|blog|search)/)([^/]+)$',
+    //     to: '/docs/$2',
+    //   },
 
-      // 可选：Algolia 搜索参数
-      searchParameters: {},
-      placeholder: '搜索 UNHub DOCS',
+    //   // 可选：Algolia 搜索参数
+    //   searchParameters: {},
+    //   placeholder: '搜索 UNHub DOCS',
 
-      // 可选：默认启用的搜索页路径（传递 `false` 以禁用它）
-      searchPagePath: 'search',
+    //   // 可选：默认启用的搜索页路径（传递 `false` 以禁用它）
+    //   searchPagePath: 'search',
 
-      // 可选：Docsearch 的 insights 功能是否启用（默认为 `false`）
-      insights: false,
+    //   // 可选：Docsearch 的 insights 功能是否启用（默认为 `false`）
+    //   insights: false,
 
-      //... 其他 Algolia 参数
-    },
+    //   //... 其他 Algolia 参数
+    // },
   },
 };
 
