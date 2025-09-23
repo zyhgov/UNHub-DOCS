@@ -446,11 +446,11 @@ plugins: [
     },
   ],
     navbar: {
-      title: 'UNHub DOCS',
+      // title: 'UNHub DOCS',
       logo: {
         alt: 'UNHub Logo',
-        src: 'img/logo.svg',
-        srcDark: 'img/unhub.svg',
+        src: 'img/light-logo.png',
+        srcDark: 'img/dark-logo.png',
       },
       items: [
         {
