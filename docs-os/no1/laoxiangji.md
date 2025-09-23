@@ -4,13 +4,14 @@ sidebar_label: 老乡鸡开源GitHub项目生态全景分析 —— 官方仓库
 title: 老乡鸡开源GitHub项目生态全景分析 —— 官方仓库与社区衍生项目
 description: 本报告旨在对两个与“老乡鸡”品牌相关的开源项目进行专业、详尽的介绍与对比分析。
 keywords: [老乡鸡, GuihongWang, Gar-b-age]
+tags: [GitHub, 老乡鸡, GuihongWang, Gar-b-age]
 image: /img/os/laoxiangji.png
 ---
 
 # 老乡鸡开源GitHub项目生态全景分析 —— 官方仓库与社区衍生项目
 
 **文档版本**：1.0  
-**最后更新**：2025年4月11日  
+**最后更新**：2025年9月23日  
 **适用对象**：开源爱好者、餐饮行业数字化研究者、前端开发者、品牌营销分析师
 
 ---

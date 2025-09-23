@@ -4,6 +4,7 @@ sidebar_label: Tongyi DeepResearch - 阿里巴巴通义实验室下一代AI搜�
 title: Tongyi DeepResearch - 阿里巴巴通义实验室下一代AI搜索与研究智能体
 description: Tongyi DeepResearch 是由阿里巴巴通义实验室（Tongyi Lab）推出的一个开源项目，旨在构建下一代AI驱动的研究智能体（Research Agent）。它不仅仅是一个信息检索工具，更是一个能够自主规划、执行多步研究、批判性评估信息并生成结构化报告的智能系统。
 keywords: [Tongyi, DeepResearch, 阿里巴巴, 通义]
+tags: [GitHub, Tongyi, DeepResearch, 阿里巴巴, 通义]
 image: /img/os/DeepResearch.png
 ---
 

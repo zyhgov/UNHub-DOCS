@@ -3,7 +3,8 @@ sidebar_position: 2
 sidebar_label: Bevy Engine 一个用 Rust 构建的令人耳目一新的简单数据驱动游戏引擎
 title: Bevy Engine 一个用 Rust 构建的令人耳目一新的简单数据驱动游戏引擎
 description: Bevy 是一个用 Rust 语言编写的免费、开源、现代化的游戏引擎。它以“数据驱动”为核心设计理念，采用 ECS（实体-组件-系统）架构，旨在为开发者提供高性能、模块化、易于学习和使用的开发体验。Bevy 的目标是成为一款“全能型”引擎，适用于从 2D 移动游戏到 3D AAA 大作的广泛场景。
-keywords: [Bevy, Rust, 游戏引擎, 数据驱动]
+keywords: [GitHub, Bevy, Rust, 游戏引擎, 数据驱动]
+tags: [GitHub, Bevy, Rust, 游戏引擎, 数据驱动]
 ---
 
 

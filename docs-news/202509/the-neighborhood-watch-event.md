@@ -3,8 +3,9 @@ sidebar_position: 1
 sidebar_label: GTA在线模式"邻里守望"活动完整指南
 title: GTA在线模式"邻里守望"活动完整指南
 description: 邻里守望是GTA在线模式于2025年9月推出的一项限时特别活动，为期两周（9月10日至9月24日）。该活动以执法角色体验为主题，为玩家提供了独特的机会，可以暂时脱离犯罪生涯，扮演洛圣都的执法者，维护城市治安。活动名称"邻里守望"源自现实社区中居民共同协作预防犯罪的概念，在GTA在线模式中则演变为一项让玩家参与虚拟执法行动的趣味企划。
-keywords: [rockstargames, 邻里守望, GTA在线模式]
+keywords: [RockstarGames, 邻里守望, GTA在线模式]
 image: /img/news/202509/llsw001.jpg
+tags: [RockstarGames, 邻里守望, GTA在线模式]
 ---
 
 # GTA在线模式"邻里守望"活动完整指南

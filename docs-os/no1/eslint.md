@@ -4,6 +4,7 @@ sidebar_label: 可插拔的 JavaScript 与 TypeScript 代码检查工具
 title: 可插拔的 JavaScript 与 TypeScript 代码检查工具
 description: ESLint 是一个开源的、可插拔的静态代码分析工具，主要用于识别和报告 JavaScript 和 TypeScript 代码中的模式，其核心目标是保证代码的一致性和避免错误。它不是强制性的代码风格工具，而是一个高度可配置的平台，允许团队根据自身需求定义和执行代码规范。
 keywords: [ESLint, JavaScript, TypeScript]
+tags: [GitHub, ESLint, JavaScript, TypeScript]
 ---
 
 

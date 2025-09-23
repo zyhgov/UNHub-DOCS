@@ -4,6 +4,7 @@ sidebar_label: Free Programming Books — 全球最大的免费开源编程学�
 title: Free Programming Books — 全球最大的免费开源编程学习资源库
 description: Free Programming Books 是一个由 Free Ebook Foundation 维护的、托管在 GitHub 上的开源项目。它汇集了全球互联网上合法、免费的编程书籍、教程、课程和播客资源，是目前世界上规模最大、最全面、最活跃的免费编程学习资源索引库。
 keywords: [Free Programming Books, Free Ebook Foundation, 免费开源编程学习资源库]
+tags: [GitHub, Free Programming Books, Free Ebook Foundation, 免费开源编程学习资源库]
 ---
 
 

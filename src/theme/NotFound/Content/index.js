@@ -34,11 +34,11 @@ export default function NotFoundContent({ className }) {
         }}
       >
         <img
-          src="/img/404.svg"
+          src="/img/40402.svg"
           alt="Error icon"
           style={{
-            width: "150px",
-            height: "150px",
+            width: "300px",
+            height: "200px",
             marginBottom: "20px",
             animation: "bounce 1s infinite",
           }}

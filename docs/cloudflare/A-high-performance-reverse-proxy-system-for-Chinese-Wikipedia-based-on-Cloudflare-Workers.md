@@ -5,6 +5,7 @@ sidebar_label: 基于 Cloudflare Workers 的中文维基百科高性能反向代
 description: 本技术文档旨在详细阐述如何利用 Cloudflare Workers 和 Cloudflare Pages/DNS 服务，构建一个高性能、高可用、用户体验友好的中文维基百科（zh.wikipedia.org）反向代理系统。该系统不仅能绕过网络访问限制，还能通过智能缓存和HTML重写技术，显著提升页面加载速度和浏览体验。
 keywords: [Cloudflare, UNHub, GitHub, Workers, 中文维基百科, wikipedia, 反向代理]
 image: /img/os/wiki.jpg
+tags: [Cloudflare, UNHub, GitHub, Workers, 中文维基百科, wikipedia, 反向代理]
 ---
 
 
