@@ -347,6 +347,9 @@ plugins: [
       routeBasePath: 'docs',
       sidebarPath: './sidebars.js',
       editUrl: 'https://github.com/zyhgov/UNHub-DOCS/edit/main/', // ✅ 已修正
+            // 👇 关键：在这里启用
+      showLastUpdateTime: true,
+
     },
   ],
   [
@@ -357,6 +360,9 @@ plugins: [
       routeBasePath: 'private',
       sidebarPath: './sidebars-private.js',
       editUrl: 'https://github.com/zyhgov/UNHub-DOCS/edit/main/', // ✅ 已修正
+            // 👇 关键：在这里启用
+      showLastUpdateTime: true,
+
     },
   ],
   [
@@ -367,6 +373,8 @@ plugins: [
       routeBasePath: 'os',
       sidebarPath: './sidebars-os.js',
       editUrl: 'https://github.com/zyhgov/UNHub-DOCS/edit/main/',
+            // 👇 关键：在这里启用
+      showLastUpdateTime: true,
     },
   ],
     [
@@ -377,6 +385,9 @@ plugins: [
       routeBasePath: 'news',
       sidebarPath: './sidebars-news.js',
       editUrl: 'https://github.com/zyhgov/UNHub-DOCS/edit/main/',
+            // 👇 关键：在这里启用
+      showLastUpdateTime: true,
+
     },
   ],
 ],
