@@ -2,6 +2,7 @@ const sidebars = {
   docs: [
     
         'intro',
+        'Docusaurus-Integration-Giscus-Review',
         'video-ceshi',
     {
       type: 'category',

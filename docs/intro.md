@@ -5,6 +5,7 @@ sidebar_label: 欢迎来到 UNHub 联合库
 description: 欢迎来到 UNHub 联合库 —— 由杖雍皓构建的下一代开源知识中枢
 keywords: [联合库, UNHub, 杖雍皓]
 image: /img/bg.jpg
+hide_comment: true
 ---
 
 

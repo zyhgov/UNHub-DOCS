@@ -35,7 +35,24 @@ i18n: {
     '@docusaurus/theme-mermaid',       // ✅ 必须在这里注册
     '@docusaurus/theme-live-codeblock' // ✅ 只有你安装了才保留
   ],
-
+  scripts: [
+    {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'zyhgov/UNHub-DOCS',
+      'data-repo-id': 'R_kgDOP0b-VQ',
+      'data-category': 'Docs Comments',
+      'data-category-id': 'DIC_kwDOP0b-Vc4Cv1Ns',
+      'data-mapping': 'pathname',
+      'data-strict': '1',
+      'data-reactions-enabled': '1',
+      'data-emit-metadata': '1',
+      'data-input-position': 'bottom',
+      'data-theme': 'preferred_color_scheme',
+      'data-lang': 'zh-CN',
+      crossorigin: 'anonymous',
+      async: true,
+    },
+  ],
 presets: [
   [
     'classic',
@@ -393,6 +410,12 @@ plugins: [
 ],
   themeConfig: {
   image: 'img/bg.jpg',
+      giscus: {
+      repo: 'zyhgov/UNHub-DOCS',
+      repoId: 'R_kgDOP0b-VQ',
+      category: 'Docs Comments',
+      categoryId: 'DIC_kwDOP0b-Vc4Cv1Ns',
+    },
   metadata: [
     // 🔍 页面关键词（SEO）
     { name: 'keywords', content: 'UNHub, UNHub文档, 云系统, 运维手册, 操作教程, 企业内参, 技术文档' },
@@ -409,6 +432,19 @@ plugins: [
     { name: 'og:type', content: 'website' },
   ],
   headTags: [
+    // ✅ 新增：SEO meta 标签
+    { tagName: 'meta', attributes: { name: 'keywords', content: 'UNHub, UNHub文档, 云系统, 运维手册, 操作教程, 企业内参, 技术文档' } },
+    { tagName: 'meta', attributes: { name: 'description', content: 'UNHub DOCS提供全面的系统使用指南、操作教程和最佳实践。' } },
+    { tagName: 'meta', attributes: { name: 'twitter:card', content: 'summary_large_image' } },
+    { tagName: 'meta', attributes: { name: 'twitter:title', content: 'UNHub DOCS' } },
+    { tagName: 'meta', attributes: { name: 'twitter:description', content: 'UNHub DOCS提供全面的系统使用指南、操作教程和最佳实践。' } },
+    { tagName: 'meta', attributes: { name: 'twitter:image', content: 'https://docs.zyhorg.cn/img/bg.jpg' } },
+    { tagName: 'meta', attributes: { property: 'og:title', content: 'UNHub DOCS' } },
+    { tagName: 'meta', attributes: { property: 'og:description', content: 'UNHub DOCS提供全面的系统使用指南、操作教程和最佳实践。' } },
+    { tagName: 'meta', attributes: { property: 'og:image', content: 'https://docs.zyhorg.cn/img/bg.jpg' } },
+    { tagName: 'meta', attributes: { property: 'og:url', content: 'https://docs.zyhorg.cn' } },
+    { tagName: 'meta', attributes: { property: 'og:type', content: 'website' } },
+
     // 🔗 预连接到关键域名（提升加载速度）
     {
       tagName: 'link',
