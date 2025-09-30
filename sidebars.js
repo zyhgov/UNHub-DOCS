@@ -3,6 +3,7 @@ const sidebars = {
     
         'intro',
         'Docusaurus-Integration-Giscus-Review',
+        'WeChat-Mini-Program-Review-Process',
         'video-ceshi',
     {
       type: 'category',

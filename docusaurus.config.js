@@ -80,200 +80,200 @@ presets: [
 plugins: [
     // ✅ 1. 添加全站 Turnstile 验证插件
 // ✅ 优化版：带 Logo、白底、多错误提示的 Turnstile 全站验证插件
-() => ({
-  name: 'docusaurus-plugin-sitewide-turnstile',
-  injectHtmlTags() {
-    return {
-      headTags: [
-        // 引入 Cloudflare Turnstile SDK
-        {
-          tagName: 'script',
-          attributes: {
-            src: 'https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad',
-            async: true,
-          },
-        },
+// () => ({
+//   name: 'docusaurus-plugin-sitewide-turnstile',
+//   injectHtmlTags() {
+//     return {
+//       headTags: [
+//         // 引入 Cloudflare Turnstile SDK
+//         {
+//           tagName: 'script',
+//           attributes: {
+//             src: 'https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad',
+//             async: true,
+//           },
+//         },
 
-        // 注入核心验证逻辑（优化版）
-        {
-          tagName: 'script',
-          innerHTML: `
-            // 设置已验证 Cookie（24 小时有效）
-            function setVerifiedCookie() {
-              const d = new Date();
-              d.setTime(d.getTime() + (24 * 60 * 60 * 1000));
-              document.cookie = "turnstile_verified=true; expires=" + d.toUTCString() + "; path=/";
-            }
+//         // 注入核心验证逻辑（优化版）
+//         {
+//           tagName: 'script',
+//           innerHTML: `
+//             // 设置已验证 Cookie（24 小时有效）
+//             function setVerifiedCookie() {
+//               const d = new Date();
+//               d.setTime(d.getTime() + (24 * 60 * 60 * 1000));
+//               document.cookie = "turnstile_verified=true; expires=" + d.toUTCString() + "; path=/";
+//             }
 
-            // 检查是否已验证
-            function isVerified() {
-              const name = "turnstile_verified=";
-              const decodedCookie = decodeURIComponent(document.cookie);
-              const ca = decodedCookie.split(';');
-              for (let i = 0; i < ca.length; i++) {
-                let c = ca[i].trim();
-                if (c.indexOf(name) === 0) {
-                  return true;
-                }
-              }
-              return false;
-            }
+//             // 检查是否已验证
+//             function isVerified() {
+//               const name = "turnstile_verified=";
+//               const decodedCookie = decodeURIComponent(document.cookie);
+//               const ca = decodedCookie.split(';');
+//               for (let i = 0; i < ca.length; i++) {
+//                 let c = ca[i].trim();
+//                 if (c.indexOf(name) === 0) {
+//                   return true;
+//                 }
+//               }
+//               return false;
+//             }
 
-            // 当 Turnstile SDK 加载完成后执行
-            function onTurnstileLoad() {
-              // 开发环境跳过验证
-              if (window.location.hostname === 'localhost') {
-                console.log('✅ Running in development mode. Turnstile verification is disabled.');
-                return;
-              }
+//             // 当 Turnstile SDK 加载完成后执行
+//             function onTurnstileLoad() {
+//               // 开发环境跳过验证
+//               if (window.location.hostname === 'localhost') {
+//                 console.log('✅ Running in development mode. Turnstile verification is disabled.');
+//                 return;
+//               }
 
-              // 如果已验证，直接退出
-              if (isVerified()) {
-                return;
-              }
+//               // 如果已验证，直接退出
+//               if (isVerified()) {
+//                 return;
+//               }
 
-              // 创建全屏遮罩层（白色背景，无模糊）
-              const overlay = document.createElement('div');
-              overlay.id = 'turnstile-overlay';
-              overlay.style.position = 'fixed';
-              overlay.style.top = '0';
-              overlay.style.left = '0';
-              overlay.style.width = '100%';
-              overlay.style.height = '100%';
-              overlay.style.backgroundColor = 'white'; // ✅ 改为纯白背景
-              overlay.style.zIndex = '99999';
-              overlay.style.display = 'flex';
-              overlay.style.justifyContent = 'center';
-              overlay.style.alignItems = 'center';
-              overlay.style.flexDirection = 'column'; // 垂直排列 Logo 和 Turnstile
-              overlay.style.gap = '24px'; // Logo 和 Turnstile 间距
-              overlay.style.padding = '20px';
+//               // 创建全屏遮罩层（白色背景，无模糊）
+//               const overlay = document.createElement('div');
+//               overlay.id = 'turnstile-overlay';
+//               overlay.style.position = 'fixed';
+//               overlay.style.top = '0';
+//               overlay.style.left = '0';
+//               overlay.style.width = '100%';
+//               overlay.style.height = '100%';
+//               overlay.style.backgroundColor = 'white'; // ✅ 改为纯白背景
+//               overlay.style.zIndex = '99999';
+//               overlay.style.display = 'flex';
+//               overlay.style.justifyContent = 'center';
+//               overlay.style.alignItems = 'center';
+//               overlay.style.flexDirection = 'column'; // 垂直排列 Logo 和 Turnstile
+//               overlay.style.gap = '24px'; // Logo 和 Turnstile 间距
+//               overlay.style.padding = '20px';
 
-              // 禁用页面滚动
-              document.body.style.overflow = 'hidden';
-              document.body.style.touchAction = 'none';
+//               // 禁用页面滚动
+//               document.body.style.overflow = 'hidden';
+//               document.body.style.touchAction = 'none';
 
-              // 创建 Logo 容器（居中显示）
-              const logoContainer = document.createElement('div');
-              logoContainer.style.display = 'flex';
-              logoContainer.style.justifyContent = 'center';
-              logoContainer.style.alignItems = 'center';
-              logoContainer.style.marginBottom = '16px';
+//               // 创建 Logo 容器（居中显示）
+//               const logoContainer = document.createElement('div');
+//               logoContainer.style.display = 'flex';
+//               logoContainer.style.justifyContent = 'center';
+//               logoContainer.style.alignItems = 'center';
+//               logoContainer.style.marginBottom = '16px';
 
-              const logoImg = document.createElement('img');
-              logoImg.src = 'https://docs.zyhorg.cn/img/logo.svg'; // ✅ 使用你的 Logo
-              logoImg.alt = 'UNHub Logo';
-              logoImg.style.height = '80px'; // 可调整大小
-              logoImg.style.objectFit = 'contain';
+//               const logoImg = document.createElement('img');
+//               logoImg.src = 'https://docs.zyhorg.cn/img/logo.svg'; // ✅ 使用你的 Logo
+//               logoImg.alt = 'UNHub Logo';
+//               logoImg.style.height = '80px'; // 可调整大小
+//               logoImg.style.objectFit = 'contain';
 
-              logoContainer.appendChild(logoImg);
-              overlay.appendChild(logoContainer);
+//               logoContainer.appendChild(logoImg);
+//               overlay.appendChild(logoContainer);
 
-              // 创建 Turnstile 容器（居中）
-              const turnstileContainer = document.createElement('div');
-              turnstileContainer.id = 'turnstile-container';
-              turnstileContainer.style.transform = 'scale(1.2)'; // 放大 1.2 倍
-              turnstileContainer.style.transformOrigin = 'center';
-              overlay.appendChild(turnstileContainer);
+//               // 创建 Turnstile 容器（居中）
+//               const turnstileContainer = document.createElement('div');
+//               turnstileContainer.id = 'turnstile-container';
+//               turnstileContainer.style.transform = 'scale(1.2)'; // 放大 1.2 倍
+//               turnstileContainer.style.transformOrigin = 'center';
+//               overlay.appendChild(turnstileContainer);
 
-              // 添加加载提示文本
-              const loadingText = document.createElement('div');
-              loadingText.style.color = '#333';
-              loadingText.style.fontSize = '16px';
-              loadingText.style.fontWeight = '500';
-              loadingText.style.textAlign = 'center';
-              loadingText.textContent = '正在验证您是否是真人。这可能需要几秒钟时间。';
-              overlay.appendChild(loadingText);
+//               // 添加加载提示文本
+//               const loadingText = document.createElement('div');
+//               loadingText.style.color = '#333';
+//               loadingText.style.fontSize = '16px';
+//               loadingText.style.fontWeight = '500';
+//               loadingText.style.textAlign = 'center';
+//               loadingText.textContent = '正在验证您是否是真人。这可能需要几秒钟时间。';
+//               overlay.appendChild(loadingText);
 
-              document.body.appendChild(overlay);
+//               document.body.appendChild(overlay);
 
-              // 🔥 关键：请确保替换为你自己的 Site Key！
-              const siteKey = '0x4AAAAAAB2kTE457GPaMQgx';
+//               // 🔥 关键：请确保替换为你自己的 Site Key！
+//               const siteKey = '0x4AAAAAAB2kTE457GPaMQgx';
 
-              // 渲染 Turnstile
-              window.turnstile.render('#turnstile-container', {
-                sitekey: siteKey,
-                callback: function(token) {
-                  // 成功验证
-                  setVerifiedCookie();
-                  overlay.remove();
-                  document.body.style.overflow = '';
-                  document.body.style.touchAction = '';
-                  console.log('✅ Turnstile verification successful!');
-                },
+//               // 渲染 Turnstile
+//               window.turnstile.render('#turnstile-container', {
+//                 sitekey: siteKey,
+//                 callback: function(token) {
+//                   // 成功验证
+//                   setVerifiedCookie();
+//                   overlay.remove();
+//                   document.body.style.overflow = '';
+//                   document.body.style.touchAction = '';
+//                   console.log('✅ Turnstile verification successful!');
+//                 },
 
-                'error-callback': function(error) {
-                  console.error('❌ Turnstile Error:', error);
+//                 'error-callback': function(error) {
+//                   console.error('❌ Turnstile Error:', error);
 
-                  // 移除加载文本
-                  const loadingTextEl = overlay.querySelector('div[style*="color"]'); 
-                  if (loadingTextEl) loadingTextEl.remove();
+//                   // 移除加载文本
+//                   const loadingTextEl = overlay.querySelector('div[style*="color"]'); 
+//                   if (loadingTextEl) loadingTextEl.remove();
 
-                  // 根据不同错误类型显示不同提示
-                  let errorMessage = '';
-                  switch (error) {
-                    case 'timeout':
-                      errorMessage = '⏰ 验证超时，请刷新页面重试。';
-                      break;
-                    case 'bad-response':
-                      errorMessage = '🌐 网络异常或服务器响应错误，请检查网络后重试。';
-                      break;
-                    case 'invalid-site-key':
-                      errorMessage = '🔐 站点密钥无效，请联系管理员。';
-                      break;
-                    case 'failed':
-                    default:
-                      errorMessage = '🚫 验证失败，请尝试重新操作。如多次失败，请联系技术支持。';
-                  }
+//                   // 根据不同错误类型显示不同提示
+//                   let errorMessage = '';
+//                   switch (error) {
+//                     case 'timeout':
+//                       errorMessage = '⏰ 验证超时，请刷新页面重试。';
+//                       break;
+//                     case 'bad-response':
+//                       errorMessage = '🌐 网络异常或服务器响应错误，请检查网络后重试。';
+//                       break;
+//                     case 'invalid-site-key':
+//                       errorMessage = '🔐 站点密钥无效，请联系管理员。';
+//                       break;
+//                     case 'failed':
+//                     default:
+//                       errorMessage = '🚫 验证失败，请尝试重新操作。如多次失败，请联系技术支持。';
+//                   }
 
-                  // 显示错误信息
-                  const errorDiv = document.createElement('div');
-                  errorDiv.style.color = '#e74c3c';
-                  errorDiv.style.fontSize = '18px';
-                  errorDiv.style.fontWeight = '600';
-                  errorDiv.style.textAlign = 'center';
-                  errorDiv.style.marginTop = '16px';
-                  errorDiv.style.padding = '12px';
-                  errorDiv.style.border = '1px solid #e74c3c';
-                  errorDiv.style.borderRadius = '8px';
-                  errorDiv.style.backgroundColor = '#fdf2f2';
-                  errorDiv.textContent = errorMessage;
+//                   // 显示错误信息
+//                   const errorDiv = document.createElement('div');
+//                   errorDiv.style.color = '#e74c3c';
+//                   errorDiv.style.fontSize = '18px';
+//                   errorDiv.style.fontWeight = '600';
+//                   errorDiv.style.textAlign = 'center';
+//                   errorDiv.style.marginTop = '16px';
+//                   errorDiv.style.padding = '12px';
+//                   errorDiv.style.border = '1px solid #e74c3c';
+//                   errorDiv.style.borderRadius = '8px';
+//                   errorDiv.style.backgroundColor = '#fdf2f2';
+//                   errorDiv.textContent = errorMessage;
 
-                  overlay.appendChild(errorDiv);
+//                   overlay.appendChild(errorDiv);
 
-                  // 提供“重试”按钮
-                  const retryButton = document.createElement('button');
-                  retryButton.style.backgroundColor = '#3498db';
-                  retryButton.style.color = 'white';
-                  retryButton.style.border = 'none';
-                  retryButton.style.padding = '12px 24px';
-                  retryButton.style.borderRadius = '6px';
-                  retryButton.style.fontSize = '16px';
-                  retryButton.style.cursor = 'pointer';
-                  retryButton.style.marginTop = '20px';
-                  retryButton.textContent = '🔄 重试验证';
+//                   // 提供“重试”按钮
+//                   const retryButton = document.createElement('button');
+//                   retryButton.style.backgroundColor = '#3498db';
+//                   retryButton.style.color = 'white';
+//                   retryButton.style.border = 'none';
+//                   retryButton.style.padding = '12px 24px';
+//                   retryButton.style.borderRadius = '6px';
+//                   retryButton.style.fontSize = '16px';
+//                   retryButton.style.cursor = 'pointer';
+//                   retryButton.style.marginTop = '20px';
+//                   retryButton.textContent = '🔄 重试验证';
 
-                  retryButton.addEventListener('click', () => {
-                    overlay.removeChild(errorDiv);
-                    overlay.removeChild(retryButton);
-                    loadingText.textContent = '正在重新加载验证...';
-                    window.turnstile.reset(); // 重置组件
-                  });
+//                   retryButton.addEventListener('click', () => {
+//                     overlay.removeChild(errorDiv);
+//                     overlay.removeChild(retryButton);
+//                     loadingText.textContent = '正在重新加载验证...';
+//                     window.turnstile.reset(); // 重置组件
+//                   });
 
-                  overlay.appendChild(retryButton);
+//                   overlay.appendChild(retryButton);
 
-                  // ✅ 错误时也恢复滚动
-                  document.body.style.overflow = '';
-                  document.body.style.touchAction = '';
-                }
-              });
-            }
-          `,
-        },
-      ],
-    };
-  },
-}),
+//                   // ✅ 错误时也恢复滚动
+//                   document.body.style.overflow = '';
+//                   document.body.style.touchAction = '';
+//                 }
+//               });
+//             }
+//           `,
+//         },
+//       ],
+//     };
+//   },
+// }),
 
     // ✅ 新增：全局注入脚本，强制弹窗警告
     () => ({
