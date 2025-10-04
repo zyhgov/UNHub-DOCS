@@ -17,3 +17,28 @@ hola:
   label: 说明
   description: 项目说明与使用指南
   permalink: /explain
+
+github:
+  label: GitHub
+  description: GitHub 平台相关集成、开发与协作实践
+  permalink: /github
+
+contributions:
+  label: contributions
+  description: 开源项目贡献、提交记录与社区参与分析
+  permalink: /contributions
+
+activity:
+  label: activity
+  description: 开发者活动统计、行为轨迹与参与度可视化
+  permalink: /activity
+
+Amap:
+  label: Amap
+  description: 基于高德地图（Amap）的地理信息与轨迹可视化实现
+  permalink: /amap
+
+API:
+  label: API
+  description: 各类开放接口（Open API）的调用、封装与集成指南
+  permalink: /api

@@ -589,36 +589,100 @@ plugins: [
           ],
         },
         {
-          title: 'UNHub矩阵',
-          items: [
-            {
-              label: '杖雍皓',
-              href: 'https://zyhorg.cn/', // ✅ 去掉空格
-            },
-          ],
+          title: '技术平台矩阵',
+          items: 
+          [
+  {
+    html: `
+      <div style="display: flex; align-items: center; justify-content: center; width: 120px; gap: 8px; white-space: nowrap;">
+        <a href="https://github.com/zyhgov" target="_blank" style="display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none;">
+          <img src="/img/logos/github.svg" alt="GitHub" height="23" style="vertical-align: middle;" />
+          <span>GitHub</span>
+        </a>
+      </div>
+    `
+  },
+  {
+    html: `
+      <div style="display: flex; align-items: center; justify-content: center; width: 120px; gap: 8px; white-space: nowrap;">
+        <a href="https://gitlab.com/zyhgov" target="_blank" style="display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none;">
+          <img src="/img/logos/gitlab.svg" alt="GitLab" height="23" style="vertical-align: middle;" />
+          <span>GitLab</span>
+        </a>
+      </div>
+    `
+  },
+  {
+    html: `
+      <div style="display: flex; align-items: center; justify-content: center; width: 120px; gap: 8px; white-space: nowrap;">
+        <a href="https://gitee.com/zyhgov/" target="_blank" style="display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none;">
+          <img src="/img/logos/gitee.svg" alt="Gitee" height="23" style="vertical-align: middle;" />
+          <span>Gitee</span>
+        </a>
+      </div>
+    `
+  },
+  {
+    html: `
+      <div style="display: flex; align-items: center; justify-content: center; width: 120px; gap: 8px; white-space: nowrap;">
+        <a href="https://blog.csdn.net/hdheh554694" target="_blank" style="display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none;">
+          <img src="/img/logos/csdn.svg" alt="CSDN" height="23" style="vertical-align: middle;" />
+          <span>CSDN</span>
+        </a>
+      </div>
+    `
+  },
+  {
+    html: `
+      <div style="display: flex; align-items: center; justify-content: center; width: 120px; gap: 8px; white-space: nowrap;">
+        <a href="https://devpress.csdn.net/user/hdheh554694" target="_blank" style="display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none;">
+          <img src="/img/logos/devpress.ico" alt="DevPress" height="23" style="vertical-align: middle;" />
+          <span>DevPress</span>
+        </a>
+      </div>
+    `
+  },
+  {
+    html: `
+      <div style="display: flex; align-items: center; justify-content: center; width: 120px; gap: 8px; white-space: nowrap;">
+        <a href="https://developer.aliyun.com/profile/klutravz4w7to" target="_blank" style="display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none;">
+          <img src="/img/logos/aliyun.svg" alt="阿里云" height="23" style="vertical-align: middle;" />
+          <span>阿里云</span>
+        </a>
+      </div>
+    `
+  },
+  {
+    html: `
+      <div style="display: flex; align-items: center; justify-content: center; width: 120px; gap: 8px; white-space: nowrap;">
+        <a href="https://cloud.tencent.com/developer/user/10089337" target="_blank" style="display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none;">
+          <img src="/img/logos/tencent-cloud.svg" alt="腾讯云" height="23" style="vertical-align: middle;" />
+          <span>腾讯云</span>
+        </a>
+      </div>
+    `
+  }
+]
         },
         {
           title: '关注与联系',
           items: [
-
             {
               label: 'info@zyhorg.cn',
               href: 'mailto:info@zyhorg.cn',
             },
-    {
-      html: `
-        <div style="display: flex; align-items: center; justify-content: center; width: 120px; gap: 8px; white-space: nowrap;">
-          <a href="https://github.com/zyhgov" style="display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none;">
-            <img src="/img/logos/github.svg" alt="Docusaurus Logo" height="23" style="vertical-align: middle;" />
-            <span>GitHub</span>
-          </a>
-        </div>
-      `
-    },
+            {
+              label: 'zyh040410@outlook.com',
+              href: 'mailto:zyh040410@outlook.com',
+            },
+            {
+              label: 'zyh040410@gmail.com',
+              href: 'mailto:info@gmail.cn',
+            },
           ],
         },
 {
-  title: '技术驱动支持',
+  title: '技术栈支持',
   items: [
     {
       html: `
@@ -636,6 +700,16 @@ plugins: [
           <a href="https://www.cloudflare.com/" style="display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none;">
             <img src="/img/logos/cloudflare.svg" alt="Cloudflare Logo" height="15" style="vertical-align: middle;" />
             <span>Cloudflare</span>
+          </a>
+        </div>
+      `
+    },
+    {
+      html: `
+        <div style="display: flex; align-items: center; justify-content: center; width: 120px; gap: 8px; white-space: nowrap;">
+          <a href="https://clarity.microsoft.com/" style="display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none;">
+            <img src="/img/logos/Microsoft Clarity.svg" alt="Cloudflare Logo" height="15" style="vertical-align: middle;" />
+            <span>Microsoft Clarity</span>
           </a>
         </div>
       `
