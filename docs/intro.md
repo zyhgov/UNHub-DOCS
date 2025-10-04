@@ -3,50 +3,61 @@ sidebar_position: 1
 title: 欢迎来到 UNHub 联合库
 sidebar_label: 欢迎来到 UNHub 联合库
 description: 欢迎来到 UNHub 联合库 —— 由杖雍皓构建的下一代开源知识中枢
-keywords: [联合库, UNHub, 杖雍皓]
+keywords: [联合库, UNHub, 杖雍皓, 知识平台, 开源, 架构师]
 image: /img/bg.jpg
-hide_comment: true
 ---
 
 
 
 ## 🌐 由杖雍皓构建的下一代开源知识中枢
 
-> **在信息碎片化的时代，我们重构认知的坐标系。**
+:::info
+ **在信息碎片化的时代，我们重构认知的坐标系。**
+:::
 
 UNHub 联合库（United Knowledge Hub）是由技术架构师 **杖雍皓** 发起并主导开发的开源知识平台，旨在打破信息孤岛，聚合全球高价值技术资产，构建一个**结构化、可进化、面向未来的知识操作系统**。
 
 平台以“四维知识引擎”为核心架构，覆盖从学习、探索、洞察到沉淀的完整认知闭环：
 
 ```mermaid
-graph LR
+flowchart LR
     A[杖雍皓 · 构建者] --> B(UNHub 联合库)
-    B --> C[📘 文档教程]
-    B --> D[🚀 开源项目]
-    B --> E[📡 前线资讯]
-    B --> F[🔐 内部参考]
 
-    C --> C1[系统化操作指南]
-    C --> C2[企业级部署方案]
-    C --> C3[最佳实践手册]
+    subgraph 核心模块
+        B --> C[📘 文档教程]
+        B --> D[🚀 开源项目]
+        B --> E[📡 前线资讯]
+        B --> F[🔐 内部参考]
+    end
 
-    D --> D1[GitHub/Gitee 雷达]
-    D --> D2[潜力项目挖掘]
-    D --> D3[开源生态图谱]
+    subgraph 文档能力
+        C --> C1[系统化操作指南]
+        C --> C2[企业级部署方案]
+        C --> C3[最佳实践手册]
+    end
 
-    E --> E1[CNN/BBC/新华社]
-    E --> E2[科技媒体追踪]
-    E --> E3[社区暗流解析]
+    subgraph 开源能力
+        D --> D1[GitHub/Gitee 雷达]
+        D --> D2[潜力项目挖掘]
+        D --> D3[开源生态图谱]
+    end
 
-    F --> F1[组织级知识沉淀]
-    F --> F2[限域经验复用]
-    F3[认知护城河构建]
+    subgraph 资讯能力
+        E --> E1[CNN/BBC/新华社]
+        E --> E2[科技媒体追踪]
+        E --> E3[社区暗流解析]
+    end
 
-    style B fill:#0051c3,stroke:#fff,color:#fff
-    style C fill:#b9d6ff,stroke:#0051c3
-    style D fill:#4693ff,stroke:#0051c3
-    style E fill:#8abaff,stroke:#0051c3
-    style F fill:#e6f0ff,stroke:#0051c3
+    subgraph 内参能力
+        F --> F1[组织级知识沉淀]
+        F --> F2[限域经验复用]
+        F --> F3[认知护城河构建]
+    end
+
+    classDef hub fill:#0051c3,stroke:#fff,color:#fff;
+    classDef mod fill:#f0f8ff,stroke:#0051c3;
+    class B hub;
+    class C,D,E,F mod;
 ```
 
 ---
@@ -78,13 +89,14 @@ graph LR
 
 🌐 **官方入口：[docs.zyhorg.cn](https://docs.zyhorg.cn)**  
 🏛️ **构建者：杖雍皓**  
-📅 **诞生于认知重构的黎明 —— 为未来而生**
+🙌 **海纳百川，有容乃大。**
 
 ---
 
-> 在 UNHub，知识不是静态的文档，而是流动的资产；  
-> 学习不是被动的接收，而是主动的勘探。  
-> 加入我们，一起绘制属于技术人的“认知星图”。
+:::tip
+ 在 UNHub，知识不是静态的文档，而是流动的资产；  
+ 学习不是被动的接收，而是主动的勘探。
+:::
 
 ---
 

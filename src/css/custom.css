@@ -1,26 +1,92 @@
+/* ================== OpenAISans 字体定义 ================== */
+
+/* Regular (400) */
 @font-face {
-  font-family: 'MiSans';
-  src: url('/fonts/sf-pro-display_semibold.woff2') format('woff2');
-  font-weight: bold; 
+  font-family: 'OpenAISans';
+  src: url('/fonts/OpenAISans-Regular.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
-/* 使用 MiSans-Semibold 替代原 PingFang SC 的 Semibold 和 Medium */
+
+/* Regular Italic (400) */
 @font-face {
-  font-family: 'MiSans-Semibold';
-  src: url('/fonts/MiSans-Semibold.woff2') format('woff2'),
-       url('/fonts/MiSans-Semibold.woff') format('woff'),
-       url('/fonts/MiSans-Semibold.ttf') format('truetype');
-  font-weight: 500; 
+  font-family: 'OpenAISans';
+  src: url('/fonts/OpenAISans-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Medium (500) */
+@font-face {
+  font-family: 'OpenAISans';
+  src: url('/fonts/OpenAISans-Medium.woff2') format('woff2');
+  font-weight: 500;
   font-style: normal;
+  font-display: swap;
+}
+
+/* Medium Italic (500) */
+@font-face {
+  font-family: 'OpenAISans';
+  src: url('/fonts/OpenAISans-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Semibold (600) */
+@font-face {
+  font-family: 'OpenAISans';
+  src: url('/fonts/OpenAISans-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Semibold Italic (600) */
+@font-face {
+  font-family: 'OpenAISans';
+  src: url('/fonts/OpenAISans-SemiboldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold (700) */
+@font-face {
+  font-family: 'OpenAISans';
+  src: url('/fonts/OpenAISans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold Italic (700) */
+@font-face {
+  font-family: 'OpenAISans';
+  src: url('/fonts/OpenAISans-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Light (300) - 可选，按需启用 */
+@font-face {
+  font-family: 'OpenAISans';
+  src: url('/fonts/OpenAISans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'MiSans-Semibold';
-  src: url('/fonts/MiSans-Semibold.woff2') format('woff2'),
-       url('/fonts/MiSans-Semibold.woff') format('woff'),
-       url('/fonts/MiSans-Semibold.ttf') format('truetype');
-  font-weight: 600; 
-  font-style: normal;
+  font-family: 'OpenAISans';
+  src: url('/fonts/OpenAISans-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
 }
 /* ================== Google Sans Code 字体定义 ================== */
 @font-face {
@@ -39,10 +105,29 @@
   font-display: swap;
 }
 
-/* 可选：如果你还想引入常规和轻体，可以后续添加 MiSans-Regular 等 */
-/* 全局设置所有文本使用 PingFang SC */
+/* ================== 全局字体强制统一 ================== */
+
+/* 所有元素默认使用 OpenAISans（无 fallback） */
+*,
+*::before,
+*::after {
+  font-family: 'OpenAISans' !important;
+}
+
+/* 代码区域及其内部所有子元素：恢复为等宽字体 */
+pre,
+code,
+kbd,
+samp,
+pre *,
+code *,
+kbd *,
+samp * {
+  font-family: 'GoogleSansCode', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace !important;
+}
 html {
-  font-family: 'MiSans';
+  font-family: 'OpenAISans';
+  scroll-behavior: smooth;
 }
 
 /* 可选：更精确控制不同元素 */
@@ -51,7 +136,7 @@ button,
 input,
 textarea,
 select {
-  font-family: 'MiSans';
+  font-family: 'OpenAISans';
 }
 /**
  * Any CSS included here will be global. The classic template
@@ -92,16 +177,18 @@ pre,
 code,
 kbd,
 samp {
-  font-family: 'GoogleSansCode', 'MiSans', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+  font-family: 'GoogleSansCode', 'OpenAISans', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
 }
+
+
 
 /* 如果你之前有单独设置 code 标签，也请一并修改 */
 .markdown code {
-  font-family: 'GoogleSansCode', 'MiSans', ui-monospace, SFMono-Regular, monospace;
+  font-family: 'GoogleSansCode', 'OpenAISans', ui-monospace, SFMono-Regular, monospace;
 }
 /* 代码块整体样式 */
 pre {
-  /* font-family: 'MiSans'; 注意顺序 */
+  /* font-family: 'OpenAISans'; 注意顺序 */
   font-size: 14px;
   letter-spacing: 0.8px;
   line-height: 1.6;
@@ -129,7 +216,7 @@ pre {
 
 /* 导航栏标题文字样式 —— 科技蓝主题 */
 .navbar__title {
-  font-family: 'MiSans-Semibold' !important;
+  font-family: 'OpenAISans' !important;
   font-size: 1.4rem !important;       /* 更大一些 */
   font-weight: bold !important;        /* 稍微加粗 */
   color: #002b67 !important;          /* 深科技蓝 - 浅色模式 */
@@ -301,8 +388,8 @@ pre {
 
 /* 全局正文段落字体设置 */
 p {
-  font-family: 'MiSans';
-  font-size: 16px;        /* 比默认稍大一点 */
+  font-family: 'OpenAISans';
+  font-size: 18px;        /* 比默认稍大一点 */
   line-height: 1.8;       /* 提升行高，增强可读性 */
   color: #1d1d1f; /* 使用主题颜色，适配浅/深色模式 */
   font-weight: 500;
@@ -320,54 +407,54 @@ p {
 
 /* 如果你希望强调文字（<em>）、加粗（<strong>）也使用 PingFang SC */
 strong {
-  font-family: 'MiSans';
+  font-family: 'OpenAISans';
   font-weight: bold;
 }
 em, small {
-  font-family: 'MiSans';
+  font-family: 'OpenAISans';
   font-weight: 500;
 }
 
 /* 可选：统一 Markdown 中的其他块级元素字体 */
 blockquote, ul, ol, li, dl, dt, dd {
-  font-family: 'MiSans';
+  font-family: 'OpenAISans';
   font-size: 16px;
   line-height: 1.8;
   font-weight: 600;
 }
-
+/* 强制覆盖 DocSearch 所有文本字体 */
+.DocSearch,
+.DocSearch * {
+  font-family: 'OpenAISans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+/* 浅色模式 */
 [data-theme='light'] .DocSearch {
-  /* --docsearch-primary-color: var(--ifm-color-primary); */
-  /* --docsearch-text-color: var(--ifm-font-color-base); */
+  --docsearch-font-family: 'OpenAISans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* 其他原有变量保持不变 */
   --docsearch-muted-color: var(--ifm-color-secondary-darkest);
   --docsearch-container-background: rgba(94, 100, 112, 0.7);
-  /* 弹窗 */
   --docsearch-modal-background: var(--ifm-color-secondary-lighter);
-  /* 搜索框 */
   --docsearch-searchbox-background: var(--ifm-color-secondary);
   --docsearch-searchbox-focus-background: var(--ifm-color-white);
-  /* 条目 */
   --docsearch-hit-color: var(--ifm-font-color-base);
   --docsearch-hit-active-color: var(--ifm-color-white);
   --docsearch-hit-background: var(--ifm-color-white);
-  /* 页脚 */
   --docsearch-footer-background: var(--ifm-color-white);
 }
 
+/* 深色模式 */
 [data-theme='dark'] .DocSearch {
+  --docsearch-font-family: 'OpenAISans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* 其他原有变量保持不变 */
   --docsearch-text-color: var(--ifm-font-color-base);
   --docsearch-muted-color: var(--ifm-color-secondary-darkest);
   --docsearch-container-background: rgba(47, 55, 69, 0.7);
-  /* 弹窗 */
   --docsearch-modal-background: var(--ifm-background-color);
-  /* 搜索框 */
   --docsearch-searchbox-background: var(--ifm-background-color);
   --docsearch-searchbox-focus-background: var(--ifm-color-black);
-  /* 条目 */
   --docsearch-hit-color: var(--ifm-font-color-base);
   --docsearch-hit-active-color: var(--ifm-color-white);
   --docsearch-hit-background: var(--ifm-color-emphasis-100);
-  /* 页脚 */
   --docsearch-footer-background: var(--ifm-background-surface-color);
   --docsearch-key-gradient: linear-gradient(
     -26.5deg,
@@ -375,7 +462,6 @@ blockquote, ul, ol, li, dl, dt, dd {
     var(--ifm-color-emphasis-100) 100%
   );
 }
-
 
 /* =============== 全局自定义鼠标指针系统 =============== */
 

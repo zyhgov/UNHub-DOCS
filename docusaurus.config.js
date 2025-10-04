@@ -407,6 +407,16 @@ plugins: [
 
     },
   ],
+  // 2. 单独添加 sitemap 插件（只需一次！）
+  [
+    '@docusaurus/plugin-sitemap',
+    {
+      // 可选配置
+      changefreq: 'weekly',
+      priority: 0.5,
+      ignorePatterns: ['/private/**'], // 不收录 private 页面
+    },
+  ],
 ],
   themeConfig: {
   image: 'img/bg.jpg',

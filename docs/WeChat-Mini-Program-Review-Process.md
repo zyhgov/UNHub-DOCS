@@ -10,7 +10,7 @@ keywords: [微信小程序, 审核, 开发者]
 # 微信小程序审核全流程
 
 **文档版本：** v2.6  
-**最后更新日期：** 2024年10月1日  
+**最后更新日期：** 2025年10月1日  
 **适用对象：** 微信小程序开发者、产品经理、测试工程师、项目负责人  
 **微信官方文档开发指南：** [https://developers.weixin.qq.com/miniprogram/dev/framework/](https://developers.weixin.qq.com/miniprogram/dev/framework/)
 
