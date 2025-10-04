@@ -73,6 +73,7 @@ presets: [
       theme: {
         customCss: './src/css/custom.css',
       },
+      sitemap: false,
     }),
   ],
 ],
