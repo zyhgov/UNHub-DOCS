@@ -437,10 +437,12 @@ plugins: [
   [
     '@docusaurus/plugin-sitemap',
     {
-      // 可选配置
       changefreq: 'weekly',
-      // priority: 0.5,
-      ignorePatterns: ['/private/**'], // 不收录 private 页面
+      // ⚠️ 确保移除 'priority: 0.5' 或 'priority: (params) => {...}'
+      ignorePatterns: ['/private/**'], // 不收录 private 页面 
+      
+      // ✅ 关键：指向你的自定义逻辑文件
+      createSitemapItems: require.resolve('./sitemap.js'),
     },
   ],
 ],
