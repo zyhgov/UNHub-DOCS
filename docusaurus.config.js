@@ -434,17 +434,87 @@ plugins: [
     },
   ],
   // 2. 单独添加 sitemap 插件（只需一次！）
-  [
-    '@docusaurus/plugin-sitemap',
-    {
-      changefreq: 'weekly',
-      // ⚠️ 确保移除 'priority: 0.5' 或 'priority: (params) => {...}'
-      ignorePatterns: ['/private/**'], // 不收录 private 页面 
-      
-      // ✅ 关键：指向你的自定义逻辑文件
-      createSitemapItems: require('./sitemap.js'), 
+[
+  '@docusaurus/plugin-sitemap',
+  {
+    changefreq: 'weekly',
+    ignorePatterns: ['/private/**'], // 不收录内部参考文档
+
+    // ✅ 在 v3 中可用的正确写法
+    async createSitemapItems(params) {
+      const { defaultCreateSitemapItems, ...rest } = params;
+      const items = await defaultCreateSitemapItems(rest);
+      const siteUrl = 'https://docs.zyhorg.cn';
+
+      return items.map((item) => {
+        const { url } = item;
+
+        // 首页
+        if (url === siteUrl + '/') {
+          item.priority = 1.0;
+        }
+        // 文档首页
+        else if (url === siteUrl + '/docs/intro') {
+          item.priority = 1.0;
+        }
+        // 核心教程
+        else if (
+          url.includes('/docs/tutorial-system/') ||
+          url.includes('/docs/tutorial-extras/') ||
+          url.includes('/docs/Command-List/') ||
+          url.includes('/docs/script/') ||
+          url.includes('/docs/cloudflare/')
+        ) {
+          item.priority = 0.9;
+        }
+        // 主文档区
+        else if (url.startsWith(siteUrl + '/docs/') && !url.includes('/tags/')) {
+          item.priority = 0.9;
+        }
+        // 前线资讯
+        else if (url.startsWith(siteUrl + '/news/') && !url.includes('/tags/')) {
+          item.priority = 0.9;
+        }
+        // 开源项目
+        else if (url.startsWith(siteUrl + '/os/') && !url.includes('/tags/')) {
+          item.priority = 0.9;
+        }
+        // 博客文章
+        else if (
+          url.startsWith(siteUrl + '/blog/') &&
+          !url.endsWith('/blog/') &&
+          !url.includes('/archive') &&
+          !url.includes('/authors') &&
+          !url.includes('/tags/')
+        ) {
+          item.priority = 0.9;
+        }
+        // 标签页、归档页
+        else if (
+          url.includes('/blog/archive') ||
+          url.includes('/blog/authors') ||
+          url.includes('/blog/tags') ||
+          url.includes('/docs/tags') ||
+          url.includes('/news/tags') ||
+          url.includes('/os/tags')
+        ) {
+          item.priority = 0.8;
+        }
+        // 搜索页、示例页
+        else if (url === siteUrl + '/search' || url === siteUrl + '/markdown-page') {
+          item.priority = 0.8;
+        }
+        // 默认
+        else {
+          item.priority = 0.7;
+        }
+
+        return item;
+      });
     },
-  ],
+  },
+],
+
 ],
   themeConfig: {
   image: 'img/bg.jpg',
