@@ -442,7 +442,7 @@ plugins: [
       ignorePatterns: ['/private/**'], // 不收录 private 页面 
       
       // ✅ 关键：指向你的自定义逻辑文件
-      createSitemapItems: require.resolve('./sitemap.js'),
+      createSitemapItems: require('./sitemap.js'), 
     },
   ],
 ],
