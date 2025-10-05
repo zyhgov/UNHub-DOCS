@@ -439,7 +439,7 @@ plugins: [
     {
       // 可选配置
       changefreq: 'weekly',
-      priority: 0.5,
+      // priority: 0.5,
       ignorePatterns: ['/private/**'], // 不收录 private 页面
     },
   ],
