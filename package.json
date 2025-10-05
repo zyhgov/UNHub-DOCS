@@ -24,10 +24,14 @@
     "clsx": "^2.0.0",
     "echarts": "^6.0.0",
     "gsap": "^3.13.0",
+    "katex": "^0.16.23",
+    "lucide-react": "^0.544.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "remark-code-titles": "^0.1.2"
+    "rehype-katex": "^7.0.1",
+    "remark-code-titles": "^0.1.2",
+    "remark-math": "^6.0.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.9.1",

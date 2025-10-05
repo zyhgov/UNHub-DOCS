@@ -1,0 +1,27 @@
+.menuExternalLink {
+  align-items: center;
+}
+
+.linkLabel {
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+/* src/theme/DocSidebarItem/Link/styles.module.css */
+
+/* 保持原有样式不变，只追加以下内容 */
+
+.sidebar-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 8px;
+  height: 16px;
+  width: 16px;
+  flex-shrink: 0;
+}
+
+.sidebar-icon {
+  vertical-align: middle;
+}

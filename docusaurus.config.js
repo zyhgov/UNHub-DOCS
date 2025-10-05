@@ -1,5 +1,7 @@
 // docusaurus.config.js
 import {themes as prismThemes} from 'prism-react-renderer';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'UNHub DOCS',
@@ -53,6 +55,16 @@ i18n: {
       async: true,
     },
   ],
+  // 👇 全局引入 KaTeX 样式
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css',
+      type: 'text/css',
+      integrity: 'sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV',
+      crossorigin: 'anonymous',
+    },
+  ],
+
 presets: [
   [
     'classic',
@@ -69,6 +81,9 @@ presets: [
         onInlineTags: 'warn',
         onInlineAuthors: 'warn',
         onUntruncatedBlogPosts: 'warn',
+          // 👇 如果你也想在博客中用公式，加上这两行：
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
       },
       theme: {
         customCss: './src/css/custom.css',
@@ -367,7 +382,10 @@ plugins: [
       editUrl: 'https://github.com/zyhgov/UNHub-DOCS/edit/main/', // ✅ 已修正
             // 👇 关键：在这里启用
       showLastUpdateTime: true,
-
+      sidebarCollapsible: true,
+        // 👇 关键：启用数学公式支持
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
     },
   ],
   [
@@ -380,7 +398,9 @@ plugins: [
       editUrl: 'https://github.com/zyhgov/UNHub-DOCS/edit/main/', // ✅ 已修正
             // 👇 关键：在这里启用
       showLastUpdateTime: true,
-
+        // 👇 关键：启用数学公式支持
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
     },
   ],
   [
@@ -393,6 +413,9 @@ plugins: [
       editUrl: 'https://github.com/zyhgov/UNHub-DOCS/edit/main/',
             // 👇 关键：在这里启用
       showLastUpdateTime: true,
+              // 👇 关键：启用数学公式支持
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
     },
   ],
     [
@@ -405,7 +428,9 @@ plugins: [
       editUrl: 'https://github.com/zyhgov/UNHub-DOCS/edit/main/',
             // 👇 关键：在这里启用
       showLastUpdateTime: true,
-
+        // 👇 关键：启用数学公式支持
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
     },
   ],
   // 2. 单独添加 sitemap 插件（只需一次！）
@@ -426,6 +451,11 @@ plugins: [
       repoId: 'R_kgDOP0b-VQ',
       category: 'Docs Comments',
       categoryId: 'DIC_kwDOP0b-Vc4Cv1Ns',
+    },
+        colorMode: {
+      defaultMode: 'light',        // 默认模式（用户首次访问时）
+      disableSwitch: false,        // 显示切换按钮（必须为 false）
+      respectPrefersColorScheme: true, // 👈 关键：启用“跟随系统”
     },
   metadata: [
     // 🔍 页面关键词（SEO）
@@ -540,7 +570,12 @@ plugins: [
           label: '内部参考',
         },
         { to: '/blog', label: '日志更新', position: 'left' },
-        
+    {
+      href: 'https://chat.zyhorg.cn/',
+      label: '🤖 AI Web 平台',
+      position: 'right',
+      // Docusaurus 会自动加 target="_blank" + rel="noopener"
+    },
         {
           type: 'localeDropdown',
           position: 'right',
@@ -586,6 +621,10 @@ plugins: [
               label: '日志更新',
               to: '/blog',
             },
+        {
+          label: '🤖 AI Web 平台',
+          href: 'https://chat.zyhorg.cn/', // 使用 href 而不是 to
+        },
           ],
         },
         {
