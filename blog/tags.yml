@@ -42,3 +42,13 @@ API:
   label: API
   description: 各类开放接口（Open API）的调用、封装与集成指南
   permalink: /api
+
+中秋节:
+  label: Mid-Autumn-Festival
+  description: 中国的传统节日,在农历八月十五日,这一天有赏月、吃月饼的风俗
+  permalink: /Mid-Autumn-Festival
+
+中国节日:
+  label: Chinese-festivals
+  description: 中国的各种传统节日
+  permalink: /Chinese-festivals
