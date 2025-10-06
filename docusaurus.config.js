@@ -697,6 +697,14 @@ plugins: [
           label: '🤖 AI Web 平台',
           href: 'https://chat.zyhorg.cn/', // 使用 href 而不是 to
         },
+        {
+          label: '📺 UNHub Video',
+          href: 'https://video.zyhorg.ac.cn/', // 使用 href 而不是 to
+        },
+        {
+          label: '📖 维基百科 Wikipedia',
+          href: 'https://wikipedia.zyhorg.cn/', // 使用 href 而不是 to
+        },
           ],
         },
         {

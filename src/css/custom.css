@@ -789,3 +789,118 @@ a, button, input, textarea, p, li {
   vertical-align: middle;
   flex-shrink: 0;
 }
+/* ====== 弹窗遮罩层 ====== */
+.ip-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  backdrop-filter: blur(4px);
+  transition: opacity 0.2s ease;
+}
+.ip-modal-overlay.closing {
+  opacity: 0;
+}
+/* ====== 弹窗主体 ====== */
+.ip-modal {
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  border-radius: 16px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.25);
+  padding: 24px;
+  width: 400px;
+  max-width: 90%;
+  animation: fadeIn 0.25s ease;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ====== 弹窗头部 ====== */
+.ip-modal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* ====== 信息内容 ====== */
+.ip-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 15px;
+}
+
+.ip-info-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed var(--ifm-color-emphasis-200);
+  padding-bottom: 4px;
+}
+
+/* ====== 关闭按钮 ====== */
+.ip-modal-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--ifm-color-emphasis-700);
+}
+/* 默认：桌面端显示国旗，移动端隐藏 */
+.ip-flag-wrapper {
+  display: flex;
+}
+
+.ip-flag-wrapper-mobile {
+  display: none;
+}
+
+/* 小屏幕（移动端）：隐藏桌面国旗，显示移动版 */
+@media (max-width: 996px) {
+  .ip-flag-wrapper {
+    display: none !important;
+  }
+
+  .ip-flag-wrapper-mobile {
+    display: flex !important;
+  }
+}
+/* ====== 响应式支持 ====== */
+@media (max-width: 600px) {
+  .ip-modal {
+    width: 90%;
+    padding: 20px;
+  }
+  .ip-modal-header h2 {
+    font-size: 18px;
+  }
+}
+
+/* 桌面端显示，手机端隐藏 */
+.desktop-only {
+  display: flex;
+}
+
+@media (max-width: 996px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .ip-flag-wrapper-mobile {
+    display: flex !important;
+  }
+}

@@ -13,11 +13,17 @@ tags: [Cloudflare, UNHub, GitHub, Workers, 中文维基百科, wikipedia, 反向
 # 基于 Cloudflare Workers 的中文维基百科高性能反向代理系统
 
 **文档版本**：1.0  
-**最后更新**：2025年9月20日  
+**最后更新**：2025年10月1日  
 **作者**：杖雍皓 Tech Team  
 **适用对象**：前端工程师、全栈开发者、DevOps工程师、网络技术爱好者
 
 ---
+
+:::warning
+
+ 最新的反向代理已经指向 **wikipedia.zyhorg.cn** 和 **wikipedia.zyhorg.ac.cn**，其他的均已废弃！
+
+:::
 
 ![无需代理的中文维基百科](img/wiki.jpg)
 *无需代理的中文维基百科*
@@ -38,7 +44,7 @@ tags: [Cloudflare, UNHub, GitHub, Workers, 中文维基百科, wikipedia, 反向
 
 ```mermaid
 graph TD
-    A[用户浏览器] --> B[自定义域名<br>vpnwiki.zyhgov.cn]
+    A[用户浏览器] --> B[自定义域名<br>wikipedia.zyhorg.cn]
     B --> C{Cloudflare DNS<br>CNAME 解析}
     C --> D[Cloudflare Worker<br>边缘节点]
     D --> E{请求类型判断}
@@ -94,7 +100,7 @@ graph TD
 ```javascript  showLineNumbers=true
 // 文件: worker.js
 // 核心常量定义
-const PROXY_HOST = 'vpnwiki.zyhgov.cn'; // 您的自定义域名
+const PROXY_HOST = 'wikipedia.zyhorg.cn'; // 您的自定义域名
 const DEFAULT_ORIGIN = 'zh.wikipedia.org'; // 默认代理的源站
 const PROXY_PREFIX = '/__proxy__/'; // 代理路径前缀
 
@@ -128,13 +134,13 @@ async function mainHandler(request) {
 1.  进入刚创建的Worker的 **Settings** 页面。
 2.  找到 **Triggers** > **Routes**。
 3.  点击 **Add Route**。
-4.  在 **Route** 输入框中，填写您的自定义域名通配符，例如：`vpnwiki.zyhgov.cn/*`。
+4.  在 **Route** 输入框中，填写您的自定义域名通配符，例如：`wikipedia.zyhorg.cn/*`。
 5.  点击 **Save**。
 
 ![路由设置示意图](img/cf002.png)
 *路由设置示意图*
 
-此步骤确保所有访问 `vpnwiki.zyhgov.cn` 的流量都被引导至该Worker进行处理。
+此步骤确保所有访问 `wikipedia.zyhorg.cn` 的流量都被引导至该Worker进行处理。
 
 ### 3.4 步骤四：配置 DNS 记录
 
@@ -149,9 +155,9 @@ async function mainHandler(request) {
 
 部署完成后，可通过以下方式验证系统是否正常工作：
 
-1.  **访问首页**：在浏览器中打开 `https://vpnwiki.zyhgov.cn`。您应看到与 `https://zh.wikipedia.org` 首页内容一致的页面，且页面中的所有图片、CSS、JS资源均能正常加载。
-2.  **健康检查**：访问 `https://vpnwiki.zyhgov.cn/__wiki_proxy_ping`，应返回简单的 `ok` 文本。
-3.  **直接代理测试**：访问 `https://vpnwiki.zyhgov.cn/__proxy__/upload.wikimedia.org/wikipedia/commons/thumb/1/11/Bob_Katter.jpg/250px-Bob_Katter.jpg`，应能直接看到一张图片。
+1.  **访问首页**：在浏览器中打开 `https://wikipedia.zyhorg.cn`。您应看到与 `https://zh.wikipedia.org` 首页内容一致的页面，且页面中的所有图片、CSS、JS资源均能正常加载。
+2.  **健康检查**：访问 `https://wikipedia.zyhorg.cn/__wiki_proxy_ping`，应返回简单的 `ok` 文本。
+3.  **直接代理测试**：访问 `https://wikipedia.zyhorg.cn/__proxy__/upload.wikimedia.org/wikipedia/commons/thumb/1/11/Bob_Katter.jpg/250px-Bob_Katter.jpg`，应能直接看到一张图片。
 
 ---
 
@@ -264,7 +270,7 @@ if (fetched.status === 200 && likelyAsset) {
 
 系统内置了一个简单的健康检查端点：
 
-*   **端点URL**: `https://vpnwiki.zyhgov.cn/__wiki_proxy_ping`
+*   **端点URL**: `https://wikipedia.zyhorg.cn/__wiki_proxy_ping`
 *   **预期响应**: HTTP 200, 内容为 `ok`
 
 您可以将此端点配置到任何第三方监控服务（如 UptimeRobot, Pingdom）中，以实时监控Worker的可用性。
@@ -306,11 +312,11 @@ function errorPage(message) {
 
 ```javascript  showLineNumbers=true
 /**
- * worker.js - vpnwiki.zyhgov.cn 强化版（完整、健壮、多 host 支持，优化缓存与容错）
+ * worker.js - wikipedia.zyhorg.cn 强化版（完整、健壮、多 host 支持，优化缓存与容错）
  *
  * 功能要点回顾：
  *  - 把 *.wikipedia.org/*.wikimedia.org 的链接改写成
- *      https://vpnwiki.zyhgov.cn/__proxy__/{host}{path}
+ *      https://wikipedia.zyhorg.cn/__proxy__/{host}{path}
  *    Worker 处理 /__proxy__/* 并转发到对应 host。
  *  - HTML 使用 HTMLRewriter 最小改写（包含 srcset、data-srcset、style:url() 等）。
  *  - 静态资源走边缘缓存（caches.default + cf.cacheEverything），HTML 短缓存。
@@ -321,7 +327,7 @@ function errorPage(message) {
  * 请结合 Cloudflare 仪表盘的 DNS/Routes/Edge Certificates 配置使用（CNAME -> workers.dev，橙云开启）。
  */
 
-const PROXY_HOST = 'vpnwiki.zyhgov.cn';
+const PROXY_HOST = 'wikipedia.zyhorg.cn';
 const DEFAULT_ORIGIN = 'zh.wikipedia.org';
 const PROXY_PREFIX = '/__proxy__/';
 
@@ -678,7 +684,7 @@ function isAlreadyProxied(val) {
 /**
  * 将任意 URL（相对 / 绝对 / 协议相对）解析并改写为代理路径 或 映射到标准路径
  *  - 对 wikipedia.org / wikimedia.org 的资源 (图片、CSS、JS等) 改写为 /__proxy__/host/...
- *  - 对 wikipedia.org 的页面链接 (/wiki/...) 映射到 vpnwiki.zyhgov.cn 的 /wiki/... 路径
+ *  - 对 wikipedia.org 的页面链接 (/wiki/...) 映射到 wikipedia.zyhorg.cn 的 /wiki/... 路径
  *  - 对相对路径（解析成 DEFAULT_ORIGIN）也会进行相应处理
  */
 function makeProxyUrl(orig) {
@@ -689,7 +695,7 @@ function makeProxyUrl(orig) {
 
     // --- 1. Check if the URL points to a host that needs proxying for RESOURCES ---
     if (host.endsWith('.wikimedia.org')) {
-      // e.g., upload.wikimedia.org -> https://vpnwiki.zyhgov.cn/__proxy__/upload.wikimedia.org/...
+      // e.g., upload.wikimedia.org -> https://wikipedia.zyhorg.cn/__proxy__/upload.wikimedia.org/...
       return `https://${PROXY_HOST}${PROXY_PREFIX}${host}${u.pathname}${u.search || ''}`;
     }
 
