@@ -99,7 +99,7 @@ export default function NavbarContentWrapper(props) {
         style={{
             justifyContent: 'center',
             width: '100%',
-            padding: '0px 0px 0px 100px',
+            padding: '0px 0px 0px 50px',
         }}
         >
         <IPFlagDisplay />

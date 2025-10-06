@@ -907,3 +907,21 @@ a, button, input, textarea, p, li {
     display: flex !important;
   }
 }
+/* ====== 国旗字体图标阴影样式（适配 .fi） ====== */
+.ip-flag-wrapper .fi,
+.ip-flag-wrapper-mobile .fi {
+  /* 保持行内块，避免影响文本流 */
+  display: inline-block;
+  /* 精确对齐，避免因阴影导致垂直偏移 */
+  vertical-align: middle;
+  /* 确保阴影包裹完整 */
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.15);
+  /* 防止子元素继承干扰 */
+  line-height: 1;
+  /* 提升合成层，优化动画/滚动性能 */
+  will-change: box-shadow;
+  /* 可选：轻微圆角让描边更柔和 */
+  border-radius: 2px;
+}
