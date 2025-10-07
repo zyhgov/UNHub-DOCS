@@ -27,6 +27,14 @@ const sidebars = {
     },
     {
       type: 'doc',
+      id: 'Cloudflare-VPN',
+      label: '基于 Cloudflare Workers 与 Pages 边缘计算服务搭建私人VPN代理节点',
+      customProps: {
+        sidebar_icon: 'Shield',
+      },
+    },
+    {
+      type: 'doc',
       id: 'GitHub-Actions',
       label: '企业级 GitHub Actions CI/CD 操作手册',
       customProps: {
