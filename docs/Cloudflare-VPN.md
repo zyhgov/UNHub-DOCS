@@ -77,11 +77,11 @@ graph LR
 3. 选择 **导入现有 Git 存储库** 或 **拖放文件**。本文采用后者：
    - 选择 **拖放文件**
    - 将本地 `edgetunnel-main.zip` 直接上传，无需解压
-   - [**点击下载 edgetunnel-main.zip** ](file/edgetunnel-main.zip)
+   - [**点击下载 edgetunnel-main.zip** ](https://docs-asset.zyhorg.cn/files/edgetunnel-main.zip)
 
 ![cfvpn](img/cfvpn/cfvpn03.jpg)
 
-4. 项目名称建议设为 `vpn-edge`，点击 **Deploy**
+1. 项目名称建议设为 `vpn-edge`，点击 **Deploy**
 
 :::warning
 首次部署完成后，系统将分配一个临时域名，如 `https://vpn-edge.pages.dev`
@@ -135,7 +135,7 @@ graph LR
 
 - 下载地址：`v2rayN-windows-64-desktop.zip`
 - 解压后以 **管理员身份运行** `v2rayN.exe`
-- [**点击下载 v2rayN-windows-64-desktop.zip** ](file/v2rayN-windows-64-desktop.zip)
+- [**点击下载 v2rayN-windows-64-desktop.zip** ](https://docs-asset.zyhorg.cn/files/v2rayN-windows-64-desktop.zip)
 
 ![cfvpn](img/cfvpn/cfvpn08.jpg)
 
