@@ -9,7 +9,7 @@ keywords:
 # 🎬 视频播放测试
 
 ## 以下是两个嵌入式视频演示。
-### 1、阿里云通义千文的品牌动画（短内容）
+### 1、阿里云通义千问(Qwen)的品牌动画（短内容）
 <video
   src="/video/tongyi_branding.mp4"
   controls

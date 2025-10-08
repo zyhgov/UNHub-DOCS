@@ -19,6 +19,14 @@ const sidebars = {
     },
     {
       type: 'doc',
+      id: 'All-AILLM-models',
+      label: '世界范围内所有的 AI / LLM 模型、提供商与主流应用',
+      customProps: {
+        sidebar_icon: 'Brain',
+      },
+    },
+    {
+      type: 'doc',
       id: 'WeChat-Mini-Program-Review-Process',
       label: '微信小程序审核流程',
       customProps: {

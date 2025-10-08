@@ -1,7 +1,7 @@
 ---
+title: Docusaurus v3+ 集成 Giscus 评论系统技术指南
 sidebar_position: 3
 sidebar_label: Docusaurus v3+ 集成 Giscus 评论系统技术指南
-title: Docusaurus v3+ 集成 Giscus 评论系统技术指南
 description: 本文详细阐述如何在 Docusaurus v3+（JavaScript 版本） 中集成 Giscus 评论系统，实现基于 GitHub Discussions 的用户评论功能。
 keywords: [Docusaurus, Giscus]
 tags: [Docusaurus, Giscus]

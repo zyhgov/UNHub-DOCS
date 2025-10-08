@@ -300,49 +300,7 @@ plugins: [
         {
           tagName: 'script',
           innerHTML: `
-            (function() {
-              // 监听所有点击事件
-              document.addEventListener('click', function(e) {
-                let target = e.target;
-                // 向上查找 <a> 标签
-                while (target && target !== document) {
-                  if (target.tagName === 'A' && target.getAttribute('href')) {
-                    const href = target.getAttribute('href');
-                    
-                    // 判断是否是站内链接且以 /private/ 开头
-                    if (href.startsWith('/private/') && !href.startsWith('http')) {
-                      // 阻止默认跳转
-                      e.preventDefault();
-                      
-                      // 弹出确认框
-                      const confirmed = confirm(
-                        '⚠️ 请注意，您正在访问受保护的内参文档。\\n\\n' +
-                        '您的所有访问行为将被记录并审计。\\n\\n' +
-                        '点击继续完成身份验证，已验证身份当天即可忽略警告。\\n' +
-                        '在内参板块点击每个文档均会弹出此警告以提示数据安全。\\n\\n' +
-                        '是否继续？\\n' +
-                        '点击继续则表明您将接受我们的安全条款。'
-                      );
-                      
-                      if (confirmed) {
-                        // 直接跳转到目标页面（强制走服务端）
-                        window.location.href = href;
-                      }
-                      return false;
-                    }
-                    break;
-                  }
-                  target = target.parentNode;
-                }
-              }, true);
-
-              // SPA 路由变化时也检查（可选）
-              const originalPushState = history.pushState;
-              history.pushState = function(...args) {
-                originalPushState.apply(this, args);
-                // 可在此处添加日志或监控
-              };
-            })();
+(function(){document.addEventListener('click',function(e){let target=e.target;while(target&&target!==document){if(target.tagName==='A'&&target.getAttribute('href')){const href=target.getAttribute('href');if(href.startsWith('/private/')&&!href.startsWith('http')){e.preventDefault();const confirmed=confirm('⚠️ 请注意，您正在访问受保护的内参文档。\\n\\n您的所有访问行为将被记录并审计。\\n\\n点击继续完成身份验证，已验证身份当天即可忽略警告。\\n在内参板块点击每个文档均会弹出此警告以提示数据安全。\\n\\n是否继续？\\n点击继续则表明您将接受我们的安全条款。');if(confirmed){window.location.href=href}return false}break}target=target.parentNode}},true);const originalPushState=history.pushState;history.pushState=function(...args){originalPushState.apply(this,args)}})();
           `,
         },
       ],
