@@ -11,6 +11,14 @@ const sidebars = {
     },
     {
       type: 'doc',
+      id: 'HTTPS-certificate',
+      label: '多服务器环境下的自动化 HTTPS 证书全生命周期管理',
+      customProps: {
+        sidebar_icon: 'Lock',
+      },
+    },
+    {
+      type: 'doc',
       id: 'nobel-prizes',
       label: '诺贝尔奖数据集可视化分析',
       customProps: {
