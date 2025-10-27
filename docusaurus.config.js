@@ -622,7 +622,7 @@ plugins: [
       style: 'dark',
         logo: {
           alt: 'UNHub健康 Footer Logo',
-          src: 'img/logo-footer.png', // 支持 SVG、PNG 等格式
+          src: 'img/logo-footer-2025.png', // 支持 SVG、PNG 等格式
           width: 333,  // 可选：设置宽度（像素）
           // height: 40,  // 可选：设置高度
           // url: 'https://docs.zyhorg.cn' // 可选：点击 logo 跳转链接
@@ -844,7 +844,17 @@ plugins: [
   ]
 }
       ],
-      copyright: `Copyright &copy; ${new Date().getFullYear()} UNHub 联合库. All rights reserved.`,
+      copyright: `
+        Copyright &copy; ${new Date().getFullYear()} UNHub 联合库. All rights reserved.<br/>
+        <a href="https://beiancx.miit.gov.cn/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 4px; text-decoration: none; color: inherit; font-size: 0.85em;">
+          <img src="/img/icp.png" alt="ICP备案标识" height="16" style="vertical-align: middle;" />
+          鄂ICP备 办理中 
+        </a>&nbsp;&nbsp;
+        <a href="https://beian.gov.cn" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 4px; text-decoration: none; color: inherit; font-size: 0.85em;">
+          <img src="/img/gonganbeian.png" alt="公安备案标识" height="16" style="vertical-align: middle;" />
+          鄂公网安备 办理中
+        </a>
+      `,
     },
     prism: {
       theme: prismThemes.github,
