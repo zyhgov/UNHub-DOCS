@@ -68,8 +68,10 @@
 }
 
 .topImage {
-  width: 64px;
-  height: 64px;
+  /* width: 64px;
+  height: 64px; */
+  width: 250px;
+  /* height: 64px; */
   object-fit: contain;
 }
 
@@ -158,8 +160,9 @@
   }
 
   .topImage {
-    width: 56px;
-    height: 56px;
+    /* width: 56px; */
+    /* height: 56px; */
+    height: 66px;
   }
 
   .buttonInner {

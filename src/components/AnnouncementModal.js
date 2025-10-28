@@ -30,28 +30,27 @@ export default function AnnouncementModal() {
         {/* 顶部小图（居中） */}
         <div className={styles.topImageWrapper}>
           <img
-            src="/img/1f92f.webp"
-            alt="LobeHub"
+            src="/img/cloudflare.png"
+            alt="Cloudflare"
             className={styles.topImage}
           />
         </div>
 
         {/* 内容 */}
         <div className={styles.content}>
-          <h2>全新 AI Web 已上线UNHub！</h2>
+          <h2>网站已全面接入 Cloudflare®</h2>
           <p>
-            我们通过 <strong>LobeHub</strong> 部署了新一代 AI 平台，现已开放注册！
+            本站由 <strong>Cloudflare, Inc.</strong> 提供安全防护、性能加速与高可用性保障。
           </p>
           <p>
-            支持全球 200+ 模型，包括：
-            <br />
-            <strong>ChatGPT、Gemini、Qwen、DeepSeek</strong> 等主流大模型。
+            通过 Cloudflare® 服务 <br /> 我们确保您的访问更快速、更安全、更可靠。
           </p>
+
 
           {/* 你的炫酷按钮 */}
           <div className={styles.buttonWrapper}>
             <a
-              href="https://chat.zyhorg.cn/"
+              href="https://www.cloudflare-cn.com/"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.customButton}
@@ -99,7 +98,7 @@ export default function AnnouncementModal() {
                     </linearGradient>
                   </defs>
                 </svg>
-                <span className={styles.buttonText}>试用我们的 LobeHub</span>
+                <span className={styles.buttonText}>随时随地连接、保护和构建</span>
               </span>
             </a>
           </div>
