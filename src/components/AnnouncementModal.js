@@ -29,28 +29,41 @@ export default function AnnouncementModal() {
 
         {/* 顶部小图（居中） */}
         <div className={styles.topImageWrapper}>
-          <img
+          {/* <img
             src="/img/cloudflare.png"
             alt="Cloudflare"
+            className={styles.topImage}
+          /> */}
+          <img
+            src="/img/nginx.svg"
+            alt="nginx"
             className={styles.topImage}
           />
         </div>
 
         {/* 内容 */}
         <div className={styles.content}>
-          <h2>网站已全面接入 Cloudflare®</h2>
+          {/* <h2>网站已全面接入 Cloudflare®</h2>
           <p>
             本站由 <strong>Cloudflare, Inc.</strong> 提供安全防护、性能加速与高可用性保障。
           </p>
           <p>
             通过 Cloudflare® 服务 <br /> 我们确保您的访问更快速、更安全、更可靠。
+          </p> */}
+          <h2>NGINX 原生 ACME 支持</h2>
+          <p>
+            从根本上重塑 <strong>TLS</strong> 自动化部署
+          </p>
+          <p>
+            本技术文档针对 Docker 环境下的 Ubuntu 系统 <br /> 提供完整的部署和配置指南
           </p>
 
 
           {/* 你的炫酷按钮 */}
           <div className={styles.buttonWrapper}>
             <a
-              href="https://www.cloudflare-cn.com/"
+              // href="https://www.cloudflare-cn.com/"
+              href="https://docs.zyhorg.cn/docs/Command-List/Nginx-tutorial/nginx-acme"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.customButton}
@@ -98,7 +111,7 @@ export default function AnnouncementModal() {
                     </linearGradient>
                   </defs>
                 </svg>
-                <span className={styles.buttonText}>随时随地连接、保护和构建</span>
+                <span className={styles.buttonText}>阅读技术文档</span>
               </span>
             </a>
           </div>

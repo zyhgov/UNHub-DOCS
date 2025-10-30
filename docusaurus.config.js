@@ -759,7 +759,7 @@ plugins: [
           ],
         },
 {
-  title: '技术栈支持',
+  title: '技术支持',
   items: [
     {
       html: `
@@ -848,11 +848,16 @@ plugins: [
         Copyright &copy; ${new Date().getFullYear()} UNHub 联合库. All rights reserved.<br/>
         <a href="https://beiancx.miit.gov.cn/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 4px; text-decoration: none; color: inherit; font-size: 0.85em;">
           <img src="/img/icp.png" alt="ICP备案标识" height="16" style="vertical-align: middle;" />
-          鄂ICP备 办理中 
+          鄂ICP备2025151647号
         </a>&nbsp;&nbsp;
         <a href="https://beian.gov.cn" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 4px; text-decoration: none; color: inherit; font-size: 0.85em;">
           <img src="/img/gonganbeian.png" alt="公安备案标识" height="16" style="vertical-align: middle;" />
-          鄂公网安备 办理中
+          鄂公网安备42011002025860号
+        </a><br />
+        <a href="https://docs.zyhorg.cn/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 4px; text-decoration: none; color: inherit; font-size: 0.85em;">
+          本站支持
+          <img src="/img/IPV6.svg" alt="ipv6" height="16" style="vertical-align: middle;" />
+          协议
         </a>
       `,
     },
