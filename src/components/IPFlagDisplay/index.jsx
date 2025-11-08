@@ -326,10 +326,20 @@ const IPModal = ({ ipData, vpnStatus, onClose }) => {
           &times;
         </button>
 
-        <div className="ip-modal-header">
-          <span className={`fi fi-${countryCode}`} style={{ fontSize: '36px', marginRight: '10px' }}></span>
-          <h2>{ipData.country} Network Info</h2>
-        </div>
+      <div 
+        className="ip-modal-header" 
+        style={{ 
+          display: 'flex', 
+          alignItems: 'center',  // ✅ 垂直居中对齐
+          gap: '10px'            // ✅ 使用 gap 替代 marginRight（可选）
+        }}
+      >
+        <span 
+          className={`fi fi-${countryCode}`} 
+          style={{ fontSize: '36px' }}  // ✅ 移除 marginRight
+        ></span>
+        <h2 style={{ margin: 0 }}>{ipData.country} Network</h2>  {/* ✅ 移除默认边距 */}
+      </div>
 
         {/* ✅ VPN 状态横幅 */}
         {vpnStatus && vpnStatus.isVPN && (
