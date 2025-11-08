@@ -237,7 +237,7 @@ dig 是一个查询 DNS 信息的命令行工具，本文介绍它的简单用�
 
 Go 语言的微服务框架，内置丰富的微服务能力，可以很方便地将 Go 脚本架设成服务。（[@kevwan](https://github.com/ruanyf/weekly/issues/2430) 投稿）
 
-4、[思源笔记](https://github.com/siyuan-note/siyuan/blob/master/README_zh_CN.md)
+4、<!-- [思源笔记](https://github.com/siyuan-note/siyuan/blob/master/README_zh_CN.md) 链接已失效 -->思源笔记
 
 ![](https://cdn.beekka.com/blogimg/asset/202206/bg2022060817.webp)
 

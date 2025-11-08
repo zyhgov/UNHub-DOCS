@@ -142,7 +142,7 @@ Unix 命令行有许多操作文本的命令，本文逐一介绍。
 
 本片使用多张图片，通俗地解释如何拓展网站服务，承受更大的访问量。
 
-10、[Flexbox 详解](https://github.com/veedrin/horseshoe/blob/master/flex/flex.md)（中文）
+10、<!-- [Flexbox 详解](https://github.com/veedrin/horseshoe/blob/master/flex/flex.md) 链接已失效 -->Flexbox 详解（中文）
 
 详细介绍 CSS 的 Flexbox 布局，配有大量图片说明。（@[veedrin](https://github.com/ruanyf/weekly/issues/295) 投稿）
 

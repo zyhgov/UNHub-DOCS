@@ -263,7 +263,7 @@ React 的组件可视化拖拽页面编辑与代码生成工具，让不会 Reac
 
 ## 资源
 
-1、[浏览器在 2020 年可以干什么？](https://github.com/luruke/browser-2020/blob/master/README.md)
+1、<!-- [浏览器在 2020 年可以干什么？](https://github.com/luruke/browser-2020/blob/master/README.md) 链接已失效 -->浏览器在 2020 年可以干什么？
 
 这个仓库收集各种新兴的浏览器 API，展示浏览器具备的能力。如果你想追踪 Web App 开发的前沿，可以关注它。上图是浏览器的画中画 API。
 
@@ -271,7 +271,7 @@ React 的组件可视化拖拽页面编辑与代码生成工具，让不会 Reac
 
 ![](https://cdn.beekka.com/blogimg/asset/202003/bg2020032301.jpg)
 
-ActivityPub 是一种去中心化的内容聚合协议，可以让其他用户远程订阅你的内容。它很像升级版的 RSS，但是支持远程推送。这里是 ActivityPub 协议[技术细节的介绍](https://github.com/WebOfTrustInfo/rwot5-boston/blob/master/topics-and-advance-readings/activitypub-decentralized-distributed.md)。
+ActivityPub 是一种去中心化的内容聚合协议，可以让其他用户远程订阅你的内容。它很像升级版的 RSS，但是支持远程推送。这里是 ActivityPub 协议<!-- [技术细节的介绍](https://github.com/WebOfTrustInfo/rwot5-boston/blob/master/topics-and-advance-readings/activitypub-decentralized-distributed.md) 链接已失效 -->技术细节的介绍。
 
 下面是目前支持 ActivityPub 协议的开源软件，可以自己架设服务。
 

@@ -367,7 +367,7 @@ Facebook 出品的 Markdown 静态文档网站的建站工具，前端使用 Rea
 
 我最欣赏的是蜜蜂，由于它给人们蜂蜜，尽管它多螫，人们都对它赞不绝口。不管您如何称赞，蜜蜂仍孜孜不倦的酿蜜，天天埋头苦干，并不因为赞美产蜜少一些。胜不骄，败不馁，从他们身上完全反射出来。在荣誉与失败面前，平静得象一湖水，这就是华为应具有的心胸与内涵。
 
--- [任正非](https://github.com/ttpianobirds/RenZhengfei/blob/master/1996/19960630_%E5%86%8D%E8%AE%BA%E5%8F%8D%E9%AA%84%E7%A0%B4%E6%BB%A1%EF%BC%8C%E5%9C%A8%E6%80%9D%E6%83%B3%E4%B8%8A%E8%89%B0%E8%8B%A6%E5%A5%8B%E6%96%97.md)
+-- <!-- [任正非](https://github.com/ttpianobirds/RenZhengfei/blob/master/1996/19960630_%E5%86%8D%E8%AE%BA%E5%8F%8D%E9%AA%84%E7%A0%B4%E6%BB%A1%EF%BC%8C%E5%9C%A8%E6%80%9D%E6%83%B3%E4%B8%8A%E8%89%B0%E8%8B%A6%E5%A5%8B%E6%96%97.md) 链接已失效 -->任正非
 
 2、
 

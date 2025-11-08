@@ -247,7 +247,7 @@ GitHub 的微信小程序客户端，代码开源。（@[JackZhouMine](https://g
 
 跟踪收集 GitHub 新项目的《Hello GitHub》的官网。（@[Salmonberry](https://github.com/ruanyf/weekly/issues/566) 投稿）
 
-7、[勒索病毒解密工具](https://github.com/jiansiting/Decryption-Tools/blob/master/readme.md)
+7、<!-- [勒索病毒解密工具](https://github.com/jiansiting/Decryption-Tools/blob/master/readme.md) 链接已失效 -->勒索病毒解密工具
 
 一个收集勒索病毒解密工具的仓库。（@[Y024](https://github.com/ruanyf/weekly/issues/609) 投稿）
 

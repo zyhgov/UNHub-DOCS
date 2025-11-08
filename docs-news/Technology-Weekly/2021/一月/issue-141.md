@@ -298,7 +298,7 @@ OpenAI 公司又推出了一个神奇的软件 DALL-E，可以根据文字描述
 
 这个仓库收集一些真实的大数据分析案例，用来了解如何处理不同行业的分析指标。目前有4个案例，包括1亿条淘宝用户行为数据分析、7000条租房数据分析等等。（[@TurboWay](https://github.com/ruanyf/weekly/issues/1577) 投稿）
 
-5、[Hello GitHub（第 57 期）](https://github.com/521xueweihan/HelloGitHub/blob/master/content/57/HelloGitHub57.md)
+5、<!-- [Hello GitHub（第 57 期）](https://github.com/521xueweihan/HelloGitHub/blob/master/content/57/HelloGitHub57.md) 链接已失效 -->Hello GitHub（第 57 期）
 
 分享GitHub上有趣，入门级的开源项目的月刊，帮你找到编程的乐趣。（[@ 521xueweihan](https://github.com/ruanyf/weekly/issues/128#issuecomment-751546156) 投稿）
 

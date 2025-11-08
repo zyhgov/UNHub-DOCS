@@ -279,7 +279,7 @@ Linux 的 WireGuard 安装工具，并且提供 Web UI 的管理界面。
 
 这个工具可以将你在各种网站上的活动记录，生成 GitHub 方块热力图或 skyline 图。（[@yihong0618](https://github.com/ruanyf/weekly/issues/1790) 投稿）
 
-8、[Apitest](https://github.com/sigoden/apitest/blob/master/README.zh-CN.md)
+8、<!-- [Apitest](https://github.com/sigoden/apitest/blob/master/README.zh-CN.md) 链接已失效 -->Apitest
 
 一个 API 测试的自动化工具，所有测试用例可以写在一个类似 JSON 的配置文件里面。（[@sigoden](https://github.com/ruanyf/weekly/issues/1788) 投稿）
 

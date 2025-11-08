@@ -193,7 +193,7 @@ DuckDB 是一个内存数据库，本文介绍如何把它当作命令行工具�
 
 ## 工具
 
-1、[Text Search Engine](https://github.com/cjinhuo/text-search-engine/blob/master/docs/README_zh.md)
+1、<!-- [Text Search Engine](https://github.com/cjinhuo/text-search-engine/blob/master/docs/README_zh.md) 链接已失效 -->Text Search Engine
 
 一个 JS 的模糊搜索库，具有中文拼音的模糊搜索等多种功能。（[@cjinhuo](https://github.com/ruanyf/weekly/issues/5020) 投稿）
 

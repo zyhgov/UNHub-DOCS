@@ -334,7 +334,7 @@ Algolia 公司推出的 JS 库，实现搜索关键字的自动补全。
 
 Rust 语言的一个初学者教程，通过100个练习来学习这门语言。
 
-2、[JavaScript 语法问题](https://github.com/lydiahallie/javascript-questions/blob/master/zh-CN/README-zh_CN.md)（中文）
+2、<!-- [JavaScript 语法问题](https://github.com/lydiahallie/javascript-questions/blob/master/zh-CN/README-zh_CN.md) 链接已失效 -->JavaScript 语法问题（中文）
 
 ![](https://cdn.beekka.com/blogimg/asset/202405/bg2024051808.webp)
 

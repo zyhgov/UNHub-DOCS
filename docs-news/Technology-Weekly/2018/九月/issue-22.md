@@ -81,7 +81,7 @@ tags: [阮一峰, GitHub]
 
 有些狗主人遛狗的时候，不清除狗屎，影响环境。意大利一个小镇忍无可忍，对本地2,156只狗的 DNA 全部登记。一旦发现没清理的狗屎，就追查DNA，对主人罚款58美元。
 
-8、[内阁来信](https://github.com/mkearney/resist_oped/blob/master/README.md)
+8、<!-- [内阁来信](https://github.com/mkearney/resist_oped/blob/master/README.md) 链接已失效 -->内阁来信
 
 《纽约时报》发表了一封匿名来信，作者是特朗普总统身边的高官。来信说，他为了美国的利益，潜伏在总统身边，让总统的很多错误决定无法执行。
 

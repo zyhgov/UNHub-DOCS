@@ -303,7 +303,7 @@ AI 视频配音的开源工具，自动将外语视频改成中文配音。（[@
 
 ## 资源
 
-1、[妖怪平生录](https://github.com/meethigher/black-wukong-youji/blob/master/%E9%BB%91%E7%A5%9E%E8%AF%9D%E6%82%9F%E7%A9%BA%E5%A6%96%E6%80%AA%E5%B9%B3%E7%94%9F%E5%BD%95.md)
+1、<!-- [妖怪平生录](https://github.com/meethigher/black-wukong-youji/blob/master/%E9%BB%91%E7%A5%9E%E8%AF%9D%E6%82%9F%E7%A9%BA%E5%A6%96%E6%80%AA%E5%B9%B3%E7%94%9F%E5%BD%95.md) 链接已失效 -->妖怪平生录
 
 ![](https://cdn.beekka.com/blogimg/asset/202408/bg2024082705.webp)
 

@@ -268,7 +268,7 @@ Meta 公司新推出的一种压缩工具，适合压缩结构化数据（比如
 
 开源的文本转播客工具，需要 OpenAI 密钥。（[@justlovemaki](https://github.com/ruanyf/weekly/issues/7967) 投稿）
 
-6、[MuseBot](https://github.com/yincongcyincong/MuseBot/blob/main/README_ZH.md)
+6、<!-- [MuseBot](https://github.com/yincongcyincong/MuseBot/blob/main/README_ZH.md) 链接已失效 -->MuseBot
 
 ![](https://cdn.beekka.com/blogimg/asset/202510/bg2025102205.webp)
 

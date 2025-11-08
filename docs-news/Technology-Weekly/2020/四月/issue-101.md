@@ -161,7 +161,7 @@ IEEE Spectrum 杂志对他进行了远程采访，访问他对医疗机器人行
 
 作者给进入这个行业的新人，提供了几点建议（上图），我觉得说得相当好。新人对这些建议肯定没有很深的体会，但是工作几年以后，再回头看，你会觉得这才是正确的路。
 
-6、[User-Agent 新方案](https://github.com/WICG/ua-client-hints/blob/master/README.md)
+6、<!-- [User-Agent 新方案](https://github.com/WICG/ua-client-hints/blob/master/README.md) 链接已失效 -->User-Agent 新方案
 
 浏览器向服务器发请求的时候，都会带有一个`User-Agent`字段，表明客户端的一些软件信息。Chrome 浏览器打算冻结这个字段，本文介绍新方案的细节。
 

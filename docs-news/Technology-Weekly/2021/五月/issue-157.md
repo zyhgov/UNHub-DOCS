@@ -226,7 +226,7 @@ AVIF 是一种新的图像格式，跟 JPG 和 PNG 类似，但可以压缩得�
 
 ## 工具
 
-1、[Puppeteer Console](pptrconsole.com)
+1、[Puppeteer Console](https://pptrconsole.com)
 
 ![](https://cdn.beekka.com/blogimg/asset/202104/bg2021041811.jpg)
 

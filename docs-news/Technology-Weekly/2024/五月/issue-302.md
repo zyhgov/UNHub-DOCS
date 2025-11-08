@@ -286,7 +286,7 @@ RoboForm 早就修正了这个 Bug。以后的人如果忘了密码，真的是�
 
 ![](https://cdn.beekka.com/blogimg/asset/202311/bg2023111316.webp)
 
-2、[掌握比特币：开放区块链编程](https://github.com/bitcoinbook/bitcoinbook/blob/develop/BOOK.md)（第三版）
+2、<!-- [掌握比特币：开放区块链编程](https://github.com/bitcoinbook/bitcoinbook/blob/develop/BOOK.md) 链接已失效 -->掌握比特币：开放区块链编程（第三版）
 
 ![](https://cdn.beekka.com/blogimg/asset/202405/bg2024052701.webp)
 

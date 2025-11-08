@@ -171,7 +171,7 @@ Pantone 是全球著名的配色公司。该公司每年都会评选本年度的
 
 一篇简短的教程，讲解如何使用 CSS 设置网页打印时的样式。
 
-4、[JSON 解析器的最大嵌套层数](https://github.com/lovasoa/bad_json_parsers/blob/master/README.md)（英文）
+4、<!-- [JSON 解析器的最大嵌套层数](https://github.com/lovasoa/bad_json_parsers/blob/master/README.md) 链接已失效 -->JSON 解析器的最大嵌套层数（英文）
 
 JSON 数据结构可以嵌套多少层，标准没有提及。作者就写了一个脚本，去测试每种语言的 JSON 解析器最多可以解析多少层嵌套的 JSON，然后将结果列成表格，比如 Node.js 可以解析5712层。
 

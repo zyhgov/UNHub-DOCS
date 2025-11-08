@@ -195,7 +195,7 @@ Deno 是一个 TypeScript 运行时，可以替代 Node.js。它有一个模块�
 
 WordPress 团队新发布的团队协作工具，有点类似公司内部的博客系统，可以免费使用，计划会在未来开源。
 
-3、[Hasura GraphQL 引擎](https://github.com/hasura/graphql-engine/blob/master/translations/README.chinese.md)
+3、<!-- [Hasura GraphQL 引擎](https://github.com/hasura/graphql-engine/blob/master/translations/README.chinese.md) 链接已失效 -->Hasura GraphQL 引擎
 
 一个高性能的 GraphQL 服务器，提供 Postgres上开箱即用的实时GraphQL API。（[@shark-h](https://github.com/ruanyf/weekly/issues/1368) 投稿）
 
@@ -209,7 +209,7 @@ WordPress 团队新发布的团队协作工具，有点类似公司内部的博�
 
 一个命令行程序，用来检查英文文章是否有语义错误。
 
-6、[github-readme-stats](https://github.com/anuraghazra/github-readme-stats/blob/master/docs/readme_cn.md)
+6、<!-- [github-readme-stats](https://github.com/anuraghazra/github-readme-stats/blob/master/docs/readme_cn.md) 链接已失效 -->github-readme-stats
 
 ![](https://cdn.beekka.com/blogimg/asset/202008/bg2020081301.jpg)
 
@@ -235,7 +235,7 @@ WordPress 团队新发布的团队协作工具，有点类似公司内部的博�
 
 ## 资源
 
-1、[技术树](https://github.com/github/archive-program/blob/master/TheTechTree.md)
+1、<!-- [技术树](https://github.com/github/archive-program/blob/master/TheTechTree.md) 链接已失效 -->技术树
 
 为了让后代了解我们如何开发和使用软件，GitHub 官方开出了一个书单，称为“技术树”（the Tech Tree），包括16个大类的200多本经典书籍。这些书籍的数字化版本，将存放在 GitHub 的北极仓库。
 

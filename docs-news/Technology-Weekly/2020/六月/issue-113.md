@@ -245,7 +245,7 @@ Chrome 浏览器的扩展，可以对选中的网页文字，生成一个 URL。
 
 一个开源的个人微博客实现，采用 ActivityPub 协议，可以与其他支持该协议的软件交换数据。
 
-10、[Youka](https://github.com/youkaclub/youka-desktop/blob/master/README.md)
+10、<!-- [Youka](https://github.com/youkaclub/youka-desktop/blob/master/README.md) 链接已失效 -->Youka
 
 ![](https://cdn.beekka.com/blogimg/asset/202003/bg2020030801.jpg)
 

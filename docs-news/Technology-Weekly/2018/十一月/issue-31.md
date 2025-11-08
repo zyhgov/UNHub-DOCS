@@ -196,7 +196,7 @@ Erlang 语言的入门教程。
 
 1、[发送短消息的 App](https://messages.android.com/)
 
-谷歌官方推出了一个网页应用，使你可以在浏览器上远程通过自己的手机发短消息。有人使用了它的底层 API，做成一个[桌面 App](https://github.com/maxchehab/Unofficial-Google-Messages-Desktop-App/blob/master/README.md)，可以在电脑桌面上发短信。
+谷歌官方推出了一个网页应用，使你可以在浏览器上远程通过自己的手机发短消息。有人使用了它的底层 API，做成一个<!-- [桌面 App](https://github.com/maxchehab/Unofficial-Google-Messages-Desktop-App/blob/master/README.md) 链接已失效 -->桌面 App，可以在电脑桌面上发短信。
 
 ![](https://cdn.beekka.com/blogimg/asset/201811/bg2018111615.jpg)
 

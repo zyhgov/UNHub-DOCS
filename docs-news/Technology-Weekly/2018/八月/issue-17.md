@@ -125,7 +125,7 @@ OpenAI Five 与人类高级玩家的 Dota2 第一场比赛结束，AI 以 2：1 
 12、__一句话新闻__
 
 * 随着手机支付的崛起，国内的[ ATM 和 POS](http://finance.caijing.com.cn/20180808/4497589.shtml) 设备制造行业大幅衰退，而二维码扫描设备制造业大幅成长。
-* [Dart 语言](https://github.com/dart-lang/sdk/blob/master/CHANGELOG.md)发布2.0版。该语言的前途完全取决于谷歌的 Flutter 框架（Dart 是 Flutter 唯一支持的语言），如果谷歌大力推广这个框架，Dart 才有可能成功。
+* <!-- [Dart 语言](https://github.com/dart-lang/sdk/blob/master/CHANGELOG.md) 链接已失效 -->Dart 语言发布2.0版。该语言的前途完全取决于谷歌的 Flutter 框架（Dart 是 Flutter 唯一支持的语言），如果谷歌大力推广这个框架，Dart 才有可能成功。
 * [Android 9.0](https://blog.google/products/android/introducing-android-9-pie/) 发布，这个版本大量增加了 AI 支持，可以对每个用户提供更好的个性化服务。
 * [Mozilla 浏览器](https://evertpot.com/firefox-rss/)计划取消 RSS 支持，原因是缺乏用户。
 

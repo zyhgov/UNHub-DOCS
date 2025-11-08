@@ -157,7 +157,7 @@ Git 的 JavaScript 实现，这意味着你可以在 JS 里进行 Git 操作，�
 
 收集所有开源的操作系统的网站。
 
-7、[黑苹果安装学院](https://github.com/huangyz0918/Hackintosh-Installer-University/blob/master/README-CN.md)
+7、<!-- [黑苹果安装学院](https://github.com/huangyz0918/Hackintosh-Installer-University/blob/master/README-CN.md) 链接已失效 -->黑苹果安装学院
 
 自从苹果采用 Intel 的处理器，OS X 被黑客破解后可以安装在 Intel CPU 与部分 AMD CPU 的机器上。从而出现了一大批非苹果设备而使用苹果操作系统的机器，被称为黑苹果（Hackintosh）。这个仓库收集了各种型号的黑苹果安装方法。
 

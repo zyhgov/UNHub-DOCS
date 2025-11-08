@@ -253,7 +253,7 @@ Sci-Hub 提供免费的科学论文下载，由于版权问题，它必须经常
 
 该仓库收集 BitTorrent 下载所需要的公共的 tracker 服务器网址。
 
-4、[git-flight-rules](https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md)
+4、<!-- [git-flight-rules](https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md) 链接已失效 -->git-flight-rules
 
 Git 操作往往会遇到各种问题，比如，如何把未暂存的内容移动到一个新分支，或者删除的分支如何恢复。这个仓库就收集这类问题的操作方法，有中文翻译。（@[ifrontend-xyz](https://github.com/ruanyf/weekly/issues/728) 投稿）
 

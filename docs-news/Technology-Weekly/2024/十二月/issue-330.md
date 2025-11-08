@@ -161,7 +161,7 @@ tags: [阮一峰, GitHub]
 
 （3）OpenAI 推出了免费电话 [1-800-ChatGPT](https://help.openai.com/en/articles/10193193-1-800-chatgpt-calling-and-messaging-chatgpt-with-your-phone)，北美用户可以拨打该电话，跟 AI 语音聊天，每月额度为15分钟。
 
-（4）[小米官方](https://github.com/XiaoMi/ha_xiaomi_home/blob/main/doc/README_zh.md)开始支持，小米物联网设备接入智能家居管理助手 Home Assistant。
+（4）<!-- [小米官方](https://github.com/XiaoMi/ha_xiaomi_home/blob/main/doc/README_zh.md) 链接已失效 -->小米官方开始支持，小米物联网设备接入智能家居管理助手 Home Assistant。
 
 ## 文章
 

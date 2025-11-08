@@ -215,7 +215,7 @@ Babel 创始人的新作品，把 JS 的主要工具都包括在一个库里。�
 
 一个 Google Analytics 的开源替代品，可以自己架设网站访问统计。特点是轻量级，结构简单
 
-7、[apioak](https://github.com/apioak/apioak/blob/master/README_CN.md)
+7、<!-- [apioak](https://github.com/apioak/apioak/blob/master/README_CN.md) 链接已失效 -->apioak
 
 一个开源的国产 API 网关，可以作为前后端之间的映射层。基于 OpenResty，性能好，功能强。（@[shuaijinchao](https://github.com/ruanyf/weekly/issues/1173) 投稿）
 

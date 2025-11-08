@@ -227,7 +227,7 @@ JetBrains 公司推出的新工具，允许使用 Kotlin 语言开发 Web UI，�
 
 一个 GitHub  API 的 JS 包装库，全部封装好了，可以更方便地操作 GitHub。
 
-6、[touchbar-systemmonitor](https://github.com/spagnuolocarmine/touchbar-systemmonitor/blob/master/README.md)
+6、<!-- [touchbar-systemmonitor](https://github.com/spagnuolocarmine/touchbar-systemmonitor/blob/master/README.md) 链接已失效 -->touchbar-systemmonitor
 
 ![](https://cdn.beekka.com/blogimg/asset/202004/bg2020040512.jpg)
 

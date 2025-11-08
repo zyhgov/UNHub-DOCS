@@ -215,7 +215,7 @@ Adobe 公司推出的手机拍照软件，只要按下快门，就可以拍出�
 
 斯坦福大学推出的 JavaScript 加密库，只有 6KB，API 也很简单，但可以提供最佳的安全性。
 
-10、[Mind elixir](https://github.com/ssshooter/mind-elixir-core/blob/master/readme.cn.md)
+10、<!-- [Mind elixir](https://github.com/ssshooter/mind-elixir-core/blob/master/readme.cn.md) 链接已失效 -->Mind elixir
 
 ![](https://cdn.beekka.com/blogimg/asset/202006/bg2020061814.jpg)
 

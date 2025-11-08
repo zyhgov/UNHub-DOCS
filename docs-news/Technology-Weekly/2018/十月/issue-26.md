@@ -152,7 +152,7 @@ Linux 发行版一般都自带桌面环境，如果你需要的只是一个好�
 
 如果你还在用广告拦截器，Pi-hole 是更好的选择。它是树莓派上的 DNS 服务器，架设在局域网里面，内置黑名单，拦截广告域名的 DNS 请求。从此，局域网所有设备都看不到广告。
 
-8、[如何制作命令行动画？](https://github.com/harrinp/Command-line-guide/blob/master/README.md)（英文）
+8、<!-- [如何制作命令行动画？](https://github.com/harrinp/Command-line-guide/blob/master/README.md) 链接已失效 -->如何制作命令行动画？（英文）
 
 本文介绍如何使用 ncurses 这个 C 语言标准库，写一个简单的命令行动画。
 

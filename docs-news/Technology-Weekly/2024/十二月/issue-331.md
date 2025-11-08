@@ -221,7 +221,7 @@ Chrome 插件 + 微信小程序，在网页上收藏单词，建立自己的词�
 
 根据模版制作“网页分享图”（open graph）的在线工具。（[@javayhu](https://github.com/ruanyf/weekly/issues/5771) 投稿）
 
-7、[Kyanos](https://github.com/hengyoush/kyanos/blob/main/README_CN.md)
+7、<!-- [Kyanos](https://github.com/hengyoush/kyanos/blob/main/README_CN.md) 链接已失效 -->Kyanos
 
 ![](https://cdn.beekka.com/blogimg/asset/202412/bg2024122508.webp)
 

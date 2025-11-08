@@ -243,7 +243,7 @@ Mozilla 基金会为了开发语音识别技术， 做了一个开源语音数�
 
 该网站收集谷歌街景出现的镜子里面的拍摄机器。
 
-5、[命令行的艺术](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md)（中文）
+5、<!-- [命令行的艺术](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md) 链接已失效 -->命令行的艺术（中文）
 
 一篇命令行的详细介绍，各种任务可以使用什么命令。（@[sdir](https://github.com/ruanyf/weekly/issues/478) 投稿）
 

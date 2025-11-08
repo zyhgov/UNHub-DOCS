@@ -311,7 +311,7 @@ esbuild 是新一代的 JavaScript 打包工具，作者初次使用，发现它
 
 一个大三同学原创的系列文章，逐一分析 C 语言的各种数据结构，并配上自己画的图片，以及从零实现的源码。（[@LookCos](https://github.com/ruanyf/weekly/issues/2174) 投稿）
 
-4、[FFmpeg libav 教程](https://github.com/leandromoreira/ffmpeg-libav-tutorial/blob/master/README-cn.md)
+4、<!-- [FFmpeg libav 教程](https://github.com/leandromoreira/ffmpeg-libav-tutorial/blob/master/README-cn.md) 链接已失效 -->FFmpeg libav 教程
 
 一个如何调用 FFmpeg 视频库的教程，有中文翻译。
 

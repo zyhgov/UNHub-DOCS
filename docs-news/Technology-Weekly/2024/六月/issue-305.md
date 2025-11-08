@@ -263,7 +263,7 @@ rm 命令的简单替代品，提供一个删除文件的回收站。（[@qqAys]
 
 一个制作个人手写字体的在线工具。（[@harbor2009](https://github.com/ruanyf/weekly/issues/4659) 投稿）
 
-10、[lingo link](https://github.com/chengfengfengwang/lingo-link/blob/main/README_ZH-CN.md)
+10、<!-- [lingo link](https://github.com/chengfengfengwang/lingo-link/blob/main/README_ZH-CN.md) 链接已失效 -->lingo link
 
 ![](https://cdn.beekka.com/blogimg/asset/202406/bg2024062001.webp)
 

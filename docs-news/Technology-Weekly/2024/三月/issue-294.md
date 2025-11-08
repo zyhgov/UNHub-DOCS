@@ -217,7 +217,7 @@ Podman 是 Docker 的替代品，本文是它的初学者教程。
 
 每日自动抓取于 V2EX 和电鸭社区的招聘信息，使用 Google AI 提取摘要。（[@hehehai](https://github.com/ruanyf/weekly/issues/4127) 投稿）
 
-4、[pear-rec](https://github.com/027xiguapi/pear-rec/blob/main/README.zh-CN.md)
+4、<!-- [pear-rec](https://github.com/027xiguapi/pear-rec/blob/main/README.zh-CN.md) 链接已失效 -->pear-rec
 
 ![](https://cdn.beekka.com/blogimg/asset/202403/bg2024031804.webp)
 

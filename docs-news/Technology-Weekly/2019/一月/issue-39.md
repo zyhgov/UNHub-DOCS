@@ -189,7 +189,7 @@ fx 可以方便地在命令行操作 JSON 数据，本文是 fx 用法的教程�
 
 Linux 命令的搜索入口，提供中文解释。（@[jaywcjlove](https://github.com/ruanyf/weekly/issues/131)__ __投稿）
 
-7、[Awesome Mac](https://github.com/jaywcjlove/awesome-mac/blob/master/README-zh.md)（中文版）
+7、<!-- [Awesome Mac](https://github.com/jaywcjlove/awesome-mac/blob/master/README-zh.md) 链接已失效 -->Awesome Mac（中文版）
 
 收入各种好用的 Mac 软件。（@[jaywcjlove](https://github.com/ruanyf/weekly/issues/132) 投稿）
 
@@ -233,7 +233,7 @@ jerverless 是一个 Web 服务器，可以将任何语言的程序转为 Server
 
 一种将 HTML 转成 JSON 格式的规范标准。
 
-9、[puppeteer-firefox](https://github.com/GoogleChrome/puppeteer/blob/master/experimental/puppeteer-firefox/README.md)
+9、<!-- [puppeteer-firefox](https://github.com/GoogleChrome/puppeteer/blob/master/experimental/puppeteer-firefox/README.md) 链接已失效 -->puppeteer-firefox
 
 Puppeteer 现在不仅封装 Chrome，还开始封装 Firefox 了，API 完全一样。以后，浏览器自动化可能只用它就可以了，其他库都要被干掉了。
 

@@ -143,7 +143,7 @@ WordPress 采用在线更新机制，从远程下载更新包，因此必须有�
 
 Chrome 浏览器宣布， Cookie 默认将不能跨站点发送，这实际上消灭了 CSRF 攻击。
 
-10、[只使用 CSS 的实时聊天](https://github.com/kkuchta/css-only-chat/blob/master/README.md)（英文）
+10、<!-- [只使用 CSS 的实时聊天](https://github.com/kkuchta/css-only-chat/blob/master/README.md) 链接已失效 -->只使用 CSS 的实时聊天（英文）
 
 一个匪夷所思的实验，不使用 JS，只使用 CSS 实现实时聊天。
 
@@ -235,7 +235,7 @@ Haskell 语言开源教程的中译本，针对初学者。
 
 该仓库收集前端各种 UI 组件库的名单，现在有20个左右，主要的组件库都包括在内了。
 
-6、[从零打造 Echarts](https://github.com/webbillion/xrender-notes/blob/master/Version1.md)（中文）
+6、<!-- [从零打造 Echarts](https://github.com/webbillion/xrender-notes/blob/master/Version1.md) 链接已失效 -->从零打造 Echarts（中文）
 
 原创的中文教程，介绍如何从零开始，打造一个你自己的 canvas 图表库，大体遵循 echarts 的设计。（@[webbillion](https://github.com/ruanyf/weekly/issues/551) 投稿）
 

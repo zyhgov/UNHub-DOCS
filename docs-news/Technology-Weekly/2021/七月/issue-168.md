@@ -289,7 +289,7 @@ nodemon 是一个 Node.js 工具，只要发现源码文件有变动，就会自
 
 一个 PHP 小工具，用来列出 MySQL 数据库的表结构信息。（[@cuishuang](https://github.com/ruanyf/weekly/issues/1850) 投稿）
 
-9、[Yozora](https://github.com/yozorajs/yozora/blob/main/README-zh.md)
+9、<!-- [Yozora](https://github.com/yozorajs/yozora/blob/main/README-zh.md) 链接已失效 -->Yozora
 
 一个高度可扩展的、插件式的 Markdown 解析器，用于生成 Markdown AST（抽象语法树），可以在它的基础上，定制自己的 Markdown 解析器。（[@guanghechen](https://github.com/ruanyf/weekly/issues/1855) 投稿）
 

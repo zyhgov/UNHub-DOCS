@@ -249,7 +249,7 @@ GUI（图形界面）是目前的主流，但是这些年来 CLI（命令行）�
 
 这个网站收集各种数据库的资料，目前一共有900多个数据库。
 
-3、[顶级域名统计](https://github.com/tb0hdan/domains/blob/master/STATS.md)
+3、<!-- [顶级域名统计](https://github.com/tb0hdan/domains/blob/master/STATS.md) 链接已失效 -->顶级域名统计
 
 这个仓库提供所有顶级域名的排名，按照各个域名的网站数量为序。
 

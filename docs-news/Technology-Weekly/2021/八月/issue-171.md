@@ -295,7 +295,7 @@ Muse 是一个无代码的网站生成器，但是生成的是 3D 虚拟网站�
 
 一个最近相似节点的搜索算法库，可以用于搜索近似的文本或图形。它使用 Rust 开发，并且有 Python 和 JavaScript 的移植版，特点是搜素速度非常快。（[@salamer](https://github.com/ruanyf/weekly/issues/1883) 投稿）
 
-8、[SRPC](https://github.com/sogou/srpc/blob/master/README_cn.md)
+8、<!-- [SRPC](https://github.com/sogou/srpc/blob/master/README_cn.md) 链接已失效 -->SRPC
 
 ![](https://cdn.beekka.com/blogimg/asset/202108/bg2021081004.jpg)
 

@@ -265,7 +265,7 @@ crontab 是 Linux 系统的定时任务执行器。这个在线工具可以可�
 
 码农周刊一周精选的分类整理。（@[rogerzhu](https://github.com/ruanyf/weekly/issues/890) 投稿）
 
-4、[Go 语言风格规范](https://github.com/uber-go/guide/blob/master/style.md)
+4、<!-- [Go 语言风格规范](https://github.com/uber-go/guide/blob/master/style.md) 链接已失效 -->Go 语言风格规范
 
 Uber 公司开源了该公司的《Go 语言风格规范》。
 

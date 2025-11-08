@@ -249,7 +249,7 @@ Go 语言写的命令行贪吃蛇游戏。
 
 一个非常简单的命令行笔记脚本，可以写入/读取笔记。所有代码就是十几行 Bash 命令。
 
-9、[hr-code](https://github.com/hantuzun/hr-code/blob/master/README.md)
+9、<!-- [hr-code](https://github.com/hantuzun/hr-code/blob/master/README.md) 链接已失效 -->hr-code
 
 ![](https://cdn.beekka.com/blogimg/asset/201911/bg2019110201.jpg)
 

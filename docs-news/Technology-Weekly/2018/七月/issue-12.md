@@ -150,7 +150,7 @@ WebAssembly 并不是一门编程语言，而是一份字节码标准，需要�
 
 这本书（Paradigms of Artificial Intelligence Programming）是人工智能领域的名著，Peter Norvig 写于 1992 年，探讨 Lisp 语言在这方面的应用，现在开源了。
 
-4、[Mac 系统免费软件](https://github.com/serhii-londar/open-source-mac-os-apps/blob/master/README.md)
+4、<!-- [Mac 系统免费软件](https://github.com/serhii-londar/open-source-mac-os-apps/blob/master/README.md) 链接已失效 -->Mac 系统免费软件
 
 ![](https://cdn.beekka.com/blogimg/asset/201807/bg2018070613.jpg)
 

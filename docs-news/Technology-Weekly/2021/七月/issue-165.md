@@ -239,7 +239,7 @@ Nvidia 公司推出的一个人工智能照片编辑软件，可以免费下载�
 
 一个命令行的 Git 用户管理器，适合需要不同身份，向不同仓库提交代码的情况。（[@gauseen](https://github.com/ruanyf/weekly/issues/1816)  投稿）
 
-4、[BookmarkHub](https://github.com/dudor/BookmarkHub/blob/main/README_cn.md)
+4、<!-- [BookmarkHub](https://github.com/dudor/BookmarkHub/blob/main/README_cn.md) 链接已失效 -->BookmarkHub
 
 ![](https://cdn.beekka.com/blogimg/asset/202106/bg2021063010.jpg)
 

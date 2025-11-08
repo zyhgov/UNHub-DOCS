@@ -247,7 +247,7 @@ Firebase 是谷歌的实时数据库服务，本文是一个详细教程，通�
 
 一份英语教程，介绍无头浏览器操作库 Puppeteer 和 Playwright 的用法。
 
-5、[macOS 的安全和隐私指南](https://github.com/drduh/macOS-Security-and-Privacy-Guide/blob/master/README-cn.md)
+5、<!-- [macOS 的安全和隐私指南](https://github.com/drduh/macOS-Security-and-Privacy-Guide/blob/master/README-cn.md) 链接已失效 -->macOS 的安全和隐私指南
 
 这本指南帮助读者提高 macOS 系统的安全性，保护个人隐私，内容为中文。
 

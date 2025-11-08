@@ -86,7 +86,7 @@ React 官方关于 React 原始设计思想的解释。
 
 ![](http://www.ruanyifeng.com/blogimg/asset/2018/bg2018042304.png)
 
-7、[电子书] [Google 面试自学手册](https://github.com/jwasham/coding-interview-university/blob/master/translations/README-cn.md)
+7、[电子书] <!-- [Google 面试自学手册](https://github.com/jwasham/coding-interview-university/blob/master/translations/README-cn.md) 链接已失效 -->Google 面试自学手册
 
 一份爱好者整理的 Google 面试准备指南。
 

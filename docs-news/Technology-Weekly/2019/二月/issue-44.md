@@ -175,9 +175,9 @@ Mac 系统提供深色背景以后，网页如果忘了设置控件的背景色�
 
 端到端的三维人脸重建，基于 MobileNet 网络框架，在 CPU 上能达到实时。（@[cleardusk](https://github.com/cleardusk) 投稿）
 
-3、[super-inspire-end](https://github.com/super-inspire/super-inspire-end/blob/master/docs/README-zh.md)
+3、<!-- [super-inspire-end](https://github.com/super-inspire/super-inspire-end/blob/master/docs/README-zh.md) 链接已失效 -->super-inspire-end
 
-使用 Docker 起一个 Linux 系统的容器，然后就可以在浏览器访问 Docker 里面的 Linux 系统。（[@](https://github.com/super-inspire/super-inspire-end/blob/master/docs/README-zh.md)[hileix](https://github.com/ruanyf/weekly/issues/238) 投稿）
+使用 Docker 起一个 Linux 系统的容器，然后就可以在浏览器访问 Docker 里面的 Linux 系统。（<!-- [@](https://github.com/super-inspire/super-inspire-end/blob/master/docs/README-zh.md) 链接已失效 -->@[hileix](https://github.com/ruanyf/weekly/issues/238) 投稿）
 
 4、[cim](https://github.com/crossoverJie/cim)
 

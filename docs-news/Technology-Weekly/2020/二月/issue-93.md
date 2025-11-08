@@ -254,7 +254,7 @@ Lunar 是一家电影动画工作室，本文是他们使用最新的 Mac Pro �
 
 中文的密码学入门介绍，向非专业读者介绍了密码学的基本概念，没有涉及到技术细节。（@[ifrontend-xyz](https://github.com/ruanyf/weekly/issues/1024) 投稿）
 
-3、[CoreUI Icons](https://github.com/coreui/coreui-icons/blob/1.0.0/README.md)
+3、<!-- [CoreUI Icons](https://github.com/coreui/coreui-icons/blob/1.0.0/README.md) 链接已失效 -->CoreUI Icons
 
 ![](https://cdn.beekka.com/blogimg/asset/201912/bg2019122802.jpg)
 

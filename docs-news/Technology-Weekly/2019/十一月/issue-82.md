@@ -389,7 +389,7 @@ Clojure 语言的在线教程。
 
 `/usr/bin/cat`命令的作用是，从一个位置读取数据并将其写入另一个位置。
 
--- [《躲开 cat 命令》](https://ura.d3npa.dev/posts/hiding-from-cats.md)
+-- <!-- [《躲开 cat 命令》](https://ura.d3npa.dev/posts/hiding-from-cats.md) 链接已失效 -->《躲开 cat 命令》
 
 3、
 

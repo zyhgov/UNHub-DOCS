@@ -289,7 +289,7 @@ BIOS 是计算机的开机固件，联想公司在官网提供该公司 BIOS 的
 
 该网站收集日本的软件工作机会，想去日本的朋友可以关注，由一个在日本工作的中国工程师维护。早期是邮件列表，第49期曾经推荐过，现在升级成了网站。（@[rourouroujiang](https://github.com/ruanyf/weekly/issues/715) 投稿）
 
-8、[github-do-not-ban-us](https://github.com/1995parham/github-do-not-ban-us/blob/master/README-CN.md)
+8、<!-- [github-do-not-ban-us](https://github.com/1995parham/github-do-not-ban-us/blob/master/README-CN.md) 链接已失效 -->github-do-not-ban-us
 
 一位伊朗开发者发起的项目，抗议只要国籍是美国政府制裁的国家，该用户就会被限制使用 GitHub。 （@[marsvet](https://github.com/ruanyf/weekly/issues/731) 投稿）
 

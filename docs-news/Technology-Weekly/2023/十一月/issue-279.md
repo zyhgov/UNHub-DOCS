@@ -185,7 +185,7 @@ React 框架最早是客户端渲染（CSR），后来增加了服务器渲染�
 
 ![](https://cdn.beekka.com/blogimg/asset/202309/bg2023092503.webp)
 
-老牌工具 curl 最近开始支持抓取 IPFS 协议的网页，本文介绍一些背后的考虑，具体用法参考[文档](https://github.com/curl/curl/blob/master/docs/IPFS.md)。
+老牌工具 curl 最近开始支持抓取 IPFS 协议的网页，本文介绍一些背后的考虑，具体用法参考<!-- [文档](https://github.com/curl/curl/blob/master/docs/IPFS.md) 链接已失效 -->文档。
 
 ## 翻译软件
 

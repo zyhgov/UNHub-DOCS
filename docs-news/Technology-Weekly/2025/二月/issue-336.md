@@ -239,7 +239,7 @@ OpenMediaVault 与 TrueNAS Scale 是两个开源的 NAS（网络文件系统）�
 
 一个 Go 语言程序，使用 AI 模型，将语音文件转成文字稿。
 
-3、[Voice-Pro](https://github.com/abus-aikorea/voice-pro/blob/main/docs/README.zh.md)
+3、<!-- [Voice-Pro](https://github.com/abus-aikorea/voice-pro/blob/main/docs/README.zh.md) 链接已失效 -->Voice-Pro
 
 ![](https://cdn.beekka.com/blogimg/asset/202501/bg2025012801.webp)
 

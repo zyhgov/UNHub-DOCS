@@ -239,7 +239,7 @@ Redux 作者 Dan Abramov 的文章，通俗地解释了 `npm audit` 命令的作
 
 一个开源的机房平面图（园区，楼栋，楼层，房间）绘制工具，也可用来生成办公室、工厂、园区的平面图。（[@bojue](https://github.com/ruanyf/weekly/issues/2243) 投稿）
 
-6、[Orange](https://github.com/naaive/orange/blob/master/README_cn.md)
+6、<!-- [Orange](https://github.com/naaive/orange/blob/master/README_cn.md) 链接已失效 -->Orange
 
 ![](https://cdn.beekka.com/blogimg/asset/202203/bg2022030906.webp)
 

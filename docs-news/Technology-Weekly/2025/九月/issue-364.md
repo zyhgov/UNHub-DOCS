@@ -172,7 +172,7 @@ Anduril 是美国新崛起的一家国防科技公司，专注于无人机的军
 
 作者谈了他的看法，什么时候直接查询数据库，什么时候使用缓存。相比数据库，缓存有什么优缺点。
 
-4、[我们把 AI 编程放入一个 while 循环](https://github.com/repomirrorhq/repomirror/blob/main/repomirror.md)（英文）
+4、<!-- [我们把 AI 编程放入一个 while 循环](https://github.com/repomirrorhq/repomirror/blob/main/repomirror.md) 链接已失效 -->我们把 AI 编程放入一个 while 循环（英文）
 
 作者写了一段指令，让 AI 自己生成代码，出现问题就自己提交 PR 修复。
 

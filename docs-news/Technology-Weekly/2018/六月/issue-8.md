@@ -117,7 +117,7 @@ Web Components 是浏览器原生的组件解决方案。如果你愿意对新�
 
 awk 是 Unix 命令行处理文本的有用工具，这里是1988年出版的 awk 教程。Unix 命令行高度稳定，所以这本教材也没那么过时。
 
-6、[仓库] [JavaScript 算法与数据结构](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md)（中文）
+6、[仓库] <!-- [JavaScript 算法与数据结构](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md) 链接已失效 -->JavaScript 算法与数据结构（中文）
 
 这个仓库收集了30多种算法的 JavaScript 实现。
 

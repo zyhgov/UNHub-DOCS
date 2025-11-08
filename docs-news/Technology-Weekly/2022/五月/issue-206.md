@@ -299,7 +299,7 @@ VSCode 编辑器的插件，只要你写一个函数名，它自动去 StackOver
 
 ## 资源
 
-1、[Type challenges](https://github.com/type-challenges/type-challenges/blob/main/README.zh-CN.md)
+1、<!-- [Type challenges](https://github.com/type-challenges/type-challenges/blob/main/README.zh-CN.md) 链接已失效 -->Type challenges
 
 ![](https://cdn.beekka.com/blogimg/asset/202205/bg2022051010.webp)
 
@@ -319,7 +319,7 @@ TypeScript 题库，用来刷题提升编写类型的能力。另有网友制作
 
 ![](https://cdn.beekka.com/blogimg/asset/202205/bg2022051205.webp)
 
-一个配有中文字幕的视频，介绍 Rust 各种数据结构的内存布局，配有可视化展示，另有[文字稿](https://github.com/rustlang-cn/Rustt/blob/main/Articles/%5B2022-05-04%5D%20%E5%8F%AF%E8%A7%86%E5%8C%96%20Rust%20%E5%90%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80.md)。（[@trdthg](https://github.com/ruanyf/weekly/issues/2374) 投稿）
+一个配有中文字幕的视频，介绍 Rust 各种数据结构的内存布局，配有可视化展示，另有<!-- [文字稿](https://github.com/rustlang-cn/Rustt/blob/main/Articles/%5B2022-05-04%5D%20%E5%8F%AF%E8%A7%86%E5%8C%96%20Rust%20%E5%90%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80.md) 链接已失效 -->文字稿。（[@trdthg](https://github.com/ruanyf/weekly/issues/2374) 投稿）
 
 ## 图片
 

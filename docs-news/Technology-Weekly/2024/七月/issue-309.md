@@ -199,11 +199,11 @@ tags: [阮一峰, GitHub]
 
 一个 Web 组件，用于在网页输入数学公式。（[@shlroland](https://github.com/ruanyf/weekly/issues/4814) 投稿）
 
-4、[fideo](https://github.com/chenfan0/fideo-live-record/blob/main/README-CN.md)
+4、<!-- [fideo](https://github.com/chenfan0/fideo-live-record/blob/main/README-CN.md) 链接已失效 -->fideo
 
 一款跨平台桌面软件，用来录制直播间的内容，支持国内外主要的直播平台。（[@chenfan0](https://github.com/ruanyf/weekly/issues/4827) 投稿）
 
-5、[Oceanbase](https://github.com/oceanbase/oceanbase/blob/develop/README_CN.md)
+5、<!-- [Oceanbase](https://github.com/oceanbase/oceanbase/blob/develop/README_CN.md) 链接已失效 -->Oceanbase
 
 ![](https://cdn.beekka.com/blogimg/asset/202407/bg2024071802.webp)
 
@@ -377,7 +377,7 @@ ChatGPT 的聊天页面就缺乏清晰的文档和专门的介绍页面。这使
 
 薛定谔认为，生命存在的唯一原因，就是为了在宇宙中产生更多的熵。生命就像龙卷风一样，本身是有秩序的，却造成了巨大的混乱。只要生命缴纳熵税，就会存在。
 
--- [《达尔文机器》](https://vedgie.net/writing/darwin_machines.md)
+-- <!-- [《达尔文机器》](https://vedgie.net/writing/darwin_machines.md) 链接已失效 -->《达尔文机器》
 
 5、
 

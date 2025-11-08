@@ -39,7 +39,7 @@ OpenAI 要求验证手机号，国内的手机都通不过。也就是说，它�
 
 ![](https://cdn.beekka.com/blogimg/asset/202306/bg2023061402.webp)
 
-类似的网站还有 [Chat GPT Demo](https://chatgptdemo.net/zh-hans)。国内也有很多，搜索“ChatGPT源”就能找到。GitHub 有好几个仓库（[1](https://github.com/LiLittleCat/awesome-free-chatgpt)，[2](https://github.com/lzwme/chatgpt-sites)，[3](https://github.com/xxxily/hello-ai/blob/main/home/FreeChatGPTSiteList.md)），收集了几百个中介网址。
+类似的网站还有 [Chat GPT Demo](https://chatgptdemo.net/zh-hans)。国内也有很多，搜索“ChatGPT源”就能找到。GitHub 有好几个仓库（[1](https://github.com/LiLittleCat/awesome-free-chatgpt)，[2](https://github.com/lzwme/chatgpt-sites)，<!-- [3](https://github.com/xxxily/hello-ai/blob/main/home/FreeChatGPTSiteList.md) 链接已失效 -->3），收集了几百个中介网址。
 
 **（2）使用 Bing Chat**。微软的 Edge 浏览器推出了 Bing Chat 功能，集成了 ChatGPT，可以免费聊天，甚至还能生成图片。
 

@@ -13,7 +13,7 @@ tags: [阮一峰, GitHub]
 
 ![](https://cdn.beekka.com/blogimg/asset/201810/bg2018102601.jpg)
 
-[第24期](issue-24.md)时，我引用了一个开发者对年轻程序员的告诫。
+[第24期](https://github.com/ruanyf/weekly/blob/master/docs/issue-24.md)时，我引用了一个开发者对年轻程序员的告诫。
 
 > 在软件开发中，技术变化如此之快，你花费了大量时间学习技术和工具，一旦这些技术被取代，你的知识将变得毫无价值，因为它们大部分都是实施的细节。
 

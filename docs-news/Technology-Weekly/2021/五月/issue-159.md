@@ -193,7 +193,7 @@ Git 分支进行合并时，有多种合并方式：直进合并、非直进合�
 
 大家用桌面浏览器访问这个网站，会列出你的电脑安装了什么应用（上图）。这样做的目的，是生成一个用户指纹，从而追踪用户，作者写了一篇详细的[文章](https://fingerprintjs.com/blog/external-protocol-flooding/)，解释这是怎么实现的。（[@jwenjian](https://github.com/ruanyf/weekly/issues/1759) 投稿）
 
-2、[Chanify](https://github.com/chanify/chanify/blob/main/README-zh_CN.md)
+2、<!-- [Chanify](https://github.com/chanify/chanify/blob/main/README-zh_CN.md) 链接已失效 -->Chanify
 
 一个开源的 iOS 设备消息推送工具，分为服务器和 iOS App 两个部分。安装以后，可以将文本/图片/文件等各种消息推送到 iOS 设备。（[@wizjin](https://github.com/ruanyf/weekly/issues/1768) 投稿）
 

@@ -248,7 +248,7 @@ CORS 是跨域 HTTP 请求，实际会发出两个 HTTP 请求（预检请求 + 
 
 一个 JS 动画库，可以设定所要观察的 DOM 元素，从而形成一种互动效果，好像页面正在注视用户的操作。（[@jj811208](https://github.com/ruanyf/weekly/issues/2729) 投稿）
 
-6、[Sonic](https://github.com/go-sonic/sonic/blob/master/doc/README_ZH.md)
+6、<!-- [Sonic](https://github.com/go-sonic/sonic/blob/master/doc/README_ZH.md) 链接已失效 -->Sonic
 
 ![](https://cdn.beekka.com/blogimg/asset/202211/bg2022111011.webp)
 

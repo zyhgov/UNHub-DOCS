@@ -303,7 +303,7 @@ Vue 官方开发者工具的下一个迭代，旨在增强 Vue 开发者体验�
 
 基于 fabric.js 的名片编辑应用。（[@more-strive](https://github.com/ruanyf/weekly/issues/3865) 投稿）
 
-10、[ant-codeAI](https://github.com/sparrow-js/ant-codeAI/blob/main/README-zh_CN.md)
+10、<!-- [ant-codeAI](https://github.com/sparrow-js/ant-codeAI/blob/main/README-zh_CN.md) 链接已失效 -->ant-codeAI
 
 ![](https://cdn.beekka.com/blogimg/asset/202401/bg2024010907.webp)
 

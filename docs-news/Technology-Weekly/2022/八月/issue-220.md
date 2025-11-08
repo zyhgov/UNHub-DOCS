@@ -287,7 +287,7 @@ SVN 源代码仓库的 Web 管理界面，使用 PHP 开发。（[@witersen](htt
 
 ![](https://cdn.beekka.com/blogimg/asset/202208/bg2022082504.webp)
 
-一个基于腾讯视频库 [FFCreator](https://github.com/tnfe/FFCreator/blob/master/README.zh-CN.md) 封装的前端视频播放器和编辑器组件。（[@milkliker](https://github.com/ruanyf/weekly/issues/2577) 投稿）
+一个基于腾讯视频库 <!-- [FFCreator](https://github.com/tnfe/FFCreator/blob/master/README.zh-CN.md) 链接已失效 -->FFCreator 封装的前端视频播放器和编辑器组件。（[@milkliker](https://github.com/ruanyf/weekly/issues/2577) 投稿）
 
 9、[Solon](https://solon.noear.org/)
 

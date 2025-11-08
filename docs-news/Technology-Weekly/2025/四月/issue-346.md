@@ -377,13 +377,13 @@ AI 伴侣可以减少孤独感，但是会产生新的问题。它可能取代�
 
 简单和优雅不受欢迎，因为它们需要努力工作和纪律才能实现。
 
--- [Edsger Dijkstra](https://github.com/tigerbeetle/tigerbeetle/blob/main/docs/TIGER_STYLE.md)，著名计算机科学家
+-- <!-- [Edsger Dijkstra](https://github.com/tigerbeetle/tigerbeetle/blob/main/docs/TIGER_STYLE.md) 链接已失效 -->Edsger Dijkstra，著名计算机科学家
 
 3、
 
 规则就像汽车上的安全带：一开始可能会有点不舒服，但一段时间后，使用规则就会成为习惯，不使用规则就变得不可想象。
 
-—— [Gerard J. Holzmann](https://github.com/tigerbeetle/tigerbeetle/blob/main/docs/TIGER_STYLE.md)
+—— <!-- [Gerard J. Holzmann](https://github.com/tigerbeetle/tigerbeetle/blob/main/docs/TIGER_STYLE.md) 链接已失效 -->Gerard J. Holzmann
 
 4、
 

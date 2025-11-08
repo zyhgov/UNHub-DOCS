@@ -307,7 +307,7 @@ VS Code 插件，当某行代码在 VS Code 里面显示不符合 ESlint 规则�
 
 免费的在线简历生成工具，集成 ChatGPT，可以让 AI 修改、定制简历。（[@WilliamLoveSoccer](https://github.com/ruanyf/weekly/issues/3907) 投稿）
 
-16、[GPUPixel](https://github.com/pixpark/gpupixel/blob/main/README_cn.md)
+16、<!-- [GPUPixel](https://github.com/pixpark/gpupixel/blob/main/README_cn.md) 链接已失效 -->GPUPixel
 
 ![](https://cdn.beekka.com/blogimg/asset/202401/bg2024011703.webp)
 

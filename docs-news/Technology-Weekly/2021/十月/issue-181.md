@@ -315,7 +315,7 @@ Chrome 浏览器现在原生提供`IdleDetector`对象，在它上面部署了�
 
 一个爱好者的个人中文网站，图文并茂地介绍了自己收藏的从 3101 到 Pentium M 的多种英特尔处理器芯片资料。（[@TransparentLC](https://github.com/ruanyf/weekly/issues/2009) 投稿）
 
-4、[Git 飞行规则](https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md)
+4、<!-- [Git 飞行规则](https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md) 链接已失效 -->Git 飞行规则
 
 一个 Git FAQ 的中文翻译，收集各种 Git 操作出现问题后的应对措施。（[@xcuYao](https://github.com/ruanyf/weekly/issues/2015) 投稿）
 

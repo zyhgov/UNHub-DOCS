@@ -147,7 +147,7 @@ Nvidia 公司宣布了一种 Super Slomo 技术，可以用人工智能生成慢
 
 全球气候正在变暖，这到底是怎么一回事，原因是什么。本文是我读过最好的这方面的入门读物。
 
-5、[如何设计 Web 应用的架构](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)（中文）
+5、<!-- [如何设计 Web 应用的架构](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md) 链接已失效 -->如何设计 Web 应用的架构（中文）
 
 大型 Web 应用最关键的就是架构，最难的也是架构。这份教程整理了这方面需要知道的知识。
 

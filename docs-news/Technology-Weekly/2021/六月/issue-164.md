@@ -217,7 +217,7 @@ Skynet 是一个开源的分布式内容托管系统，只要把内容接入这�
 
 一个前端构建工具，构建出来的页面使用最少 的 JS，尽量是纯的 HTML 和 CSS 代码，大大提高页面的加载速度。实在必需的 JS 脚本，只有用到时才会动态加载。
 
-2、[Althttpd](https://sqlite.org/althttpd/doc/trunk/althttpd.md)
+2、<!-- [Althttpd](https://sqlite.org/althttpd/doc/trunk/althttpd.md) 链接已失效 -->Althttpd
 
 ![](https://cdn.beekka.com/blogimg/asset/202106/bg2021060908.jpg)
 

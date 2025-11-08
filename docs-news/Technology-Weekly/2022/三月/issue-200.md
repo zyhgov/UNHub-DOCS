@@ -229,7 +229,7 @@ Caddy 服务器内置了 Markdown 渲染，这意味着不需要其他工具了�
 
 一个开源的 Wiki 软件，出自 SQLite 作者之手，质量肯定没有问题。它同时也是一个版本管理系统，数据保存在 SQLite 里面。
 
-4、[go-mitmproxy](https://github.com/lqqyt2423/go-mitmproxy/blob/main/README_CN.md)
+4、<!-- [go-mitmproxy](https://github.com/lqqyt2423/go-mitmproxy/blob/main/README_CN.md) 链接已失效 -->go-mitmproxy
 
 ![](https://cdn.beekka.com/blogimg/asset/202203/bg2022032304.webp)
 
@@ -255,7 +255,7 @@ Go 语言写的中间人拦截工具，可以拦截 HTTPS 通信，带有插件�
 
 8、[catt](https://github.com/skorokithakis/catt/)
 
-一个命令行工具，可以用一条命令，将[大量流媒体网站](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)的视频投屏到电视机，前提是电视机需要支持 Chromecast。
+一个命令行工具，可以用一条命令，将<!-- [大量流媒体网站](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md) 链接已失效 -->大量流媒体网站的视频投屏到电视机，前提是电视机需要支持 Chromecast。
 
 9、[Unredacter](https://github.com/bishopfox/unredacter)
 

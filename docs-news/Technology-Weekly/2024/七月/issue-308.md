@@ -241,7 +241,7 @@ AI 产品层出不穷，大家都在研究，怎么使用它们。
 
 将 RSS 转换成邮件发送，用于自建邮件列表。
 
-6、[asciinema](https://github.com/gvcgo/asciinema/blob/main/docs/README_CN.md)
+6、<!-- [asciinema](https://github.com/gvcgo/asciinema/blob/main/docs/README_CN.md) 链接已失效 -->asciinema
 
 终端录屏工具 asciinema 的跨平台版本，使用 Go 语言编写。（[@moqsien](https://github.com/ruanyf/weekly/issues/4792) 投稿）
 

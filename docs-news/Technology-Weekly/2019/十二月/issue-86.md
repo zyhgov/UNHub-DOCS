@@ -181,7 +181,7 @@ Karatsuba 是1960年发现的一种快速相乘算法，可以大大减少大整
 
 WebAuthn 是互联网密钥登陆的国际标准，属于一种双因素认证的方法。本文对用户的密钥硬件和使用方法，进行长篇介绍。
 
-5、[git rebase 是有害的](https://www.fossil-scm.org/fossil/doc/trunk/www/rebaseharm.md)（英文）
+5、<!-- [git rebase 是有害的](https://www.fossil-scm.org/fossil/doc/trunk/www/rebaseharm.md) 链接已失效 -->git rebase 是有害的（英文）
 
 本文详细解释理由，建议不要使用 git rebase 命令，至少不要在多人开发的分支上使用。
 
@@ -269,7 +269,7 @@ API 文档的静态站点生成器。
 
 一个免费的英文教程，介绍 A* 寻路算法，寻找两点之间的最短路径。（@douchuan 投稿）
 
-3、[微软 REST API 设计指南](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md)
+3、<!-- [微软 REST API 设计指南](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md) 链接已失效 -->微软 REST API 设计指南
 
 微软的官方文档，讲解微软对 REST API 的设计要求。
 
@@ -385,7 +385,7 @@ API 文档的静态站点生成器。
 
 敏捷开发提出的解决方法很简单，就是把开发过程分成多个100米，每一段都是短跑比赛就可以了。
 
--- [Rich Hickey](https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/SimpleMadeEasy.md)，Clojure 语言的发明者
+-- <!-- [Rich Hickey](https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/SimpleMadeEasy.md) 链接已失效 -->Rich Hickey，Clojure 语言的发明者
 
 3、
 

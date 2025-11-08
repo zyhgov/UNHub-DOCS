@@ -237,13 +237,13 @@ Tailwind CSS 框架的作者谈自己如何一步步探索，写出与 HTML 代�
 
 一个在线的简历编辑器，可以分享给他人一个可编辑的简历，也可以导出 PDF。（@[timqian](https://github.com/ruanyf/weekly/issues/968) 投稿）
 
-7、[MQTTX](https://github.com/emqx/MQTTX/blob/master/README-CN.md)
+7、<!-- [MQTTX](https://github.com/emqx/MQTTX/blob/master/README-CN.md) 链接已失效 -->MQTTX
 
 ![](https://cdn.beekka.com/blogimg/asset/201911/bg2019112212.jpg)
 
 一款跨平台的 MQTT 消息网关的开源桌面客户端，可以用来测试消息收发。（@[ysfscream](https://github.com/ruanyf/weekly/issues/970) 投稿）
 
-8、[KubeSphere](https://github.com/kubesphere/kubesphere/blob/master/README_zh.md)
+8、<!-- [KubeSphere](https://github.com/kubesphere/kubesphere/blob/master/README_zh.md) 链接已失效 -->KubeSphere
 
 ![](https://cdn.beekka.com/blogimg/asset/201911/bg2019112213.jpg)
 

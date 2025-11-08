@@ -367,7 +367,7 @@ Netlify 公司的免费电子书。
 
 学习编程很酷的一点是，你会同时获得两个专长。一个专长是计算机科学和编程，另一个是需要你来编程的那个专门领域。除非你是编译器作者，否则你总是会有自己的专门领域。
 
--- [Rich Hickey](https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/ProblemSolving.md)，Clojure 语言的发明者
+-- <!-- [Rich Hickey](https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/ProblemSolving.md) 链接已失效 -->Rich Hickey，Clojure 语言的发明者
 
 4、
 

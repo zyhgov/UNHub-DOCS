@@ -218,7 +218,7 @@ JS 新增了一个 `URL.canParse()`方法，可以验证字符串是否为有效
 
 一个在网页运行 Python 代码、显示运行结果的编译器，可以指定 Python 版本。
 
-6、[IP 工具箱](https://github.com/jason5ng32/MyIP/blob/main/README_CN.md)
+6、<!-- [IP 工具箱](https://github.com/jason5ng32/MyIP/blob/main/README_CN.md) 链接已失效 -->IP 工具箱
 
 ![](https://cdn.beekka.com/blogimg/asset/202312/bg2023120202.webp)
 

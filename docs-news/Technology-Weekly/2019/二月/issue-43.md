@@ -218,7 +218,7 @@ O'Reilly 新书《数据可视化基础》一书的在线预览版。
 
 Tox 是一个开源的实时通信协议，不需要中央服务器，提供多种跨平台的客户端。
 
-3、[CopyTranslator](https://github.com/elliottzheng/CopyTranslator/blob/master/README_zh.md)
+3、<!-- [CopyTranslator](https://github.com/elliottzheng/CopyTranslator/blob/master/README_zh.md) 链接已失效 -->CopyTranslator
 
 ![](https://cdn.beekka.com/blogimg/asset/201902/bg2019021521.jpg)
 

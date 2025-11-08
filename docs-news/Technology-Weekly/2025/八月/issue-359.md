@@ -273,7 +273,7 @@ Rust 语言写的终端 MP3 播放器。（[@coolcode](https://github.com/ruanyf
 
 2、[简历警察](https://github.com/itMrBoy/resumePolice)
 
-AI 开发平台 [Dify](https://dify.ai/) 的插件，让 AI 修改简历，具体的修改点可以参考它的[提示词](https://github.com/itMrBoy/resumePolice/blob/main/prompt/resume_police_Zh.md)。（[@Disdjj](https://github.com/itMrBoy/resumePolice) 投稿）
+AI 开发平台 [Dify](https://dify.ai/) 的插件，让 AI 修改简历，具体的修改点可以参考它的<!-- [提示词](https://github.com/itMrBoy/resumePolice/blob/main/prompt/resume_police_Zh.md) 链接已失效 -->提示词。（[@Disdjj](https://github.com/itMrBoy/resumePolice) 投稿）
 
 3、[Belin Doc](https://belindoc.com/zh)
 

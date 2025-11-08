@@ -207,7 +207,7 @@ React 的一个比较简单的动画组件库。
 
 团队协作工具 Slack 的开源替代品。
 
-8、[JYunCMS](https://github.com/JYunCMS/jyun-cms-doc/blob/master/1.1_intro_base.md)
+8、<!-- [JYunCMS](https://github.com/JYunCMS/jyun-cms-doc/blob/master/1.1_intro_base.md) 链接已失效 -->JYunCMS
 
 一个轻量级的 Java CMS，可以便捷地搭建自己的网站。（@[liangpengyv](https://github.com/ruanyf/weekly/issues/584) 投稿）
 
@@ -303,7 +303,7 @@ Chrome 浏览器插件，用在那些没做代码高亮的网站，具有代码�
 
 ## 文摘
 
-1、[华为早期创业史](https://github.com/F-happy/RenZhengfei/blob/master/1995/19951226_%E7%9B%AE%E5%89%8D%E6%88%91%E4%BB%AC%E7%9A%84%E5%BD%A2%E5%8A%BF%E5%92%8C%E4%BB%BB%E5%8A%A1.md)
+1、<!-- [华为早期创业史](https://github.com/F-happy/RenZhengfei/blob/master/1995/19951226_%E7%9B%AE%E5%89%8D%E6%88%91%E4%BB%AC%E7%9A%84%E5%BD%A2%E5%8A%BF%E5%92%8C%E4%BB%BB%E5%8A%A1.md) 链接已失效 -->华为早期创业史
 
 以下摘自1995年12月26日任正非在年度总结大会上的讲话。
 
@@ -357,7 +357,7 @@ Chrome 浏览器插件，用在那些没做代码高亮的网站，具有代码�
   
 地位是什么？人家不会做事时你指导一下，他服从你的指导，就是有地位。
 
--- [任正非](https://github.com/ttpianobirds/RenZhengfei/blob/master/1996/19960828_%E7%A7%98%E4%B9%A6%E4%BD%93%E7%B3%BB%E6%98%AF%E4%BF%A1%E6%81%AF%E6%A1%A5.md)
+-- <!-- [任正非](https://github.com/ttpianobirds/RenZhengfei/blob/master/1996/19960828_%E7%A7%98%E4%B9%A6%E4%BD%93%E7%B3%BB%E6%98%AF%E4%BF%A1%E6%81%AF%E6%A1%A5.md) 链接已失效 -->任正非
 
 3、
 

@@ -247,7 +247,7 @@ SourceHut 可能是最值得信赖的代码托管服务。它最近更新了服�
 
 2）关闭美国办公室，从此不要求用户遵守美国法律。
 
-2、[SQLite3 WASM](https://sqlite.org/wasm/doc/ckout/index.md)
+2、<!-- [SQLite3 WASM](https://sqlite.org/wasm/doc/ckout/index.md) 链接已失效 -->SQLite3 WASM
 
 ![](https://cdn.beekka.com/blogimg/asset/202211/bg2022110316.webp)
 

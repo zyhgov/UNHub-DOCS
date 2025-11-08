@@ -146,7 +146,7 @@ TypeScript 正变得越来越流行，本文作者谈了自己的看法，何时
 
 本文介绍如何使用 Python 自动生成一篇文章的摘要。
 
-10、[微信公众号文章链接 GitHub 文章的方法](https://github.com/ZhuPeng/mp-githubtrending/blob/master/doc/api.md)（中文）
+10、<!-- [微信公众号文章链接 GitHub 文章的方法](https://github.com/ZhuPeng/mp-githubtrending/blob/master/doc/api.md) 链接已失效 -->微信公众号文章链接 GitHub 文章的方法（中文）
 
 微信公众号不允许外部链接，如果想在文中插入 GitHub 链接，可以考虑采用本文的方法。作者提供了一个小程序，可以抓取 GitHub 页面，只要跳转到这个小程序就可以了。
 
@@ -228,7 +228,7 @@ React 的视频播放器组件。
 
 教程库，介绍如何用 Jest 为 Vue 项目写单测。（@[holylovelqq](https://github.com/ruanyf/weekly/issues/452) 投稿）
 
-4、[《HelloGitHub》第 36 期](https://github.com/521xueweihan/HelloGitHub/blob/master/content/36/HelloGitHub36.md)
+4、<!-- [《HelloGitHub》第 36 期](https://github.com/521xueweihan/HelloGitHub/blob/master/content/36/HelloGitHub36.md) 链接已失效 -->《HelloGitHub》第 36 期
 
 分享 GitHub 上有趣、入门级的开源项目的月刊，帮你找到编程的乐趣。（[@521xueweihan](https://github.com/ruanyf/weekly/issues/128) 投稿）
 

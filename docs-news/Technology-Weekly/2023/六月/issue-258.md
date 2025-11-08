@@ -253,7 +253,7 @@ GitHub Copilot 的开源替代品，AI 代码助手，可以自己架设，并�
 
 ## 资源
 
-1、[Posters](https://github.com/corkami/pics/blob/master/binary/README.md)
+1、<!-- [Posters](https://github.com/corkami/pics/blob/master/binary/README.md) 链接已失效 -->Posters
 
 ![](https://cdn.beekka.com/blogimg/asset/202212/bg2022122703.webp)
 

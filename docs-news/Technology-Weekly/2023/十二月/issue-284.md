@@ -199,7 +199,7 @@ Firefox 允许新建容器，在容器里面访问某个网站。这不仅可以
 
 一个在线编辑和分享乐谱的网站，乐谱保存在 URL 之中。
 
-2、[Teamlinker](https://github.com/Teamlinker/Teamlinker/blob/main/README-ZH-CN.md)
+2、<!-- [Teamlinker](https://github.com/Teamlinker/Teamlinker/blob/main/README-ZH-CN.md) 链接已失效 -->Teamlinker
 
 ![](https://cdn.beekka.com/blogimg/asset/202312/bg2023122204.webp)
 

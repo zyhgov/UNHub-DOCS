@@ -193,7 +193,7 @@ Mithril 是一个前端 JS 框架，只有 9.5KB，如果你感到 React 或 Vue
 
 Cloud Run 是谷歌云的一个 Serverless 服务，特点是直接抓取 Docker 镜像文件运行，不用自己部署文件。
 
-本文介绍作者如何使用这个服务，部署自己的静态博客网站。此外，网上还有一份 [Cloud Run 介绍](https://github.com/ahmetb/cloud-run-faq/blob/master/README.md)，也可以参考。
+本文介绍作者如何使用这个服务，部署自己的静态博客网站。此外，网上还有一份 <!-- [Cloud Run 介绍](https://github.com/ahmetb/cloud-run-faq/blob/master/README.md) 链接已失效 -->Cloud Run 介绍，也可以参考。
 
 6、[大炮 DDOS 攻击分析](https://cybersecurity.att.com/blogs/labs-research/the-great-cannon-has-been-deployed-again)（英文）
 
@@ -257,7 +257,7 @@ Linux 系统的虚拟桌面  App，可以起一个 VNC 服务，然后用 iPad �
 
 Windows 系统的一个可定制的桌面环境。
 
-6、[knDB](https://github.com/Knove/knDB/blob/master/README.CN.md)
+6、<!-- [knDB](https://github.com/Knove/knDB/blob/master/README.CN.md) 链接已失效 -->knDB
 
 一个轻量级的 Node.js 数据持久化库。（@[Knove](https://github.com/ruanyf/weekly/issues/1000) 投稿）
 

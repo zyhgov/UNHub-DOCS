@@ -150,7 +150,7 @@ tags: [阮一峰, GitHub]
 
 本文介绍如何在 GitHub 仓库里面定时跑 Go 语言脚本，再将代码推送回仓库。
 
-3、[JavaScript 测试框架比较](https://github.com/scraggo/comparing-javascript-test-runners/blob/master/README.md)（英文）
+3、<!-- [JavaScript 测试框架比较](https://github.com/scraggo/comparing-javascript-test-runners/blob/master/README.md) 链接已失效 -->JavaScript 测试框架比较（英文）
 
 Mocha、Ava、Jest 是目前非常流行的三大 JavaScript 测试框架，本文对它们进行了比较，每个框架最合适的运行场景。
 
