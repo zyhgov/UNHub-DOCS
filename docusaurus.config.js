@@ -376,7 +376,7 @@ plugins: [
         rehypePlugins: [rehypeKatex],
     },
   ],
-    [
+[
     '@docusaurus/plugin-content-docs',
     {
       id: 'news',
@@ -384,13 +384,97 @@ plugins: [
       routeBasePath: 'news',
       sidebarPath: './sidebars-news.js',
       editUrl: 'https://github.com/zyhgov/UNHub-DOCS/edit/main/',
-            // 👇 关键：在这里启用
       showLastUpdateTime: true,
-        // 👇 关键：启用数学公式支持
-        remarkPlugins: [remarkMath],
-        rehypePlugins: [rehypeKatex],
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+      
+      // ✅ 自定义排序逻辑：文档优先，然后按年份月份降序
+      async sidebarItemsGenerator({
+        defaultSidebarItemsGenerator,
+        ...args
+      }) {
+        const sidebarItems = await defaultSidebarItemsGenerator(args);
+        
+        // 中文月份映射表
+        const chineseMonthMap = {
+          '一月': 1, '二月': 2, '三月': 3, '四月': 4,
+          '五月': 5, '六月': 6, '七月': 7, '八月': 8,
+          '九月': 9, '十月': 10, '十一月': 11, '十二月': 12
+        };
+        
+        // 递归排序函数
+        function sortItems(items) {
+          return items.sort((a, b) => {
+            // 👉 1. 普通文档（type: 'doc' 或 'link'）排在最前面
+            const isDocA = a.type === 'doc' || a.type === 'link';
+            const isDocB = b.type === 'doc' || b.type === 'link';
+            
+            if (isDocA && !isDocB) return -1;  // A 是文档，B 是分类 → A 排前面
+            if (!isDocA && isDocB) return 1;   // A 是分类，B 是文档 → B 排前面
+            
+            // 👉 2. 如果都是文档，保持原顺序（或按字母排序）
+            if (isDocA && isDocB) {
+              return 0; // 保持原顺序
+            }
+            
+            // 👉 3. 如果都是分类（年份/月份文件夹），按日期降序
+            const extractDate = (item) => {
+              const text = item.label || item.id || '';
+              
+              // 匹配纯年份（如 "2025"）
+              const yearMatch = text.match(/^(\d{4})$/);
+              if (yearMatch) {
+                return { year: parseInt(yearMatch[1]), month: 0, hasDate: true };
+              }
+              
+              // 匹配中文月份（如 "十二月"）
+              for (const [cnMonth, numMonth] of Object.entries(chineseMonthMap)) {
+                if (text === cnMonth) {
+                  return { year: 0, month: numMonth, hasDate: true };
+                }
+              }
+              
+              // 匹配其他格式（如 "2025年9月"）
+              const complexMatch = text.match(/(\d{4})[年/-]?(\d{1,2})?/);
+              if (complexMatch) {
+                return {
+                  year: parseInt(complexMatch[1]),
+                  month: complexMatch[2] ? parseInt(complexMatch[2]) : 0,
+                  hasDate: true
+                };
+              }
+              
+              return { year: 0, month: 0, hasDate: false };
+            };
+            
+            const dateA = extractDate(a);
+            const dateB = extractDate(b);
+            
+            // 没有日期的项放最后
+            if (!dateA.hasDate && dateB.hasDate) return 1;
+            if (dateA.hasDate && !dateB.hasDate) return -1;
+            
+            // 按年份降序（2025 > 2024 > 2020）
+            if (dateB.year !== dateA.year) {
+              return dateB.year - dateA.year;
+            }
+            
+            // 按月份降序（12 > 11 > 1）
+            return dateB.month - dateA.month;
+            
+          }).map(item => {
+            // 🔄 递归处理子项
+            if (item.items && item.items.length > 0) {
+              item.items = sortItems(item.items);
+            }
+            return item;
+          });
+        }
+        
+        return sortItems(sidebarItems);
+      },
     },
-  ],
+],
   // 2. 单独添加 sitemap 插件（只需一次！）
 [
   '@docusaurus/plugin-sitemap',
