@@ -237,7 +237,7 @@ Facebook 和 Airbnb 设计系统的创造者[@soopa](https://twitter.com/soopa) 
 
 ![](https://cdn.beekka.com/blogimg/asset/201806/bg2018060825.jpg)
 
-1941年，<span data-type="color" style="color:rgb(68, 68, 68)">美国《生活》（LIFE）杂志摄影师迈登斯（ Carl Mydans）来到中国，拍摄中国人民的抗战。现在，他拍摄的3332张照片已经可以在互联网免费下载。</span>
+1941年，美国《生活》（LIFE）杂志摄影师迈登斯（ Carl Mydans）来到中国，拍摄中国人民的抗战。现在，他拍摄的3332张照片已经可以在互联网免费下载。
 
 2、[监视器上的燕子](https://www.mobile01.com/topicdetail.php?f=629&t=5445008&p=8#68506804)
 

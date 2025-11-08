@@ -164,7 +164,7 @@ Node 语言编写的博客建站工具。
 
 2、[wink-lemmatizer](http://winkjs.org/wink-lemmatizer/)
 
-英语单词"词干化"的 Node 库，比如 <span data-type="color" style="color:rgb(0, 0, 0)">am, are, is 都会转成 be，这是自然语言处理必须的。</span> 
+英语单词"词干化"的 Node 库，比如 am, are, is 都会转成 be，这是自然语言处理必须的。
 
 3、[fusuma](https://github.com/hiroppy/fusuma)
 
