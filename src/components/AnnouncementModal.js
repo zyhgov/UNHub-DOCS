@@ -35,8 +35,8 @@ export default function AnnouncementModal() {
             className={styles.topImage}
           /> */}
           <img
-            src="/img/nginx.svg"
-            alt="nginx"
+            src="/img/modal/jetbrains/jetbrains/jetbrains.svg"
+            alt="jetbrains"
             className={styles.topImage}
           />
         </div>
@@ -50,12 +50,9 @@ export default function AnnouncementModal() {
           <p>
             通过 Cloudflare® 服务 <br /> 我们确保您的访问更快速、更安全、更可靠。
           </p> */}
-          <h2>NGINX 原生 ACME 支持</h2>
+          <h2><strong>2025 年开发者生态系统报告</strong></h2>
           <p>
-            从根本上重塑 <strong>TLS</strong> 自动化部署
-          </p>
-          <p>
-            本技术文档针对 Docker 环境下的 Ubuntu 系统 <br /> 提供完整的部署和配置指南
+            这份报告揭示了开发者社区的趋势与洞察， <br /> 数据基于全球 24,534 名受访者的回复。
           </p>
 
 
@@ -63,7 +60,7 @@ export default function AnnouncementModal() {
           <div className={styles.buttonWrapper}>
             <a
               // href="https://www.cloudflare-cn.com/"
-              href="https://docs.zyhorg.cn/docs/Command-List/Nginx-tutorial/nginx-acme"
+              href="https://devecosystem-2025.jetbrains.com/cn"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.customButton}
@@ -111,7 +108,7 @@ export default function AnnouncementModal() {
                     </linearGradient>
                   </defs>
                 </svg>
-                <span className={styles.buttonText}>阅读技术文档</span>
+                <span className={styles.buttonText}>阅读现状报告</span>
               </span>
             </a>
           </div>
