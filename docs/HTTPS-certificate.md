@@ -1,7 +1,7 @@
 ---
 title: 多服务器环境下基于 Let's Encrypt + Nginx + Docker 的自动化 HTTPS 证书全生命周期管理方案
 sidebar_position: 2
-sidebar_label: 多服务器环境下的自动化 HTTPS 证书全生命周期管理
+sidebar_label: 自动化 Nginx HTTPS 证书管理
 description: 方案基于 Let's Encrypt ACME 协议 v2、Nginx 容器化部署 与 Docker 卷挂载机制，适用于多租户、多子域名、跨物理服务器的复杂生产环境。
 keywords: [Let's Encrypt, Nginx, Docker]
 ---

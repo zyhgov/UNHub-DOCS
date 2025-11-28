@@ -11,6 +11,14 @@ const sidebars = {
     },
     {
       type: 'doc',
+      id: 'RDP-Wrapper-Multi-User-Management-System',
+      label: 'RDP Wrapper 多用户管理系统',
+      customProps: {
+        sidebar_icon: 'Layers',
+      },
+    },
+    {
+      type: 'doc',
       id: 'HTTPS-certificate',
       label: '多服务器环境下的自动化 HTTPS 证书全生命周期管理',
       customProps: {

@@ -1,7 +1,7 @@
 ---
 title: 基于 Cloudflare Workers 与 Pages 边缘计算服务搭建私人VPN代理节点
 sidebar_position: 6
-sidebar_label: 基于 Cloudflare Workers 与 Pages 边缘计算服务搭建私人VPN代理节点
+sidebar_label: Cloudflare搭建VPN代理
 description: 本文详细阐述了一种基于 Cloudflare Workers 与 Pages 边缘计算服务搭建轻量级私人代理节点（类 VPN）的技术方案。该方案利用 Cloudflare 全球边缘网络的高可用性与低延迟特性，结合开源项目 `edgetunnel`，实现无需自建服务器即可部署的私有代理服务。文章从账户准备、项目部署、环境变量配置、自定义域名绑定，到客户端（Windows / Android / iOS）配置全流程进行系统化说明，并辅以 Mermaid 图表清晰展示架构流程，为开发者与高级用户提供可复现、低成本、高隐私的网络代理解决方案。
 keywords: [Cloudflare, Workers, VPN]
 tags: [Cloudflare, Workers, VPN]

@@ -1,7 +1,7 @@
 ---
 title: 企业级 GitHub Actions CI/CD 操作手册 
 sidebar_position: 4
-sidebar_label: 企业级 GitHub Actions CI/CD 操作手册 
+sidebar_label: GitHub Actions CI/CD
 description: 本手册旨在为企业提供一套 可落地、可扩展、符合安全合规要求 的 GitHub Actions CI/CD 实施规范。内容涵盖架构设计、权限控制、流水线模板、安全加固、审计监控及最佳实践，适用于金融、互联网、制造等对交付质量与安全有严格要求的行业。
 keywords: [GitHub, Actions, CI/CD]
 tags: [GitHub, Actions, CI/CD]

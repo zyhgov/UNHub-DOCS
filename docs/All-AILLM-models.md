@@ -1,7 +1,7 @@
 ---
 title: 世界范围内所有的 AI / LLM 模型、提供商与主流应用
 sidebar_position: 7
-sidebar_label: 世界范围内所有的 AI / LLM 模型、提供商与主流应用
+sidebar_label: 所有的 AI / LLM 模型
 description: 本文系统梳理了当前全球范围内主流的 AI/大语言模型（LLM）、核心提供商及其代表性应用，涵盖开源与闭源模型、企业与研究机构、工具平台与终端产品，为开发者、研究者与行业用户提供一站式参考。
 keywords: [AI, LLM, models]
 tags: [AI, LLM, models]
