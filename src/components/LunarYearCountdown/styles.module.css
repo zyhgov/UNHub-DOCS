@@ -1,0 +1,457 @@
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 50px;
+  background: linear-gradient(135deg, #c41e3a 0%, #e74c3c 50%, #c41e3a 100%);
+  color: white;
+  overflow: hidden;
+  min-height: 48px;
+}
+
+/* ========== 烟火动画 ========== */
+.fireworks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.firework {
+  position: absolute;
+  top: -20px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  animation: firework-burst ease-out infinite;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}
+
+.firework:nth-child(1) { left: 5%; animation-duration: 2s; animation-delay: 0s; }
+.firework:nth-child(2) { left: 10%; animation-duration: 2.5s; animation-delay: 0.3s; }
+.firework:nth-child(3) { left: 15%; animation-duration: 2s; animation-delay: 0.6s; }
+.firework:nth-child(4) { left: 20%; animation-duration: 2.2s; animation-delay: 0.9s; }
+.firework:nth-child(5) { left: 25%; animation-duration: 2.8s; animation-delay: 0.2s; }
+.firework:nth-child(6) { left: 30%; animation-duration: 2s; animation-delay: 0.5s; }
+.firework:nth-child(7) { left: 35%; animation-duration: 2.4s; animation-delay: 0.8s; }
+.firework:nth-child(8) { left: 40%; animation-duration: 2.1s; animation-delay: 0.1s; }
+.firework:nth-child(9) { left: 45%; animation-duration: 2.6s; animation-delay: 0.4s; }
+.firework:nth-child(10) { left: 50%; animation-duration: 2s; animation-delay: 0.7s; }
+.firework:nth-child(11) { left: 55%; animation-duration: 2.3s; animation-delay: 1s; }
+.firework:nth-child(12) { left: 60%; animation-duration: 2.7s; animation-delay: 0.3s; }
+.firework:nth-child(13) { left: 70%; animation-duration: 2s; animation-delay: 0.6s; }
+.firework:nth-child(14) { left: 85%; animation-duration: 2.5s; animation-delay: 0.2s; }
+.firework:nth-child(15) { left: 95%; animation-duration: 2.2s; animation-delay: 0.8s; }
+
+@keyframes firework-burst {
+  0% {
+    transform: translateY(-20px) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(60px) scale(0.3) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* ========== 灯笼动画 ========== */
+.lanterns {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 4px 0;
+  pointer-events: none;
+}
+
+.lantern {
+  font-size: 1.2rem;
+  animation: lantern-sway 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.6));
+}
+
+@keyframes lantern-sway {
+  0%, 100% {
+    transform: translateY(0px) rotateZ(0deg);
+  }
+  25% {
+    transform: translateY(-2px) rotateZ(1deg);
+  }
+  50% {
+    transform: translateY(0px) rotateZ(0deg);
+  }
+  75% {
+    transform: translateY(-2px) rotateZ(-1deg);
+  }
+}
+
+/* ========== 底部装饰线 ========== */
+.decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    #ffd700 0%,
+    #ffed4e 25%,
+    #ffd700 50%,
+    #ffed4e 75%,
+    #ffd700 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* ========== 内容区域 ========== */
+.content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 1;
+}
+
+/* 装饰图标 */
+.decorLeft,
+.decorRight {
+  font-size: 1.5rem;
+  animation: bounce-horizontal 2s ease-in-out infinite;
+}
+
+.decorRight {
+  animation-delay: 0.5s;
+}
+
+@keyframes bounce-horizontal {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+}
+
+/* 标题 */
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.firecracker {
+  animation: shake 0.5s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+}
+
+/* ========== 倒计时 ========== */
+.countdown {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.timeBlock {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.timeNum {
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  min-width: 28px;
+  text-align: center;
+}
+
+.timeLabel {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+.separator {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffd700;
+  animation: pulse 1s ease-in-out infinite;
+  margin: 0 2px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+/* ========== 新年当天 ========== */
+.newYearMessage {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.greeting {
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ffd700, #fff, #ffd700);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+.dragon {
+  font-size: 1.4rem;
+  animation: dance 2s ease-in-out infinite;
+}
+
+@keyframes dance {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(0deg) scale(1);
+  }
+  75% {
+    transform: rotate(5deg) scale(1.1);
+  }
+}
+
+/* ========== 关闭按钮 ========== */
+.closeBtn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  z-index: 2;
+}
+
+.closeBtn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* ========== 响应式布局 ========== */
+
+/* 平板 */
+@media (max-width: 768px) {
+  .banner {
+    padding: 10px 40px;
+  }
+
+  .content {
+    gap: 10px;
+  }
+
+  .decorLeft,
+  .decorRight {
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 0.85rem;
+  }
+
+  .timeBlock {
+    padding: 4px 8px;
+  }
+
+  .timeNum {
+    font-size: 1.1rem;
+    min-width: 24px;
+  }
+
+  .timeLabel {
+    font-size: 0.65rem;
+  }
+
+  .separator {
+    font-size: 1rem;
+  }
+
+  .lantern {
+    font-size: 1rem;
+  }
+}
+
+/* 手机 */
+@media (max-width: 600px) {
+  .banner {
+    padding: 10px 36px 10px 12px;
+  }
+
+  .content {
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .decorLeft {
+    font-size: 1rem;
+  }
+
+  .decorRight {
+    display: none;
+  }
+
+  .title {
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+
+  .firecracker {
+    display: none;
+  }
+
+  .countdown {
+    gap: 2px;
+  }
+
+  .timeBlock {
+    padding: 3px 6px;
+    border-radius: 6px;
+  }
+
+  .timeNum {
+    font-size: 0.95rem;
+    min-width: 20px;
+  }
+
+  .timeLabel {
+    font-size: 0.6rem;
+  }
+
+  .separator {
+    font-size: 0.9rem;
+    margin: 0 1px;
+  }
+
+  .firework {
+    font-size: 10px !important;
+  }
+
+  .lantern {
+    font-size: 0.9rem;
+  }
+
+  .greeting {
+    font-size: 0.9rem;
+  }
+}
+
+/* 超小屏幕 */
+@media (max-width: 400px) {
+  .title {
+    display: none;
+  }
+
+  .decorLeft {
+    font-size: 1.2rem;
+  }
+
+  .timeBlock {
+    padding: 4px 6px;
+  }
+
+  .timeNum {
+    font-size: 1rem;
+  }
+
+  .timeLabel {
+    font-size: 0.55rem;
+  }
+}
+
+/* ========== 深色模式 ========== */
+[data-theme='dark'] .banner {
+  background: linear-gradient(135deg, #8b1428 0%, #b8261f 50%, #8b1428 100%);
+}
+
+[data-theme='dark'] .timeBlock {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme='dark'] .closeBtn {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme='dark'] .closeBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ========== 减少动画（尊重用户偏好） ========== */
+@media (prefers-reduced-motion: reduce) {
+  .firework,
+  .lantern,
+  .decoration,
+  .decorLeft,
+  .decorRight,
+  .firecracker,
+  .separator,
+  .dragon,
+  .greeting {
+    animation: none;
+  }
+
+  .closeBtn:hover {
+    transform: translateY(-50%);
+  }
+}

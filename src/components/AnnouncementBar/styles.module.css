@@ -1,0 +1,114 @@
+.announcementBar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: white;
+  z-index: 100;
+}
+
+/* 类型样式 */
+.info {
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+}
+
+.success {
+  background: linear-gradient(90deg, #059669, #10b981);
+}
+
+.warning {
+  background: linear-gradient(90deg, #d97706, #f59e0b);
+}
+
+.error {
+  background: linear-gradient(90deg, #dc2626, #ef4444);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.message {
+  font-weight: 500;
+}
+
+.link {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.link:hover {
+  opacity: 0.8;
+  color: white;
+}
+
+/* 关闭按钮 */
+.closeButton {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* 多条公告指示器 */
+.indicators {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+}
+
+.indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.indicator.active {
+  background: white;
+  width: 16px;
+  border-radius: 3px;
+}
+
+/* 响应式 */
+@media (max-width: 600px) {
+  .announcementBar {
+    padding: 10px 36px 10px 12px;
+    font-size: 0.8rem;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

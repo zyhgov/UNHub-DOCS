@@ -1,0 +1,471 @@
+.calculator {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+/* 输入区域 - 简洁风格 */
+.inputSection {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.inputSection h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.inputGroup {
+  margin-bottom: 16px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.inputGroup input,
+.inputGroup select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  color: #333;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus {
+  outline: none;
+  border-color: #4a90d9;
+  box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.1);
+}
+
+.inputGroup input::placeholder {
+  color: #aaa;
+}
+
+.inputRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  flex: 1;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.primaryBtn {
+  background: #4a90d9;
+  color: white;
+}
+
+.primaryBtn:hover {
+  background: #3a7bc8;
+}
+
+.secondaryBtn {
+  background: #f5f5f5;
+  color: #666;
+  border: 1px solid #ddd;
+}
+
+.secondaryBtn:hover {
+  background: #eee;
+}
+
+/* 结果区域 */
+.resultSection {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.resultSection h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+/* BMI 数值展示 - 简洁边框风格 */
+.bmiDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border-radius: 12px;
+  border: 3px solid;
+  background: #fafafa;
+  margin-bottom: 24px;
+}
+
+.bmiValue {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.bmiLabel {
+  font-size: 1.3rem;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+/* BMI 刻度尺 */
+.bmiScale {
+  position: relative;
+  margin: 40px 0 60px 0;
+  padding: 0 10px;
+}
+
+.scaleBar {
+  display: flex;
+  height: 28px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scaleSegment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* 指针样式优化 */
+.scalePointer {
+  position: absolute;
+  top: 32px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: left 0.3s ease;
+}
+
+.pointerArrow {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1;
+}
+
+.pointerValue {
+  background: #333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.scaleLabels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
+  font-size: 0.8rem;
+  color: #666;
+  padding: 0 2px;
+}
+
+/* 信息卡片 */
+.infoCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.infoCard {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 16px;
+  border: 1px solid #eee;
+}
+
+.infoCard h4 {
+  margin: 0 0 8px 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.infoCard p {
+  margin: 0;
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* WHO 标准区域 */
+.whoSection {
+  background: #f0f7ff;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 16px;
+  border: 1px solid #d0e3f7;
+}
+
+.whoSection h4 {
+  margin: 0 0 8px 0;
+  color: #1a73e8;
+  font-size: 0.95rem;
+}
+
+.whoSection p {
+  margin: 0;
+  color: #333;
+}
+
+/* 参考表格区域 */
+.referenceSection {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.referenceSection h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.referenceTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.referenceTable th,
+.referenceTable td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.referenceTable th {
+  background: #f5f5f5;
+  color: #333;
+  font-weight: 600;
+}
+
+.referenceTable tr:last-child td {
+  border-bottom: none;
+}
+
+.referenceTable tr:hover td {
+  background: #fafafa;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.note {
+  margin-top: 20px;
+  padding: 16px;
+  background: #fffbeb;
+  border-radius: 8px;
+  border: 1px solid #fde68a;
+}
+
+.note p {
+  margin: 0 0 8px 0;
+  color: #92400e;
+}
+
+.note ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #92400e;
+}
+
+.note li {
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+  .inputRow {
+    grid-template-columns: 1fr;
+  }
+
+  .infoCards {
+    grid-template-columns: 1fr;
+  }
+
+  .bmiValue {
+    font-size: 2.5rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+
+  .scaleSegment span {
+    font-size: 0.65rem;
+  }
+}
+
+/* 深色模式支持 */
+[data-theme='dark'] .inputSection {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+[data-theme='dark'] .inputSection h3 {
+  color: #fff;
+}
+
+[data-theme='dark'] .inputGroup label {
+  color: #ccc;
+}
+
+[data-theme='dark'] .inputGroup input,
+[data-theme='dark'] .inputGroup select {
+  background: #2d2d2d;
+  border-color: #444;
+  color: #fff;
+}
+
+[data-theme='dark'] .inputGroup input::placeholder {
+  color: #666;
+}
+
+[data-theme='dark'] .secondaryBtn {
+  background: #333;
+  color: #ccc;
+  border-color: #444;
+}
+
+[data-theme='dark'] .resultSection {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+[data-theme='dark'] .resultSection h3 {
+  color: #fff;
+}
+
+[data-theme='dark'] .bmiDisplay {
+  background: #252525;
+}
+
+[data-theme='dark'] .pointerArrow {
+  color: #fff;
+}
+
+[data-theme='dark'] .pointerValue {
+  background: #fff;
+  color: #333;
+}
+
+[data-theme='dark'] .scaleLabels {
+  color: #aaa;
+}
+
+[data-theme='dark'] .infoCard {
+  background: #252525;
+  border-color: #333;
+}
+
+[data-theme='dark'] .infoCard h4 {
+  color: #fff;
+}
+
+[data-theme='dark'] .infoCard p {
+  color: #ccc;
+}
+
+[data-theme='dark'] .referenceSection {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+[data-theme='dark'] .referenceSection h3 {
+  color: #fff;
+}
+
+[data-theme='dark'] .referenceTable {
+  background: #252525;
+  border-color: #333;
+}
+
+[data-theme='dark'] .referenceTable th {
+  background: #2d2d2d;
+  color: #fff;
+}
+
+[data-theme='dark'] .referenceTable td {
+  color: #ccc;
+  border-bottom-color: #333;
+}
+
+[data-theme='dark'] .referenceTable tr:hover td {
+  background: #2d2d2d;
+}
+
+[data-theme='dark'] .whoSection {
+  background: #1a2a3a;
+  border-color: #2a4a6a;
+}
+
+[data-theme='dark'] .whoSection h4 {
+  color: #64b5f6;
+}
+
+[data-theme='dark'] .whoSection p {
+  color: #ccc;
+}
+
+[data-theme='dark'] .note {
+  background: #2d2a1e;
+  border-color: #5c4a1e;
+}
+
+[data-theme='dark'] .note p,
+[data-theme='dark'] .note ul {
+  color: #fbbf24;
+}

@@ -1,0 +1,944 @@
+.calculator {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+/* 输入区域 */
+.inputSection {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.inputSection h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.sectionDesc {
+  margin: 0 0 20px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* 计算方式选择器 */
+.methodSelector {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.methodOption {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 2px solid #e8e8e8;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.methodOption:hover {
+  border-color: #f472b6;
+}
+
+.methodOption.active {
+  border-color: #f472b6;
+  background: #fdf2f8;
+}
+
+.methodOption input {
+  display: none;
+}
+
+.methodIcon {
+  font-size: 1.5rem;
+}
+
+.methodText {
+  display: flex;
+  flex-direction: column;
+}
+
+.methodLabel {
+  font-weight: 600;
+  color: #333;
+}
+
+.methodDesc {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* 输入字段 */
+.inputFields {
+  margin-bottom: 20px;
+}
+
+.inputGroup {
+  margin-bottom: 16px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.inputGroup input,
+.inputGroup select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  color: #333;
+  transition: border-color 0.2s;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus {
+  outline: none;
+  border-color: #f472b6;
+}
+
+.inputRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+}
+
+/* IVF 类型选择 */
+.ivfTypes {
+  display: flex;
+  gap: 12px;
+}
+
+.ivfType {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ivfType:hover {
+  border-color: #f472b6;
+}
+
+.ivfType.active {
+  border-color: #f472b6;
+  background: #fdf2f8;
+}
+
+.ivfType input {
+  display: none;
+}
+
+/* 按钮 */
+.buttonGroup {
+  display: flex;
+  gap: 12px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  flex: 1;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.primaryBtn {
+  background: linear-gradient(135deg, #f472b6, #ec4899);
+  color: white;
+}
+
+.primaryBtn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(244, 114, 182, 0.3);
+}
+
+.primaryBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.secondaryBtn {
+  background: #f5f5f5;
+  color: #666;
+  border: 1px solid #ddd;
+}
+
+.secondaryBtn:hover {
+  background: #eee;
+}
+
+/* 结果区域 */
+.resultSection {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.resultSection h4 {
+  margin: 24px 0 16px 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* 预产期卡片 */
+.dueDateCard {
+  background: linear-gradient(135deg, #fdf2f8, #fce7f3);
+  border: 2px solid #f9a8d4;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.dueDateHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.dueDateIcon {
+  font-size: 2rem;
+}
+
+.dueDateLabel {
+  font-size: 1.1rem;
+  color: #be185d;
+  font-weight: 500;
+}
+
+.dueDateValue {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #831843;
+  margin-bottom: 12px;
+}
+
+.dueDateExtra {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.zodiacBadge {
+  padding: 6px 12px;
+  background: white;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* 当前状态 */
+.currentStatus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.weekDisplay {
+  display: flex;
+  flex-direction: column;
+}
+
+.weekLabel {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.weekValue {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.weekNum {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.weekUnit {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.weekDays {
+  font-size: 1rem;
+  color: #f472b6;
+  margin-left: 8px;
+}
+
+.trimesterBadge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+.countdown {
+  font-size: 1rem;
+  color: #666;
+}
+
+.countdown strong {
+  color: #ec4899;
+  font-size: 1.3rem;
+}
+
+/* 进度条 */
+.progressSection {
+  margin-bottom: 24px;
+}
+
+.progressBar {
+  height: 24px;
+  background: #e5e5e5;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #f472b6, #a78bfa, #60a5fa);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  min-width: 60px;
+  transition: width 0.3s;
+}
+
+.progressText {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.progressLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.trimesterBar {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.trimesterSegment {
+  flex: 1;
+  padding: 8px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* 胎儿信息 */
+.fetalInfo {
+  margin-bottom: 24px;
+}
+
+.fetalCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.fetalCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background: #fdf2f8;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.fetalIcon {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+.fetalLabel {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.fetalValue {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* 孕期阶段信息 */
+.trimesterInfo {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.trimesterInfo h4 {
+  margin: 0 0 16px 0;
+}
+
+.trimesterContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.trimesterCol h5 {
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.trimesterCol ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* 里程碑时间线 */
+.milestonesSection {
+  margin-bottom: 24px;
+}
+
+.milestoneTimeline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.milestoneItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  opacity: 0.6;
+  transition: all 0.2s;
+}
+
+.milestoneItem.past {
+  opacity: 0.8;
+  background: #f0fdf4;
+}
+
+.milestoneItem.current {
+  opacity: 1;
+  background: #fdf2f8;
+  border: 2px solid #f472b6;
+}
+
+.milestoneMarker {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.milestoneItem.past .milestoneMarker {
+  background: #dcfce7;
+}
+
+.milestoneItem.current .milestoneMarker {
+  background: #fce7f3;
+}
+
+.milestoneIcon {
+  font-size: 1.2rem;
+}
+
+.milestoneContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.milestoneWeek {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.milestoneTitle {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.milestoneDesc {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* 重要日期 */
+.importantDates {
+  margin-bottom: 24px;
+}
+
+.dateGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.dateCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.dateIcon {
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.dateLabel {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.dateValue {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* 产检时间表 */
+.prenatalSection {
+  margin-bottom: 24px;
+}
+
+.prenatalTable {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.prenatalItem {
+  display: flex;
+  gap: 16px;
+  padding: 14px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  border-left: 4px solid #e5e5e5;
+  transition: all 0.2s;
+}
+
+.prenatalItem.past {
+  opacity: 0.6;
+  border-left-color: #86efac;
+}
+
+.prenatalItem.current {
+  border-left-color: #f472b6;
+  background: #fdf2f8;
+}
+
+.prenatalWeek {
+  font-weight: 700;
+  color: #333;
+  min-width: 70px;
+}
+
+.prenatalContent {
+  flex: 1;
+}
+
+.prenatalCheckup {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.prenatalItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.prenatalItems .prenatalItem {
+  padding: 4px 10px;
+  background: white;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #666;
+  border: none;
+}
+
+/* 知识区域 */
+.knowledgeSection {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.knowledgeSection h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.knowledgeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.knowledgeCard {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.knowledgeCard h4 {
+  margin: 0 0 10px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.knowledgeCard p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.knowledgeCard ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.note {
+  padding: 16px;
+  background: #fdf2f8;
+  border-radius: 8px;
+  border: 1px solid #f9a8d4;
+}
+
+.note p {
+  margin: 0 0 8px 0;
+  color: #be185d;
+  font-size: 0.9rem;
+}
+
+.note ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #9d174d;
+}
+
+.note li {
+  margin-bottom: 4px;
+  font-size: 0.85rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .methodSelector {
+    grid-template-columns: 1fr;
+  }
+
+  .currentStatus {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fetalCards {
+    grid-template-columns: 1fr;
+  }
+
+  .trimesterContent {
+    grid-template-columns: 1fr;
+  }
+
+  .dateGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .knowledgeGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .buttonGroup {
+    flex-direction: column;
+  }
+
+  .inputRow {
+    grid-template-columns: 1fr;
+  }
+
+  .weekNum {
+    font-size: 2.5rem;
+  }
+
+  .dueDateValue {
+    font-size: 1.4rem;
+  }
+
+  .dateGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ivfTypes {
+    flex-direction: column;
+  }
+}
+
+/* 深色模式 */
+[data-theme='dark'] .inputSection,
+[data-theme='dark'] .resultSection,
+[data-theme='dark'] .knowledgeSection {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+[data-theme='dark'] .inputSection h3,
+[data-theme='dark'] .resultSection h4,
+[data-theme='dark'] .knowledgeSection h3 {
+  color: #fff;
+}
+
+[data-theme='dark'] .sectionDesc {
+  color: #aaa;
+}
+
+[data-theme='dark'] .methodOption {
+  background: #2d2d2d;
+  border-color: #444;
+}
+
+[data-theme='dark'] .methodOption.active {
+  background: #3d2a3a;
+  border-color: #f472b6;
+}
+
+[data-theme='dark'] .methodLabel {
+  color: #fff;
+}
+
+[data-theme='dark'] .inputGroup label {
+  color: #ccc;
+}
+
+[data-theme='dark'] .inputGroup input,
+[data-theme='dark'] .inputGroup select {
+  background: #2d2d2d;
+  border-color: #444;
+  color: #fff;
+}
+
+[data-theme='dark'] .ivfType {
+  background: #2d2d2d;
+  border-color: #444;
+  color: #ccc;
+}
+
+[data-theme='dark'] .ivfType.active {
+  background: #3d2a3a;
+  border-color: #f472b6;
+}
+
+[data-theme='dark'] .secondaryBtn {
+  background: #333;
+  border-color: #444;
+  color: #ccc;
+}
+
+[data-theme='dark'] .dueDateCard {
+  background: linear-gradient(135deg, #3d2a3a, #4a2a4a);
+  border-color: #f472b6;
+}
+
+[data-theme='dark'] .dueDateValue {
+  color: #f9a8d4;
+}
+
+[data-theme='dark'] .dueDateLabel {
+  color: #f9a8d4;
+}
+
+[data-theme='dark'] .zodiacBadge {
+  background: #2d2d2d;
+  color: #ccc;
+}
+
+[data-theme='dark'] .currentStatus {
+  background: #252525;
+}
+
+[data-theme='dark'] .weekNum {
+  color: #fff;
+}
+
+[data-theme='dark'] .countdown {
+  color: #aaa;
+}
+
+[data-theme='dark'] .progressBar {
+  background: #333;
+}
+
+[data-theme='dark'] .progressLabels {
+  color: #888;
+}
+
+[data-theme='dark'] .fetalCard {
+  background: #252525;
+}
+
+[data-theme='dark'] .fetalValue {
+  color: #fff;
+}
+
+[data-theme='dark'] .trimesterInfo {
+  background: #252525;
+}
+
+[data-theme='dark'] .trimesterCol h5 {
+  color: #fff;
+}
+
+[data-theme='dark'] .trimesterCol ul {
+  color: #ccc;
+}
+
+[data-theme='dark'] .milestoneItem {
+  background: #252525;
+}
+
+[data-theme='dark'] .milestoneItem.past {
+  background: #1a3a2a;
+}
+
+[data-theme='dark'] .milestoneItem.current {
+  background: #3d2a3a;
+  border-color: #f472b6;
+}
+
+[data-theme='dark'] .milestoneMarker {
+  background: #333;
+}
+
+[data-theme='dark'] .milestoneItem.past .milestoneMarker {
+  background: #2a5a3a;
+}
+
+[data-theme='dark'] .milestoneItem.current .milestoneMarker {
+  background: #5a2a4a;
+}
+
+[data-theme='dark'] .milestoneTitle {
+  color: #fff;
+}
+
+[data-theme='dark'] .dateCard,
+[data-theme='dark'] .prenatalItem {
+  background: #252525;
+}
+
+[data-theme='dark'] .prenatalItem.current {
+  background: #3d2a3a;
+}
+
+[data-theme='dark'] .dateValue,
+[data-theme='dark'] .prenatalWeek,
+[data-theme='dark'] .prenatalCheckup {
+  color: #fff;
+}
+
+[data-theme='dark'] .prenatalItems .prenatalItem {
+  background: #1e1e1e;
+  color: #aaa;
+}
+
+[data-theme='dark'] .knowledgeCard {
+  background: #252525;
+  border-color: #333;
+}
+
+[data-theme='dark'] .knowledgeCard h4 {
+  color: #fff;
+}
+
+[data-theme='dark'] .knowledgeCard p,
+[data-theme='dark'] .knowledgeCard ul {
+  color: #ccc;
+}
+
+[data-theme='dark'] .note {
+  background: #3d2a3a;
+  border-color: #5a2a4a;
+}
+
+[data-theme='dark'] .note p {
+  color: #f9a8d4;
+}
+
+[data-theme='dark'] .note ul {
+  color: #f472b6;
+}

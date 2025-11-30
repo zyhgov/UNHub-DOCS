@@ -1,0 +1,1023 @@
+.calculator {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+/* 输入区域 */
+.inputSection {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.inputSection h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.inputSection h4 {
+  margin: 20px 0 12px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.inputGroup {
+  margin-bottom: 12px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #fff;
+  color: #333;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #ec4899;
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1);
+}
+
+.inputHint {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* 性别按钮 */
+.genderButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.genderBtn {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.genderBtn:hover {
+  border-color: #ec4899;
+}
+
+.genderBtn.active {
+  border-color: #ec4899;
+  background: #fdf2f8;
+  color: #db2777;
+}
+
+/* 主要输入卡片 */
+.mainInputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.inputCard {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+
+.inputCard .inputIcon {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.inputCard .inputGroup {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+/* 可选数据区域 */
+.optionalSection {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.optionalSection h4 {
+  margin: 0 0 12px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.optionalGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* 测量指南 */
+.measureGuide {
+  background: #fdf2f8;
+  border: 1px solid #fbcfe8;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.measureGuide h4 {
+  margin: 0 0 12px 0;
+  color: #db2777;
+  font-size: 0.95rem;
+}
+
+.guideGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.guideItem {
+  display: flex;
+  gap: 12px;
+}
+
+.guideIcon {
+  font-size: 1.5rem;
+}
+
+.guideItem strong {
+  display: block;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.guideItem p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* 按钮 */
+.buttonGroup {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  flex: 1;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.primaryBtn {
+  background: #ec4899;
+  color: white;
+}
+
+.primaryBtn:hover {
+  background: #db2777;
+}
+
+.secondaryBtn {
+  background: #f5f5f5;
+  color: #666;
+  border: 1px solid #ddd;
+}
+
+.secondaryBtn:hover {
+  background: #eee;
+}
+
+/* 结果区域 */
+.resultSection {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.resultSection h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.resultSection h4 {
+  margin: 24px 0 16px 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* 主要结果卡片 */
+.mainResults {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.whrCard {
+  padding: 24px;
+  background: #fafafa;
+  border: 2px solid;
+  border-radius: 12px;
+}
+
+.whrHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.whrLabel {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.whrBadge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.whrValue {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.whrDesc {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.bodyShapeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.bodyShapeIcon {
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+
+.bodyShapeLabel {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.bodyShapeName {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  margin: 4px 0;
+}
+
+.bodyShapeDesc {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* WHR 刻度尺 */
+.whrScale {
+  margin-bottom: 24px;
+}
+
+.scaleContainer {
+  position: relative;
+  padding: 20px 0 50px 0;
+}
+
+.scaleBar {
+  display: flex;
+  height: 28px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.scaleSegment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.scalePointer {
+  position: absolute;
+  top: 52px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: left 0.3s ease;
+}
+
+.pointerArrow {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1;
+}
+
+.pointerValue {
+  background: #333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.scaleLabels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* 综合指标 */
+.metricsSection {
+  margin-bottom: 24px;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.metricCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background: #f9f9f9;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  border-left-width: 3px;
+  text-align: center;
+}
+
+.metricIcon {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+.metricLabel {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.metricValue {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin: 4px 0;
+}
+
+.metricStatus {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.metricNote {
+  font-size: 0.7rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* 年龄提示 */
+.ageNote {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.ageIcon {
+  font-size: 1.3rem;
+}
+
+.ageNote p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #0369a1;
+}
+
+/* 健康风险评估 */
+.riskSection {
+  margin-bottom: 24px;
+}
+
+.riskGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.riskCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background: #f9f9f9;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.riskIcon {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+.riskDisease {
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.riskLevel {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* 体型分析 */
+.bodyShapeSection {
+  background: #f9f9f9;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.bodyShapeSection h4 {
+  margin: 0 0 16px 0;
+}
+
+.shapeContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.shapeColumn h5 {
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.shapeColumn ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* 对比图 */
+.comparisonSection {
+  margin-bottom: 20px;
+}
+
+.comparisonBars {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.comparisonItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.comparisonLabel {
+  width: 70px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.comparisonBar {
+  flex: 1;
+  height: 24px;
+  background: #e5e5e5;
+  border-radius: 12px;
+  position: relative;
+  overflow: visible;
+}
+
+.comparisonFill {
+  height: 100%;
+  border-radius: 12px;
+  transition: width 0.3s;
+}
+
+.comparisonTarget {
+  position: absolute;
+  top: -6px;
+  bottom: -6px;
+  width: 2px;
+  background: #333;
+}
+
+.comparisonTarget span {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.65rem;
+  color: #666;
+  white-space: nowrap;
+}
+
+.comparisonValue {
+  width: 70px;
+  font-weight: 600;
+  color: #333;
+  text-align: right;
+}
+
+/* 参考标准 */
+.referenceSection {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.referenceSection h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.tablesContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.tableWrapper h4 {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.referenceTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  font-size: 0.85rem;
+}
+
+.referenceTable th,
+.referenceTable td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.referenceTable th {
+  background: #f5f5f5;
+  color: #333;
+  font-weight: 600;
+}
+
+.referenceTable tr:last-child td {
+  border-bottom: none;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+/* 腰围标准 */
+.waistStandard h4 {
+  margin: 0 0 12px 0;
+}
+
+.waistGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.waistCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+
+.waistIcon {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.waistGender {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.waistLevels {
+  width: 100%;
+}
+
+.waistLevel {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.waistLevel:last-child {
+  border-bottom: none;
+}
+
+/* 知识区域 */
+.knowledgeSection {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.knowledgeSection h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.knowledgeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.knowledgeCard {
+  background: #f9f9f9;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.knowledgeCard h4 {
+  margin: 0 0 10px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.knowledgeCard p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.knowledgeCard ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.note {
+  padding: 16px;
+  background: #fffbeb;
+  border-radius: 8px;
+  border: 1px solid #fde68a;
+}
+
+.note p {
+  margin: 0 0 8px 0;
+  color: #92400e;
+  font-size: 0.9rem;
+}
+
+.note ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #92400e;
+}
+
+.note li {
+  margin-bottom: 4px;
+  font-size: 0.85rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .mainInputs {
+    grid-template-columns: 1fr;
+  }
+
+  .optionalGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .guideGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .mainResults {
+    grid-template-columns: 1fr;
+  }
+
+  .metricsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .riskGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .shapeContent {
+    grid-template-columns: 1fr;
+  }
+
+  .tablesContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .waistGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .knowledgeGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .genderButtons {
+    flex-direction: column;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+
+  .whrValue {
+    font-size: 2.5rem;
+  }
+
+  .metricsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .riskGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .scaleSegment span {
+    font-size: 0.6rem;
+  }
+}
+
+/* 深色模式 */
+[data-theme='dark'] .inputSection,
+[data-theme='dark'] .resultSection,
+[data-theme='dark'] .referenceSection,
+[data-theme='dark'] .knowledgeSection {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+[data-theme='dark'] .inputSection h3,
+[data-theme='dark'] .inputSection h4,
+[data-theme='dark'] .resultSection h3,
+[data-theme='dark'] .resultSection h4,
+[data-theme='dark'] .referenceSection h3,
+[data-theme='dark'] .knowledgeSection h3 {
+  color: #fff;
+}
+
+[data-theme='dark'] .inputGroup label {
+  color: #ccc;
+}
+
+[data-theme='dark'] .inputGroup input {
+  background: #2d2d2d;
+  border-color: #444;
+  color: #fff;
+}
+
+[data-theme='dark'] .genderBtn {
+  background: #2d2d2d;
+  border-color: #444;
+  color: #ccc;
+}
+
+[data-theme='dark'] .genderBtn.active {
+  background: #4a1942;
+  border-color: #ec4899;
+  color: #ec4899;
+}
+
+[data-theme='dark'] .inputCard,
+[data-theme='dark'] .optionalSection {
+  background: #252525;
+  border-color: #333;
+}
+
+[data-theme='dark'] .measureGuide {
+  background: #3a1a32;
+  border-color: #6a2a52;
+}
+
+[data-theme='dark'] .measureGuide h4 {
+  color: #f9a8d4;
+}
+
+[data-theme='dark'] .guideItem strong {
+  color: #fff;
+}
+
+[data-theme='dark'] .secondaryBtn {
+  background: #333;
+  border-color: #444;
+  color: #ccc;
+}
+
+[data-theme='dark'] .whrCard,
+[data-theme='dark'] .bodyShapeCard,
+[data-theme='dark'] .metricCard,
+[data-theme='dark'] .riskCard {
+  background: #252525;
+  border-color: #333;
+}
+
+[data-theme='dark'] .whrDesc,
+[data-theme='dark'] .bodyShapeDesc {
+  color: #aaa;
+}
+
+[data-theme='dark'] .bodyShapeName,
+[data-theme='dark'] .metricValue,
+[data-theme='dark'] .riskDisease {
+  color: #fff;
+}
+
+[data-theme='dark'] .pointerArrow {
+  color: #fff;
+}
+
+[data-theme='dark'] .pointerValue {
+  background: #fff;
+  color: #333;
+}
+
+[data-theme='dark'] .scaleLabels {
+  color: #aaa;
+}
+
+[data-theme='dark'] .ageNote {
+  background: #1a2a3a;
+  border-color: #2a4a6a;
+}
+
+[data-theme='dark'] .ageNote p {
+  color: #64b5f6;
+}
+
+[data-theme='dark'] .bodyShapeSection,
+[data-theme='dark'] .knowledgeCard {
+  background: #252525;
+  border-color: #333;
+}
+
+[data-theme='dark'] .bodyShapeSection h4,
+[data-theme='dark'] .shapeColumn h5,
+[data-theme='dark'] .knowledgeCard h4 {
+  color: #fff;
+}
+
+[data-theme='dark'] .shapeColumn ul,
+[data-theme='dark'] .knowledgeCard p,
+[data-theme='dark'] .knowledgeCard ul {
+  color: #ccc;
+}
+
+[data-theme='dark'] .comparisonBar {
+  background: #333;
+}
+
+[data-theme='dark'] .comparisonLabel,
+[data-theme='dark'] .comparisonTarget span {
+  color: #aaa;
+}
+
+[data-theme='dark'] .comparisonValue {
+  color: #fff;
+}
+
+[data-theme='dark'] .tableWrapper h4 {
+  color: #fff;
+}
+
+[data-theme='dark'] .referenceTable {
+  background: #252525;
+  border-color: #333;
+}
+
+[data-theme='dark'] .referenceTable th {
+  background: #2d2d2d;
+  color: #fff;
+}
+
+[data-theme='dark'] .referenceTable td {
+  color: #ccc;
+  border-color: #333;
+}
+
+[data-theme='dark'] .waistCard {
+  background: #252525;
+  border-color: #333;
+}
+
+[data-theme='dark'] .waistGender {
+  color: #fff;
+}
+
+[data-theme='dark'] .waistLevel {
+  border-color: #333;
+}
+
+[data-theme='dark'] .note {
+  background: #2d2a1e;
+  border-color: #5c4a1e;
+}
+
+[data-theme='dark'] .note p,
+[data-theme='dark'] .note ul {
+  color: #fbbf24;
+}

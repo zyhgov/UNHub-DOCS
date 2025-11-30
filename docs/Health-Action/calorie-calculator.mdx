@@ -1,0 +1,77 @@
+---
+title: 卡路里计算器
+sidebar_label: 卡路里计算器
+description: 全面的每日热量需求计算工具，支持食物热量查询和运动消耗计算
+keywords: [卡路里, 热量计算, TDEE, 减肥, 增肌, 饮食计划]
+---
+
+import CalorieCalculator from '@site/src/components/CalorieCalculator';
+
+# 卡路里计算器
+
+**卡路里 (Calorie)** 是衡量食物能量的单位。了解每日热量需求是科学管理体重的第一步。
+
+## 核心公式
+
+### 基础代谢率 (Mifflin-St Jeor)
+
+$$
+\text{男性: } BMR = 10W + 6.25H - 5A + 5
+$$
+
+$$
+\text{女性: } BMR = 10W + 6.25H - 5A - 161
+$$
+
+*其中 W=体重(kg), H=身高(cm), A=年龄*
+
+### 每日总能量消耗
+
+$$
+TDEE = BMR \times 活动系数
+$$
+
+---
+
+## 在线计算
+
+<CalorieCalculator />
+
+---
+
+## 活动系数参考
+
+| 活动水平 | 系数 | 描述 |
+|---------|------|------|
+| 久坐不动 | 1.2 | 办公室工作，几乎不运动 |
+| 轻度活动 | 1.375 | 每周轻度运动 1-3 次 |
+| 中度活动 | 1.55 | 每周中等强度运动 3-5 次 |
+| 高度活动 | 1.725 | 每周高强度运动 6-7 次 |
+| 专业运动 | 1.9 | 每天高强度训练 |
+
+## 热量缺口与体重变化
+
+| 每日热量差 | 每周变化 | 每月变化 |
+|-----------|---------|---------|
+| -500 kcal | -0.45 kg | -1.8 kg |
+| -300 kcal | -0.27 kg | -1.1 kg |
+| +300 kcal | +0.27 kg | +1.1 kg |
+| +500 kcal | +0.45 kg | +1.8 kg |
+
+> 💡 **提示：** 每减少/增加 7700 千卡约变化 1kg 体重
+
+---
+
+## 相关资源
+
+- [BMI 体质指数计算器](/docs/Health-Action/bmi-calculator)
+- [基础代谢率 (BMR) 计算器](/docs/Health-Action/bmr-calculator)
+- [体脂率计算器](/docs/Health-Action/body-fat-calculator)
+- [蛋白质计算器](/docs/Health-Action/protein-calculator)
+- [《成人肥胖食养指南（2024年版）》](/docs/Health-Action/obesity-guide)
+
+---
+
+:::caution 免责声明
+本计算器仅供参考，不构成医疗或营养建议。每个人的实际代谢率受多种因素影响。如需制定专业的饮食计划，请咨询注册营养师或医疗专业人员。
+:::
