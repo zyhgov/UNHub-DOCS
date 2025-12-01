@@ -16,28 +16,34 @@ import IdealWeightCalculator from '@site/src/components/IdealWeightCalculator';
 ### BMI 标准法（推荐）
 
 $$
-理想体重 = 22 \times 身高(m)^2
+W_{\text{ideal}} = 22 \times H^2
 $$
 
 ### Broca 公式（亚洲人适用）
 
 $$
-\text{男性：} 理想体重 = (身高cm - 100) \times 0.9
+\text{Male: } W_{\text{ideal}} = (H_{\text{cm}} - 100) \times 0.9
 $$
 
 $$
-\text{女性：} 理想体重 = (身高cm - 100) \times 0.85
+\text{Female: } W_{\text{ideal}} = (H_{\text{cm}} - 100) \times 0.85
 $$
 
 ### Devine 公式（临床常用）
 
 $$
-\text{男性：} 理想体重 = 50 + 2.3 \times (身高英寸 - 60)
+\text{Male: } W_{\text{ideal}} = 50 + 2.3 \times (H_{\text{in}} - 60)
 $$
 
 $$
-\text{女性：} 理想体重 = 45.5 + 2.3 \times (身高英寸 - 60)
+\text{Female: } W_{\text{ideal}} = 45.5 + 2.3 \times (H_{\text{in}} - 60)
 $$
+
+**变量说明：**
+- $ W_{\text{ideal}} $：理想体重（单位：kg）  
+- $ H $：身高（单位：m）  
+- $ H_{\text{cm}} $：身高（单位：cm）  
+- $ H_{\text{in}} $：身高（单位：英寸，1 英寸 = 2.54 cm）
 
 ---
 

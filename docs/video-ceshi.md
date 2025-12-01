@@ -8,8 +8,25 @@ keywords:
 
 # 🎬 视频播放测试
 
-## 以下是两个嵌入式视频演示。
-### 1、阿里云通义千问(Qwen)的品牌动画（短内容）
+## 以下是三个嵌入式视频演示。
+
+### 1、What is Cloudflare？
+<video
+  src="https://cf-r2.zyhorg.ac.cn/videos/1764571572711-2wpn8n-What-is-Cloudflare.mp4"
+  controls
+  width="100%"
+  height="auto"
+  style={{
+    border: '1px solid #ddd',
+    borderRadius: '8px',
+    boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+    marginBottom: '20px'
+  }}
+>
+  您的浏览器不支持视频播放，请下载观看：<a href="https://cf-r2.zyhorg.ac.cn/videos/1764571572711-2wpn8n-What-is-Cloudflare.mp4">点击下载</a>
+</video>
+
+### 2、阿里云通义千问(Qwen)的品牌动画（短内容）
 <video
   src="/video/tongyi_branding.mp4"
   controls
@@ -25,7 +42,7 @@ keywords:
   您的浏览器不支持视频播放，请下载观看：<a href="/video/tongyi_branding.mp4">点击下载</a>
 </video>
 
-### 2、JetBrainsAI品牌展示（长内容）
+### 3、JetBrainsAI品牌展示（长内容）
 <video
   src="/video/JetBrainsAI.mp4"
   controls

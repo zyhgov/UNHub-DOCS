@@ -26,17 +26,22 @@ import BMRCalculator from '@site/src/components/BMRCalculator';
 ### Mifflin-St Jeor 公式（推荐）
 
 $$
-\text{男性: } BMR = 10 \times 体重(kg) + 6.25 \times 身高(cm) - 5 \times 年龄 + 5
+\text{男性: } BMR = 10 \times W + 6.25 \times H - 5 \times A + 5
 $$
 
 $$
-\text{女性: } BMR = 10 \times 体重(kg) + 6.25 \times 身高(cm) - 5 \times 年龄 - 161
+\text{女性: } BMR = 10 \times W + 6.25 \times H - 5 \times A - 161
 $$
+
+其中：
+- $ W $：体重（kg）  
+- $ H $：身高（cm）  
+- $ A $：年龄（岁）
 
 ### TDEE 计算
 
 $$
-TDEE = BMR \times 活动系数
+\text{TDEE} = \text{BMR} \times A
 $$
 
 ---

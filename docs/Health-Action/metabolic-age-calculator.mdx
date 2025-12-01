@@ -14,9 +14,15 @@ import MetabolicAgeCalculator from '@site/src/components/MetabolicAgeCalculator'
 ## 核心概念
 
 $$
-代谢年龄 = f(BMR, 生活方式因素)
+A_{\text{met}} = f(\text{BMR}, L)
 $$
 
+其中：
+- $ A_{\text{met}} $：代谢年龄（Metabolic Age）  
+- $ \text{BMR} $：基础代谢率（Basal Metabolic Rate）  
+- $ L $：生活方式因素（如运动、睡眠、压力等综合评分）
+
+说明：
 - **代谢年龄 < 实际年龄**：代谢状态良好 ✅
 - **代谢年龄 = 实际年龄**：代谢状态正常 ➡️
 - **代谢年龄 > 实际年龄**：代谢状态需改善 ⚠️

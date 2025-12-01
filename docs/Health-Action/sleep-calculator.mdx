@@ -14,8 +14,13 @@ import SleepCalculator from '@site/src/components/SleepCalculator';
 ## 核心原理
 
 $$
-最佳睡眠时长 = 睡眠周期数 \times 90分钟 + 入睡时间
+T_{\text{sleep}} = N \times 90 + t_{\text{fall}}
 $$
+
+**变量说明：**
+- $ T_{\text{sleep}} $：最佳睡眠总时长（单位：分钟）  
+- $ N $：完整睡眠周期数（通常 4–6 个）  
+- $ t_{\text{fall}} $：入睡所需时间（单位：分钟，通常 5–20 分钟）
 
 :::tip
  一个完整的睡眠周期约为 **90分钟**，包含浅睡、深睡和REM睡眠阶段

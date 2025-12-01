@@ -13,17 +13,23 @@ import BodyFatCalculator from '@site/src/components/BodyFatCalculator';
 
 ## 计算公式
 
-### 美国海军公式（推荐）
+### 美国海军体脂计算法（U.S. Navy Method）
 
-**男性：**
+**男性：**  
 $$
-体脂率 = 86.010 \times \log_{10}(腰围 - 颈围) - 70.041 \times \log_{10}(身高) + 36.76
+\text{Body Fat \%} = 86.010 \times \log_{10}(W - N) - 70.041 \times \log_{10}(H) + 36.76
 $$
 
-**女性：**
+**女性：**  
 $$
-体脂率 = 163.205 \times \log_{10}(腰围 + 臀围 - 颈围) - 97.684 \times \log_{10}(身高) - 78.387
+\text{Body Fat \%} = 163.205 \times \log_{10}(W + H_p - N) - 97.684 \times \log_{10}(H) - 78.387
 $$
+
+**变量说明：**
+- $ W $：腰围（cm）  
+- $ N $：颈围（cm）  
+- $ H_p $：臀围（cm）（仅女性公式使用）  
+- $ H $：身高（cm）
 
 ---
 
