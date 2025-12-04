@@ -52,3 +52,8 @@ API:
   label: Chinese-festivals
   description: 中国的各种传统节日
   permalink: /Chinese-festivals
+
+名侦探柯南:
+  label: Detective-Conan
+  description: 日本著名的侦探漫画和动画系列
+  permalink: /detective-conan
