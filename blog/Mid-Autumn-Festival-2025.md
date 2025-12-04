@@ -3,6 +3,7 @@ title: 古代的皇帝和名人是怎么过中秋节的？
 slug: Mid-Autumn-Festival-2025
 authors: zyhgov
 tags: [中秋节, 中国节日]
+date: 2025-10-06
 ---
 
 

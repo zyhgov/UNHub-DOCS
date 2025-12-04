@@ -3,6 +3,7 @@ title: 行踪轨迹
 slug: movement-trajectory
 authors: zyhgov
 tags: [github, Amap, API]
+date: 2025-10-04
 ---
 
 # 我的行踪轨迹

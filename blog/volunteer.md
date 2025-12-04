@@ -2,6 +2,7 @@
 title: 赛博功德簿：志愿汇与表演善良的艺术
 slug: volunteer
 authors: zyhgov
+date: 2025-10-27
 ---
 
 # 赛博功德簿：志愿汇与表演善良的艺术 

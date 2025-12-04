@@ -16,6 +16,7 @@ keywords:
   - 日本动画电影
   - Detective Conan Movie 29
 image: /img/conan2026/teaser_poster.webp
+date: 2025-12-04
 ---
 
 # 名侦探柯南：高速公路的堕天使将于 2026 年 4 月 10 日星期五上映！
