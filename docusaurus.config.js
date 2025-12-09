@@ -81,6 +81,10 @@ presets: [
         onInlineTags: 'warn',
         onInlineAuthors: 'warn',
         onUntruncatedBlogPosts: 'warn',
+        postsPerPage: 'ALL', // 或者 'ALL' 表示显示全部
+        // ✅ 添加这两行来控制侧边栏
+        blogSidebarCount: 'ALL',      // 显示所有文章，或者填数字如 10、20
+        blogSidebarTitle: '所有博客日志文章',  // 可选：自定义侧边栏标题
           // 👇 如果你也想在博客中用公式，加上这两行：
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
