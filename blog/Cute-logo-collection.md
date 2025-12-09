@@ -30,7 +30,7 @@ date: 2025-12-09
 **介绍**：AT Protocol 是一个去中心化的社交网络协议，由 Bluesky 开发，旨在构建可互操作、用户可控、高性能的社交平台。其核心设计包括“可移植的用户身份”（通过分布式标识 DID）、“可组合的内容存储”（使用“记录”Record 和“仓库”Repository 模型）、以及“算法可插拔”（用户可选择或自定义内容推荐算法）。AT Protocol 支持“联合式”（federated）架构，允许不同服务器（称为 Personal Data Servers）托管用户数据，同时保持跨实例互操作。它被用于 Bluesky 社交网络，目标是解决传统中心化社交平台在内容审核、数据所有权和算法透明度方面的局限性。
 
 ## Bluesky 
-![超可爱的 Logo 集合](img/KawaiiLogos/Bluesky/Bluesky.png)
+![超可爱的 Logo 集合](img/KawaiiLogos/Bluesky/BlueSky.png)
 **名称**：Bluesky  
 **创始人**：Jack Dorsey（前 Twitter 联合创始人）发起并资助，由 Jay Graber 担任 CEO 领导团队开发  
 **推出时间**：2019 年首次宣布；2023 年 2 月向公众开放邀请制访问；2024 年 4 月全面开放注册  
@@ -79,7 +79,7 @@ date: 2025-12-09
 **介绍**：Go 是一种开源、编译型、静态类型、并发友好的编程语言，由 Google 团队为解决大规模软件工程挑战而设计。它语法简洁，编译速度快，内置垃圾回收和轻量级并发模型（goroutines 和 channels），强调开发效率与运行性能的平衡。Go 广泛应用于云原生开发（如 Docker、Kubernetes）、网络服务、命令行工具和分布式系统，是现代基础设施软件的重要构建语言之一。其标准库丰富，工具链完善，由开源社区和 Google 共同维护。
 
 ## Haskell 
-![超可爱的 Logo 集合](img/KawaiiLogos/Haskell/Haskell.png)
+![超可爱的 Logo 集合](img/KawaiiLogos/Haskell/haskell.png)
 **名称**：Haskell  
 **创始人**：由学术界多个研究团队联合设计，主要贡献者包括 Philip Wadler、Paul Hudak、Simon Peyton Jones 等  
 **推出时间**：1990 年（Haskell 1.0 正式发布）  
