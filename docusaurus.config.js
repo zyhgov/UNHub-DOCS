@@ -687,7 +687,7 @@ plugins: [
           position: 'left',
           label: '内部参考',
         },
-        { to: '/blog', label: '日志更新', position: 'left' },
+        { to: '/blog', label: '博客日志', position: 'left' },
     {
       href: 'https://chat.zyhorg.cn/',
       label: '🤖 AI Web 平台',
@@ -736,7 +736,7 @@ plugins: [
               to: '/private',
             },
             {
-              label: '日志更新',
+              label: '博客日志',
               to: '/blog',
             },
         {
